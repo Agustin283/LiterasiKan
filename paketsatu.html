@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home_Literasi</title>
+
+  <style>
+    .projects.container {
+        text-align: center;
+    }
+    
+    p {
+        text-align: justify;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* Popup container - can be anything you want */
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Style untuk popup content yang diperbesar dan diperindah */
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    text-align: justify;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Soft shadow */
+    animation: scaleIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Animasi muncul */
+}
+
+/* Animasi scale untuk muncul */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Style untuk tombol close */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+    /* Stopwatch */
+    #stopwatch {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+</style>
+
+
+  <script>
+    let startTime, endTime;
+    let stopwatchInterval;
+
+    function startReading() {
+        startTime = new Date();
+        document.querySelector('button[onclick="stopReading()"]').disabled = false;
+        document.querySelector('button[onclick="startReading()"]').disabled = true;
+        document.getElementById('stopwatch').innerText = '00:00:00.000';
+        stopwatchInterval = setInterval(updateStopwatch, 10);
+    }
+
+    function stopReading() {
+        endTime = new Date();
+        clearInterval(stopwatchInterval);
+        const readingTime = (endTime - startTime) / 1000; // convert to seconds
+        const textLength = document.getElementById('text').innerText.split(' ').length;
+        const readingSpeed = textLength / readingTime * 120; // words per minute (WPM)
+        let resultText = `(WPM) Kecepatan membaca Anda adalah ${Math.round(readingSpeed)} kata per menit.`;
+
+        if (readingSpeed < 200) {
+            resultText += " Kecepatan membaca Anda terlalu lambat. Semangat Dalam Membaca Yaa :) ";
+        } else if (readingSpeed >= 200 && readingSpeed <= 250) {
+            resultText += " Kecepatan Membaca Anda Ideal";
+        } else if (readingSpeed > 250 && readingSpeed <= 300) {
+            resultText += " Kecepatan Membaca Anda Cepat .";
+        } else {
+            resultText += " Kecepatan membaca Anda Cepat.";
+        }
+
+
+        document.getElementById('popup-result').innerText = resultText;
+        openPopup();
+
+        document.querySelector('button[onclick="stopReading()"]').disabled = true;
+        document.querySelector('button[onclick="startReading()"]').disabled = false;
+    }
+
+    function openPopup() {
+        document.getElementById('popup').style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        const popup = document.getElementById('popup');
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+
+    function updateStopwatch() {
+        const now = new Date();
+        const elapsedTime = now - startTime; // in milliseconds
+        const minutes = Math.floor(elapsedTime / 60000);
+        const seconds = Math.floor((elapsedTime % 60000) / 1000);
+        const milliseconds = elapsedTime % 1000;
+        document.getElementById('stopwatch').innerText = 
+            `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(milliseconds).padStart(3, '0')}`;
+    }
+</script>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Li</span>terasi <span>K</span>an</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#projects" data-after="Projects"></a></li>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#manual" data-after="manual">Panduan</a></li>
+            <li><a href="#services" data-after="services">Informasi</a></li>
+            <li><a href="#contact" data-after="Contact">Kontak</a></li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+ <!-- Hero Section  -->
+ <section id="hero">
+  <div class="hero container">
+    <div>
+      <h1>Hallo, <span></span></h1>
+      <h1>Apakah Kecepatan Membaca Kamu <span></span></h1>
+      <h1>Sudah Efektif ?<span></span></h1>
+      <a href="#projects" type="button" class="cta">Mari Membaca</a>
+    </div>
+  </div>
+</section>
+<!-- End Hero Section  -->
+
+ <!-- manual Section -->
+ <section id="manual">
+  <div class="manual container">
+      <h1 class="section-title">Pan <span>Duan</span></h1>
+      <h2>Membaca Pemahaman</h2>
+      <p>Membaca pemahaman adalah membaca yang tujuannya untuk memperoleh pemahaman. Seseorang dikatakan memahami bacaan secara baik apabila memiliki 
+        kemampuan untuk menangkap arti kata dan ungkapan yang digunakan penulis, kemampuan menangkap makna tersurat dan makna tersirat, dan kemampuan
+        membuat simpulan. Hal ini sesuai dengan pendapat Iskandarwassid (2008:245) yang menyatakan bahwa membaca merupakan hal yang sangat penting bagi
+        pengembangan pengetahuan karena persentase transfer ilmu pengetahuan terbanyak dilakukan melalui membaca. </p>
+    </div>
+  </div>
+</section>
+<!-- manual Section -->
+
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+        <div class="projects-header">
+            <h1 class="section-title">Uji <span>Membaca Kecepatan Paket Satu</span></h1>
+            <h3 class="section-title">Bacalah Teks<span>Berikut ini</span></h3>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h1>UJI MEMBACA KECEPATAN</h1>
+                    <br>
+                    <button type="button" class="cta" onclick="startReading()" style="color: black;">MULAI</button>
+                    <div id="stopwatch">00:00:00.000</div>
+                    <br>
+                    <br>
+                    <h1>Pergaulan Bebas</h1>
+                    <p id="text">
+                      Pergaulan bebas telah menjerat banyak remaja. 
+                      Pergaulan bebas yakni perilaku salah dan buruk. 
+                      Hal ini tidak sesuai norma timur yang dianut oleh masyarakat Indonesia.
+                      Berbagai dampak negatif timbul akibat dari pergaulan bebas, baik secara hukum  atau adat. 
+                      Rasa gengsi, nafsu, penasaran, dan banyak hal lain jadi sebab masuknya remaja dalam pergaulan bebas.
+                      Teknologi yang makin maju pun memiliki pengaruh terhadap pergaulan bebas.
+                      Setelah tahu penyebab masuknya remaja dalam pergaulan bebas, orang tua diharap bisa lebih tegas dalam mengawasi dan mendidik anak. 
+                      Penggunaan internet yang bijak juga perlu diajarkan sejak dini kepada  anak agar tidak masuk ke dalam hal buruk.
+                    </p>
+                    <br>
+                      <p id="text">
+                      Awal mula seorang remaja terjerumus ke dalam pergaulan bebas adalah salah bergaull dan mudah terpengaruh oleh temannya yang tidak benar.
+                      Kebanyakan remaja ini ingin di puji dan di katakan gaul oleh teman-temannya tanpa memikirkan dampak dan akibat yang berkelanjutan.Maksud dari salah
+                      bergaul adalah bukan berarti kita harus memilih milih dalam bergaul, kita boleh saja bergaul dengan siapa pun asalkan kita jangan mudah terpengaruh dan tetap
+                      berpegang teguh kepada norma-norma agama dan norma hukum yang berlaku. Oleh karena itu kita sebagai remaja harus membiasakan berfikir panjang
+                      ke depan sebelum melakukan sesuatu hal, apalagi yang belum kita ketahui dampak baik dan buruknya bagi diri kita, keluarga dan orang lain.
+                    </p>
+                    <br>
+                    <button type="button" class="cta" onclick="stopReading()" disabled style="color: black;">BERHENTI</button>
+          
+                </div>
+                <!-- The popup -->
+                <div id="popup" class="popup">
+                  <div class="popup-content">
+                      <span class="close" onclick="closePopup()">&times;</span>
+                      <center><img src='img/semangat_gemoy.webp' style="width: 300px; height: 300px; align-items: center; justify-content: center; text-align: center; align-content: center;" ></img></center> 
+                      <p id="popup-result"></p>
+                      <p style="text-align: center; font-weight: bold;">Jangan Lupa, Hasil WPM Di Ingat Yah Untuk Mengetahui Hasil Akhir</p>
+                      <center><button  type="button" class="cta" onclick="" disabled style="color: black;"><a href="quizz.html">Lanjut Quizz </a></button></center>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Projects Section -->
+ 
+  <!-- Services Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/img-2.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Tentang <span>Kami</span></h1>
+        <h2>Membaca Pemahaman</h2>
+        <p>Membaca pemahaman adalah membaca yang tujuannya untuk memperoleh pemahaman. Seseorang dikatakan memahami bacaan secara baik apabila memiliki 
+          kemampuan untuk menangkap arti kata dan ungkapan yang digunakan penulis, kemampuan menangkap makna tersurat dan makna tersirat, dan kemampuan
+          membuat simpulan. Hal ini sesuai dengan pendapat Iskandarwassid (2008:245) yang menyatakan bahwa membaca merupakan hal yang sangat penting bagi
+          pengembangan pengetahuan karena persentase transfer ilmu pengetahuan terbanyak dilakukan melalui membaca. </p>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Kontak<span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Narahubung</h1>
+            <h2>+6283861742214</h2>
+            <h2>instagram:agstnlinaa_</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>agustinlinawati@students.unnes.ac.id</h2>
+            <h2>agustinlinawati@students.unnes.ac.id</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Alamat</h1>
+            <h2>Sekaran, Gunung Pati, Kota Semarang, Jawa Tengah 50229</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>A</span>gustin<span>Li</span>nawati</h1>
+      </div>
+      <h2>Solusi melengkapi website LiterasiKan</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024 Agustin Linawati. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
