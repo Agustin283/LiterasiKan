@@ -98,8 +98,10 @@
         clearInterval(stopwatchInterval);
         const readingTime = (endTime - startTime) / 1000; // convert to seconds
         const textLength = document.getElementById('text').innerText.split(' ').length;
-        const readingSpeed = textLength / readingTime * 120; // words per minute (WPM)
-        let resultText = `(WPM) Kecepatan membaca Anda adalah ${Math.round(readingSpeed)} kata per menit.`;
+        const readingSpeed = Math.round(textLength / readingTime * 120); // words per minute (WPM)
+        let resultText = `(WPM) Kecepatan membaca Anda adalah ${readingSpeed} kata per menit.`;
+
+        localStorage.setItem("readingSpeed", readingSpeed)
 
         if (readingSpeed < 200) {
             resultText += " Kecepatan membaca Anda terlalu lambat. Semangat Dalam Membaca Yaa :) ";
@@ -191,7 +193,7 @@
 
  <!-- manual Section -->
  <section id="manual">
-  <div class="manual container">
+  <div class="manual container ">
       <h1 class="section-title">Pan <span>Duan</span></h1>
       <h2>Membaca Pemahaman</h2>
       <p>Membaca pemahaman adalah membaca yang tujuannya untuk memperoleh pemahaman. Seseorang dikatakan memahami bacaan secara baik apabila memiliki 
