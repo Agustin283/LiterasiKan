@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scoreText = document.getElementById("scoreText");
 
   const CORRECT_BONUS = 5;
-  const MAX_QUESTIONS = 3;
+  const MAX_QUESTIONS = 20;
 
   let questions = [];
   let questionCounter = 0;
