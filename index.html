@@ -214,17 +214,14 @@
         >
           Pan <span>Duan</span>
         </h1>
-        <h2 style="margin-left: 70px">Membaca Pemahaman</h2>
         <p>
-          Membaca pemahaman adalah membaca yang tujuannya untuk memperoleh
-          pemahaman. Seseorang dikatakan memahami bacaan secara baik apabila
-          memiliki kemampuan untuk menangkap arti kata dan ungkapan yang
-          digunakan penulis, kemampuan menangkap makna tersurat dan makna
-          tersirat, dan kemampuan membuat simpulan. Hal ini sesuai dengan
-          pendapat Iskandarwassid (2008:245) yang menyatakan bahwa membaca
-          merupakan hal yang sangat penting bagi pengembangan pengetahuan karena
-          persentase transfer ilmu pengetahuan terbanyak dilakukan melalui
-          membaca.
+          Klik Mulai untuk memulai tes membaca. Baca teksnya dengan kecepatan
+          normal. Klik Berhenti jika sudah selesai. Nanti akan muncul hasil
+          kecepatan baca kamu. Coba dulu ya sebelum yang beneran, caranya
+          gampang kok. Tinggal klik-klik aja. Ingat, jangan buru-buru baca ya.
+          Baca aja kayak biasanya. Nanti akan ada penghitung waktu yang mencatat
+          berapa kata yang kamu baca dalam satu menit. Penasaran kan seberapa
+          cepat kamu baca? Yuk, kita coba!
         </p>
       </div>
     </section>
@@ -269,10 +266,10 @@
         document
           .getElementById("card-2")
           .addEventListener("click", function () {
-            location.href = "paketsatu.html";
+            location.href = "paketdua.html";
           });
       </script>
-      <div class="card card-3">
+      <div id="card-3" class="card card-3">
         <img src="img/pakettiga.jpg" alt="Paket Tiga" class="card__img" />
         <div class="card__details">
           <ul>
@@ -282,7 +279,14 @@
           </ul>
         </div>
       </div>
-      <div class="card card-4">
+      <script>
+        document
+          .getElementById("card-3")
+          .addEventListener("click", function () {
+            location.href = "pakettiga.html";
+          });
+      </script>
+      <div id="card-4" class="card card-4">
         <img src="img/paketempat.jpg" alt="Paket Empat" class="card__img" />
         <div class="card__details">
           <ul>
@@ -292,7 +296,14 @@
           </ul>
         </div>
       </div>
-      <div class="card card-5">
+      <script>
+        document
+          .getElementById("card-4")
+          .addEventListener("click", function () {
+            location.href = "paketempat.html";
+          });
+      </script>
+      <div id="card-5" class="card card-5">
         <img src="img/paketlima.jpg" alt="Paket Lima" class="card__img" />
         <div class="card__details">
           <ul>
@@ -302,16 +313,30 @@
           </ul>
         </div>
       </div>
-      <div class="card card-6">
+      <script>
+        document
+          .getElementById("card-5")
+          .addEventListener("click", function () {
+            location.href = "paketlima.html";
+          });
+      </script>
+      <div id="card-6" class="card card-6">
         <img src="img/paketenam.jpg" alt="Paket Enam" class="card__img" />
         <div class="card__details">
           <ul>
             <li>Paket Enam</li>
             <li>Teks Argumentasi</li>
-            <li>Bahaya Game Online</li>
+            <li>Makanan Sehat</li>
           </ul>
         </div>
       </div>
+      <script>
+        document
+          .getElementById("card-6")
+          .addEventListener("click", function () {
+            location.href = "paketenam.html";
+          });
+      </script>
     </section>
 
     <!--End Card Section-->
