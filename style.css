@@ -25,7 +25,7 @@ img {
   object-fit: cover;
 }
 p {
-  color: black;
+  color: #000b10; /* Mengubah warna teks menjadi #4335A7 */
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
@@ -35,14 +35,14 @@ p {
 .section-title {
   font-size: 4rem;
   font-weight: 300;
-  color: black;
+  color: #4335a7; /* Mengubah warna teks menjadi #4335A7 */
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
 }
 .section-title span {
-  color: rgb(92, 158, 223);
+  color: #80c4e9; /* Mengubah warna span menjadi #80C4E9 */
 }
 
 .cta {
@@ -50,7 +50,6 @@ p {
   padding: 10px 30px;
   color: white;
   background-color: transparent;
-  border: 2px solid rgb(92, 158, 223);
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -60,7 +59,7 @@ p {
 }
 .cta:hover {
   color: white;
-  background-color: rgb(92, 158, 223);
+  background-color: #80c4e9; /* Mengubah background hover menjadi #80C4E9 */
 }
 .brand h1 {
   font-size: 3rem;
@@ -68,7 +67,7 @@ p {
   color: white;
 }
 .brand h1 span {
-  color: rgb(92, 158, 223);
+  color: #80c4e9; /* Mengubah warna span menjadi #80C4E9 */
 }
 
 /* Header section */
@@ -97,7 +96,7 @@ p {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgb(31, 30, 30);
+  background-color: #4335a7; /* Mengubah background menu menjadi #4335A7 */
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -140,7 +139,7 @@ p {
   letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-  color: rgb(92, 158, 223);
+  color: #80c4e9; /* Mengubah warna teks menu hover menjadi #80C4E9 */
 }
 #header .hamburger {
   height: 60px;
@@ -197,7 +196,6 @@ p {
   top: 0;
 }
 /* End Header section */
-
 /* Hero Section */
 #hero {
   position: relative;
@@ -210,7 +208,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #4335a7; /* Mengubah background menjadi #4335A7 */
   opacity: 0.7;
   z-index: -1;
 }
@@ -245,7 +243,7 @@ p {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: rgb(92, 158, 223);
+  background-color: #80c4e9; /* Mengubah warna latar belakang span menjadi #80C4E9 */
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
@@ -286,7 +284,7 @@ p {
   margin-bottom: 20px;
 }
 #manual .col-right .cta {
-  color: black;
+  color: #4335a7; /* Mengubah warna tombol menjadi #4335A7 */
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
@@ -328,8 +326,12 @@ p {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: rgb(247, 244, 244);
+  background-image: linear-gradient(
+    60deg,
+    #4335a7 0%,
+    #80c4e9 100%
+  ); /* Mengubah gradient menjadi #4335A7 dan #80C4E9 */
+  color: #fff6e9; /* Mengubah warna teks menjadi #FFF6E9 */
 }
 #projects .project-info h1 {
   font-size: 4rem;
@@ -341,7 +343,7 @@ p {
   margin-top: 10px;
 }
 #projects .project-info p {
-  color: white;
+  color: #fff6e9; /* Mengubah warna teks menjadi #FFF6E9 */
 }
 #projects .project-img {
   flex-basis: 50%;
@@ -356,7 +358,11 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(
+    60deg,
+    #4335a7 0%,
+    #80c4e9 100%
+  ); /* Mengubah gradient menjadi #4335A7 dan #80C4E9 */
   opacity: 0.7;
 }
 #projects .project-img img {
@@ -367,7 +373,6 @@ p {
 }
 
 /* End Projects section */
-
 /* CARD */
 .section-card {
   display: grid;
@@ -376,16 +381,16 @@ p {
   width: 80%;
   margin: 60px auto auto;
 
-  background-color: #fff;
+  background-color: #ffff; /* Mengubah background section-card menjadi #FFF6E9 */
 }
 
 .card {
-  background-color: #fff;
+  background-color: #ffff; /* Mengubah background card menjadi #FFF6E9 */
   box-shadow: 0 20px 40px rgba (0, 0, 0, 0.2);
 }
 
 .card:hover {
-  box-shadow: 0px 0px 5px 0 #0000002c;
+  box-shadow: 0px 0px 5px 0 #4335a7; /* Menambahkan warna #FF7F3E pada hover box-shadow */
 }
 .card__img {
   width: 100%;
@@ -425,12 +430,15 @@ p {
   font-weight: 500;
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
+  color: #4335a7; /* Mengubah warna h2 menjadi #4335A7 */
 }
 #services .col-right p {
   margin-bottom: 20px;
+  color: #4335a7; /* Mengubah warna paragraf menjadi #4335A7 */
 }
 #services .col-right .cta {
-  color: black;
+  color: white;
+  background-color: #4335a7; /* Mengubah warna background tombol CTA menjadi #4335A7 */
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
@@ -439,7 +447,7 @@ p {
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid white;
+  border: 10px solid #fff6e9; /* Mengubah border gambar menjadi #FFF6E9 */
 }
 #services .col-left .about-img::after {
   content: "";
@@ -448,7 +456,7 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
-  border: 7px solid rgb(92, 158, 223);
+  border: 7px solid #80c4e9; /* Mengubah border setelah gambar menjadi #80C4E9 */
   z-index: -1;
 }
 /* End services Section */
@@ -479,7 +487,7 @@ p {
   transition: 0.3s ease box-shadow;
 }
 #contact .contact-item:hover {
-  box-shadow: 0px 0px 5px 0 #0000002c;
+  box-shadow: 0px 0px 5px 0 #ff7f3e; /* Mengubah hover box-shadow menjadi #FF7F3E */
 }
 #contact .icon {
   width: 70px;
@@ -490,17 +498,22 @@ p {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 5px;
+  color: #4335a7; /* Mengubah warna h1 menjadi #4335A7 */
 }
 #contact .contact-info h2 {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 500;
+  color: #80c4e9; /* Mengubah warna h2 menjadi #80C4E9 */
 }
 /*End contact Section */
-
 /* Footer */
 #footer {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(
+    60deg,
+    #4335a7 0%,
+    #80c4e9 100%
+  ); /* Mengubah gradient footer dengan warna utama */
 }
 #footer .footer {
   min-height: 200px;
@@ -509,7 +522,7 @@ p {
   padding-bottom: 10px;
 }
 #footer h2 {
-  color: white;
+  color: #fff6e9; /* Mengubah warna teks h2 menjadi #FFF6E9 */
   font-weight: 500;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -533,7 +546,7 @@ p {
   filter: grayscale(0);
 }
 #footer p {
-  color: white;
+  color: #fff6e9; /* Mengubah warna teks paragraf menjadi #FFF6E9 */
   font-size: 1.3rem;
 }
 /* End Footer */
@@ -561,12 +574,12 @@ p {
 }
 @keyframes text_reveal {
   100% {
-    color: white;
+    color: #fff6e9; /* Mengubah warna teks menjadi #FFF6E9 */
   }
 }
 @keyframes text_reveal_name {
   100% {
-    color: rgb(92, 158, 223);
+    color: #80c4e9; /* Mengubah warna teks nama menjadi #80C4E9 */
     font-weight: 500;
   }
 }
@@ -577,6 +590,8 @@ p {
   .cta {
     font-size: 2.5rem;
     padding: 20px 60px;
+    background-color: #4335a7; /* Mengubah background CTA menjadi #4335A7 */
+    color: #fff6e9; /* Mengubah warna teks CTA menjadi #FFF6E9 */
   }
   h1.section-title {
     font-size: 6rem;
@@ -585,6 +600,7 @@ p {
   /* Hero */
   #hero h1 {
     font-size: 7rem;
+    color: #4335a7; /* Mengubah warna heading hero menjadi #4335A7 */
   }
   /* End Hero */
 
@@ -670,6 +686,7 @@ p {
   }
   #header .nav-list ul li a {
     font-size: 1.8rem;
+    color: #4335a7; /* Mengubah warna teks navbar menjadi #4335A7 */
   }
   #header .nav-list ul a:after {
     display: none;
@@ -681,4 +698,3 @@ p {
     margin: 1.5%;
   }
 }
-/* End  Media Query For Desktop */

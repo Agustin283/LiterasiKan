@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <style>
+      #timer {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff0000; /* Warna merah */
+        margin-bottom: 20px;
+      }
       body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -64,20 +70,20 @@
         margin-top: 20px;
         font-size: 24px;
         font-weight: bold;
-        color: #4335a7; /* Warna ungu gelap */
+        color: #4335a7;
       }
 
       .choices button {
-        text-align: left; /* Buat teks di dalam tombol rata kiri */
+        text-align: left;
         display: flex;
-        align-items: center; /* Teks sejajar secara vertikal */
-        padding: 10px 20px; /* Memberi ruang pada tombol */
-        gap: 10px; /* Jarak antara label (A, B, C, D) dan teks */
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
       }
 
       .choices span {
-        font-weight: bold; /* Huruf A, B, C, D tampil lebih tebal */
-        color: #fff6e9; /* Warna krem terang agar mencolok */
+        font-weight: bold;
+        color: #fff6e9;
       }
     </style>
   </head>
@@ -91,17 +97,18 @@
             .section-title {
               display: inline-block;
               padding: 10px;
-              background-color: #fff6e9; /* Warna latar belakang untuk efek kotak */
-              border-radius: 8px; /* Menambahkan sudut melengkung pada kotak */
+              background-color: #fff6e9;
+              border-radius: 8px;
             }
 
             .section-title span {
-              font-size: 20px; /* Ukuran font untuk judul */
-              font-weight: bold; /* Menebalkan font */
+              font-size: 20px;
+              font-weight: bold;
             }
           </style>
         </div>
         <div id="game" class="quiz-content hidden">
+          <div id="timer">00:20</div>
           <div id="question">Question will appear here</div>
 
           <div class="choices">
@@ -131,5 +138,41 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="quiz-2.js"></script>
+    <script>
+      let timerInterval;
+      const timerElement = document.getElementById("timer");
+      let timeLeft = 20;
+
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${String(minutes).padStart(2, "0")}:${String(
+          remainingSeconds
+        ).padStart(2, "0")}`;
+      }
+
+      function startTimer(nextQuestionCallback) {
+        timeLeft = 20;
+        timerElement.textContent = formatTime(timeLeft);
+
+        clearInterval(timerInterval);
+        timerInterval = setInterval(() => {
+          timeLeft--;
+          timerElement.textContent = formatTime(timeLeft);
+
+          if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            nextQuestionCallback();
+          }
+        }, 1000);
+      }
+
+      function nextQuestion() {
+        console.log("Lanjut ke pertanyaan berikutnya!");
+        startTimer(nextQuestion);
+      }
+
+      startTimer(nextQuestion);
+    </script>
   </body>
 </html>
