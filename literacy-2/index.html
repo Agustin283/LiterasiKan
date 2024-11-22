@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Dampak Pergaulan Bebas</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <p>Bacalah paragraf di bawah ini dengan cermat:</p>
+        <div class="paragraph">
+          <p id="text">
+            Kecerdasan buatan atau AI telah menjadi bagian tak terpisahkan dari
+            kehidupan kita sehari-hari. AI, yang meniru kecerdasan manusia,
+            telah dikembangkan untuk menyelesaikan berbagai tugas kompleks,
+            mulai dari pengenalan wajah hingga mengemudikan mobil tanpa
+            pengemudi. Salah satu contoh penerapan AI yang paling umum adalah
+            pada asisten virtual seperti Siri, Google Assistant, atau Alexa.
+            Asisten virtual ini mampu memahami perintah suara, menjawab
+            pertanyaan, dan bahkan melakukan tugas-tugas tertentu seperti
+            mengatur alarm atau memutar musik. Selain itu, AI juga digunakan
+            dalam bidang kesehatan untuk mendiagnosis penyakit, dalam bidang
+            keuangan untuk menganalisis data pasar, dan dalam industri
+            manufaktur untuk meningkatkan efisiensi produksi.
+          </p>
+          <p id="text">
+            Meskipun memiliki banyak manfaat, perkembangan AI juga menimbulkan
+            beberapa tantangan. Salah satunya adalah kekhawatiran akan hilangnya
+            lapangan pekerjaan akibat otomatisasi. Selain itu, ada juga
+            kekhawatiran tentang etika penggunaan AI, seperti potensi
+            penyalahgunaan AI untuk tujuan jahat.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
