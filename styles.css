@@ -1,0 +1,275 @@
+/* styles.css */
+
+/* Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fd;
+  color: #333;
+}
+
+/* Global Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Menyamakan dengan guide-container dan card-container */
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(74, 108, 247, 0.6); /* Transparan */
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-links li:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 60px; /* Menyesuaikan dengan tinggi navbar */
+  padding: 4rem 0;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  color: #4a6cf7;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  padding: 0.8rem 2rem;
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero-btn:hover {
+  background-color: #365ac9;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 2rem;
+  }
+}
+
+.guide-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guide-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guide-card .icon {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.guide-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.guide-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.icon-1 {
+  color: #ffba08;
+}
+
+.icon-2 {
+  color: #f94144;
+}
+
+.icon-3 {
+  color: #277da1;
+}
+
+.icon-4 {
+  color: #90be6d;
+}
+
+.guide-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Card Container Styling */
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 24px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%; /* Lebar penuh dari card */
+  aspect-ratio: 1 / 1; /* Pastikan area berbentuk kotak 1:1 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Potong bagian gambar yang keluar area */
+}
+
+.card-image img {
+  width: 100%; /* Gambar mengikuti lebar card-image */
+  height: 100%; /* Gambar mengikuti tinggi card-image */
+  object-fit: cover; /* Memastikan gambar tetap proporsional dan memenuhi kotak */
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 8px 0;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .navbar-menu a {
+    font-size: 14px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Kesehatan Mental</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <p>Bacalah paragraf di bawah ini dengan cermat:</p>
+        <div class="paragraph">
+          <p id="text">
+            Pendidikan karakter adalah proses pembelajaran nilai-nilai moral,
+            etika, dan sikap positif yang bertujuan untuk membentuk pribadi yang
+            berakhlak mulia. Selain kecerdasan intelektual, karakter yang baik
+            sangat penting untuk keberhasilan seseorang dalam hidup. Pendidikan
+            karakter tidak hanya diajarkan di sekolah, tetapi juga di lingkungan
+            keluarga dan masyarakat. Nilai-nilai karakter yang perlu ditanamkan
+            sejak dini antara lain kejujuran, tanggung jawab, hormat, peduli,
+            dan gotong royong. Dengan memiliki karakter yang baik, seseorang
+            akan lebih mudah beradaptasi dengan lingkungan sosial, membangun
+            relasi yang sehat, dan berkontribusi positif bagi masyarakat.
+            Pendidikan karakter dapat dilakukan melalui berbagai cara, seperti
+            memberikan contoh yang baik, memberikan pengajaran langsung tentang
+            nilai-nilai moral, dan melibatkan siswa dalam kegiatan-kegiatan yang
+            menumbuhkan karakter positif. Dengan pendidikan karakter yang
+            efektif, diharapkan generasi muda dapat tumbuh menjadi generasi yang
+            berkualitas dan berintegritas.
+          </p>
+          <p id="text">
+            Awal mula seorang remaja terjerumus ke dalam pergaulan bebas adalah
+            salah bergaull dan mudah terpengaruh oleh temannya yang tidak benar.
+            Kebanyakan remaja ini ingin di puji dan di katakan gaul oleh
+            teman-temannya tanpa memikirkan dampak dan akibat yang
+            berkelanjutan.Maksud dari salah bergaul adalah bukan berarti kita
+            harus memilih milih dalam bergaul, kita boleh saja bergaul dengan
+            siapa pun asalkan kita jangan mudah terpengaruh dan tetap berpegang
+            teguh kepada norma-norma agama dan norma hukum yang berlaku. Oleh
+            karena itu kita sebagai remaja harus membiasakan berfikir panjang ke
+            depan sebelum melakukan sesuatu hal, apalagi yang belum kita ketahui
+            dampak baik dan buruknya bagi diri kita, keluarga dan orang lain.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

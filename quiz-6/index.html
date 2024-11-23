@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section id="quiz">
+      <div id="loader" class="container">
+        <div class="quiz-header">
+          <h2 class="section-title">Ayo Kuis</h2>
+          <div id="timerContainer">
+            <div id="timerText">20</div>
+          </div>
+        </div>
+
+        <div id="game" class="quiz-content hidden">
+          <div id="questionCounterText">Soal 1 dari 20</div>
+          <div id="question">Question will appear here</div>
+
+          <div class="choices">
+            <div class="flex-container">
+              <div class="flex-label">A.</div>
+              <button class="flex-button">Choice 1</button>
+            </div>
+            <div class="flex-container">
+              <div class="flex-label">B.</div>
+              <button class="flex-button">Choice 2</button>
+            </div>
+            <div class="flex-container">
+              <div class="flex-label">C.</div>
+              <button class="flex-button">Choice 3</button>
+            </div>
+            <div class="flex-container">
+              <div class="flex-label">D.</div>
+              <button class="flex-button">Choice 4</button>
+            </div>
+          </div>
+
+          <!-- Menampilkan skor -->
+          <div id="scoreText">0</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
