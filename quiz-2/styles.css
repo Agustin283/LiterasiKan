@@ -60,22 +60,21 @@ body {
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
-  color: #4335a7; /* Warna ungu gelap */
+  color: #4335a7;
 }
 
 .choices button {
-  text-align: left; /* Buat teks di dalam tombol rata kiri */
+  text-align: left;
   display: flex;
-  align-items: center; /* Teks sejajar secara vertikal */
-  padding: 10px 20px; /* Memberi ruang pada tombol */
-  gap: 10px; /* Jarak antara label (A, B, C, D) dan teks */
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
 }
 
 .choices span {
-  font-weight: bold; /* Huruf A, B, C, D tampil lebih tebal */
-  color: #fff6e9; /* Warna krem terang agar mencolok */
+  font-weight: bold;
+  color: #fff6e9;
 }
-
 .flex-container {
   display: flex;
   width: 100%;
