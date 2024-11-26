@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(https://i.pinimg.com/736x/e6/04/83/e60483df64f74fa2bf2d3966105302b6.jpg);
-  color: #fff1db;
+  background-image: url(https://i.pinimg.com/736x/b5/9f/93/b59f9362072934cf7380f38845a731b4.jpg);
+  color: #333; /* Warna merah muda lembut untuk teks */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +18,13 @@ body {
 
 .quiz-header h1,
 .quiz-header h2 {
-  color: #fff1db;
+  color: #ccc; /* Warna teks */
   margin: 10px 0;
 }
 
 #game {
   padding: 20px;
-  background-color: #536493; /* Warna biru tua lembut */
+  background-color: #eae7c6; /* Warna krem pastel */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -32,7 +32,6 @@ body {
 #question {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #d4bdac;
 }
 
 .choices {
@@ -43,8 +42,8 @@ body {
 
 .choices button {
   padding: 10px;
-  background-color: #88c273;
-  color: #fff1db;
+  background-color: #c37b89;
+  color: #ffffff; /* Warna teks putih */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -53,29 +52,27 @@ body {
 }
 
 .choices button:hover {
-  background-color: #6b9e59;
+  background-color: #c37b89; /* Hijau pastel lebih gelap untuk hover */
 }
 
 #scoreText {
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
-  color: #d4bdac;
 }
 
 .choices button {
-  text-align: left;
+  text-align: left; /* Buat teks di dalam tombol rata kiri */
   display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
+  align-items: center; /* Teks sejajar secara vertikal */
+  padding: 10px 20px; /* Memberi ruang pada tombol */
+  gap: 10px; /* Jarak antara label (A, B, C, D) dan teks */
 }
 
 .choices span {
-  font-weight: bold;
-  color: #fff1db;
+  font-weight: bold; /* Huruf A, B, C, D tampil lebih tebal */
+  color: #f5f5f5; /* Warna putih agar mencolok */
 }
-
 .flex-container {
   display: flex;
   width: 100%;
@@ -86,7 +83,7 @@ body {
 
 .flex-label {
   flex: 0 0 5%;
-  background-color: #6b9e59;
+  background-color: #c37b89;
   text-align: center;
   border-radius: 5px;
   padding: 5px;
@@ -105,7 +102,7 @@ body {
   align-items: center; /* Menyelaraskan elemen secara vertikal */
   gap: 20px; /* Jarak antara judul dan timer */
   margin: 20px 0; /* Jarak atas dan bawah */
-  background-color: #536493;
+  background-color: #c37b89;
   padding: 10px;
   border-radius: 8px;
 }

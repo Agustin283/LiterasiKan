@@ -11,6 +11,92 @@ body {
   background-color: #f8f9fd;
   color: #333;
 }
+/* Blur effect for body content (excluding popup) */
+body.popup-active::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent overlay */
+  backdrop-filter: blur(5px); /* Blur effect for background */
+  z-index: 999; /* Behind popup */
+}
+
+/* Popup Form Styles */
+.popup-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 320px;
+  width: 90%;
+  text-align: center;
+  z-index: 1000; /* Above background blur */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.popup-form.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-form h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.popup-form p {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.popup-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.popup-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.popup-form .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.popup-form .cta {
+  margin-top: 10px;
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.popup-form .cta:hover {
+  background-color: #365ac9;
+}
 
 .read-first {
   background-color: white;

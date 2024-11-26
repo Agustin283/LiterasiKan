@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(https://i.pinimg.com/736x/78/f7/75/78f7759e22e49db306741617c2022ccd.jpg);
-  color: #fff1db; /* Warna teks dengan nuansa lembut */
+  color: #fff1db;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +18,13 @@ body {
 
 .quiz-header h1,
 .quiz-header h2 {
-  color: #fff1db; /* Warna header dengan nuansa lembut */
+  color: #fff1db;
   margin: 10px 0;
 }
 
 #game {
   padding: 20px;
-  background-color: #536493; /* Warna biru tua lembut */
+  background-color: #536493;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -32,7 +32,7 @@ body {
 #question {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #d4bdac; /* Warna teks pertanyaan dengan nuansa beige */
+  color: #d4bdac;
 }
 
 .choices {
@@ -43,8 +43,8 @@ body {
 
 .choices button {
   padding: 10px;
-  background-color: #88c273; /* Warna tombol hijau cerah */
-  color: #fff1db; /* Warna teks tombol dengan nuansa lembut */
+  background-color: #88c273;
+  color: #fff1db;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -53,29 +53,28 @@ body {
 }
 
 .choices button:hover {
-  background-color: #6b9e59; /* Warna tombol lebih gelap saat hover */
+  background-color: #6b9e59;
 }
 
 #scoreText {
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
-  color: #d4bdac; /* Warna teks skor */
+  color: #d4bdac;
 }
 
 .choices button {
-  text-align: left; /* Buat teks di dalam tombol rata kiri */
+  text-align: left;
   display: flex;
-  align-items: center; /* Teks sejajar secara vertikal */
-  padding: 10px 20px; /* Memberi ruang pada tombol */
-  gap: 10px; /* Jarak antara label (A, B, C, D) dan teks */
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
 }
 
 .choices span {
-  font-weight: bold; /* Huruf A, B, C, D tampil lebih tebal */
-  color: #fff1db; /* Warna teks label (A, B, C, D) */
+  font-weight: bold;
+  color: #fff1db;
 }
-
 .flex-container {
   display: flex;
   width: 100%;

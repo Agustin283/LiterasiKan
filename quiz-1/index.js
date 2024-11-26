@@ -22,205 +22,202 @@ document.addEventListener("DOMContentLoaded", () => {
     result: [
       {
         question: "Apa yang dimaksud dengan pergaulan bebas menurut teks?",
-        correct_answer: "Perilaku salah dan buruk",
+        correct_answer: "Perilaku buruk yang tidak sesuai norma",
         incorrect_answer: [
-          "Perilaku yang mematuhi norma hukum dan agama",
-          "Perilaku yang menghormati adat dan budaya",
-          "Perilaku yang kreatif dan inovatif",
-        ],
-      },
-      {
-        question: "Apa penyebab utama remaja terjerumus dalam pergaulan bebas?",
-        correct_answer: "Nafsu, rasa gengsi, dan penasaran",
-        incorrect_answer: [
-          "Ketidakmampuan memahami pelajaran",
-          "Kebiasaan membaca buku",
-          "Ketidakmampuan menggunakan teknologi",
-        ],
-      },
-      {
-        question: "Apa peran teknologi dalam pergaulan bebas??",
-        correct_answer: "Memiliki pengaruh terhadap perilaku negatif",
-        incorrect_answer: [
-          "Tidak berpengaruh sama sekali",
-          "Mendorong perilaku disiplin",
-          "Meningkatkan nilai sosial",
+          "Perilaku sesuai norma",
+          "Perilaku baik yang diterima masyarakat",
+          "Perilaku yang bebas tanpa batas",
         ],
       },
       {
         question:
-          "Apa yang harus dilakukan orang tua untuk mencegah pergaulan bebas?",
+          "Apa saja penyebab remaja terjerumus ke dalam pergaulan bebas?",
+        correct_answer: "Gengsi, rasa penasaran, dan pengaruh teknologi",
+        incorrect_answer: [
+          "Pendidikan yang tinggi",
+          "Tidak suka bergaul",
+          "Kurangnya hiburan",
+        ],
+      },
+      {
+        question:
+          "Siapa yang diharapkan berperan dalam mengawasi anak agar tidak terjerumus ke pergaulan bebas?",
+        correct_answer: "Orang tua",
+        incorrect_answer: ["Guru", "Tetangga", "Teman sebaya"],
+      },
+      {
+        question:
+          "Teknologi yang makin maju dapat memiliki pengaruh terhadap...",
+        correct_answer: "Pergaulan bebas",
+        incorrect_answer: [
+          "Pendidikan yang baik",
+          "Karakter bangsa",
+          "Kebiasaan hidup sehat",
+        ],
+      },
+      {
+        question: "Apa pesan utama dari teks yang dibahas?",
+        correct_answer:
+          "Pergaulan bebas memiliki dampak buruk yang harus dihindari.",
+        incorrect_answer: [
+          "Remaja perlu menjaga hubungan baik dengan teman.",
+          "Teknologi modern mempermudah kehidupan manusia.",
+          "Orang tua tidak perlu khawatir terhadap perkembangan anak.",
+        ],
+      },
+      {
+        question:
+          "Mengapa orang tua perlu mengajarkan penggunaan internet yang bijak kepada anak?",
+        correct_answer: "Agar anak tidak masuk ke dalam hal buruk",
+        incorrect_answer: [
+          "Agar anak tidak ketinggalan zaman",
+          "Agar anak memahami teknologi baru",
+          "Agar anak memiliki banyak teman",
+        ],
+      },
+      {
+        question: 'Apa yang dimaksud dengan "salah bergaul" dalam teks?',
+        correct_answer: "Terpengaruh oleh teman yang tidak baik",
+        incorrect_answer: [
+          "Tidak memiliki teman yang banyak",
+          "Memilih-milih teman dalam bergaul",
+          "Tidak mengikuti tren yang ada",
+        ],
+      },
+      {
+        question:
+          "Apa tujuan remaja yang terjerumus dalam pergaulan bebas ingin dipuji?",
+        correct_answer: "Agar terlihat keren dan gaul",
+        incorrect_answer: [
+          "Agar merasa lebih dewasa",
+          "Agar mendapat banyak teman",
+          "Agar lebih dihormati oleh guru",
+        ],
+      },
+      {
+        question: "Bagaimana seorang remaja dapat menghindari pergaulan bebas?",
+        correct_answer: "Dengan tetap mematuhi norma-norma agama dan hukum",
+        incorrect_answer: [
+          "Dengan menjauhi semua teman",
+          "Dengan mengikuti semua tren terbaru",
+          "Dengan menghindari penggunaan teknologi",
+        ],
+      },
+      {
+        question:
+          "Apa tindakan pertama yang dapat dilakukan orang tua untuk mencegah anak masuk dalam pergaulan bebas?",
         correct_answer: "Mengawasi dan mendidik anak dengan tegas",
         incorrect_answer: [
-          "Memberikan kebebasan penuh kepada anak",
-          "Melarang anak menggunakan internet",
-          "Mengabaikan perilaku anak",
+          "Membelikan gadget terbaru",
+          "Memarahi anak setiap hari",
+          "Membatasi pergaulan anak sepenuhnya",
         ],
       },
       {
-        question: "Apa yang dimaksud dengan salah bergaul dalam teks?",
-        correct_answer: "Mudah terpengaruh oleh teman yang tidak benar",
+        question:
+          "Seorang teman mengajak kamu melakukan hal yang tidak sesuai norma. Apa langkah terbaik yang bisa kamu ambil?",
+        correct_answer: "Menolak dengan sopan dan memberi alasan",
         incorrect_answer: [
-          "Memilih teman yang memiliki banyak kelebihan",
-          "Menghindari pergaulan dengan orang lain",
-          "Tidak berinteraksi dengan teman-teman",
+          "Mengikuti agar tidak dianggap ketinggalan zaman",
+          "Melaporkan kepada guru atau orang tua",
+          "Membalas dengan melakukan hal yang sama",
         ],
       },
       {
-        question: "Mengapa norma timur tidak sesuai dengan pergaulan bebas?",
+        question:
+          "Jika kamu melihat teman terjerumus dalam pergaulan bebas, apa yang sebaiknya kamu lakukan?",
+        correct_answer: "Mengajak dia untuk berbicara dan memberi saran",
+        incorrect_answer: [
+          "Membiarkan karena itu bukan urusanmu",
+          "Melaporkan dia ke pihak berwajib",
+          "Menyindir dia di media sosial",
+        ],
+      },
+      {
+        question:
+          "Apa hubungan antara kemajuan teknologi dan pergaulan bebas dalam teks?",
         correct_answer:
-          "Karena norma timur menjunjung tinggi kesopanan dan moral",
+          "Kemajuan teknologi mempermudah akses terhadap hal buruk.",
         incorrect_answer: [
-          "Karena norma timur terlalu ketat",
-          "Karena norma timur mengajarkan nilai-nilai yang bertentangan",
-          "Karena norma timur tidak diterima oleh semua orang",
+          "Kemajuan teknologi selalu membawa dampak positif.",
+          "Teknologi membuat remaja lebih religius.",
+          "Teknologi tidak terkait dengan pergaulan bebas.",
         ],
       },
       {
-        question: "Bagaimana rasa gengsi dapat memengaruhi perilaku remaja?",
+        question:
+          "Mengapa norma agama dan hukum dianggap penting dalam mencegah pergaulan bebas?",
         correct_answer:
-          "Mendorong remaja mencari pengakuan tanpa memikirkan akibatnya",
+          "Karena norma tersebut menjadi panduan hidup yang benar.",
         incorrect_answer: [
-          "Membuat remaja lebih percaya diri",
-          "Mengajarkan remaja bertanggung jawab atas perbuatannya",
-          "Membantu remaja mematuhi norma hukum",
+          "Karena norma tersebut memberikan sanksi berat.",
+          "Karena norma tersebut tidak bisa dilanggar.",
+          "Karena norma tersebut membatasi kreativitas remaja.",
         ],
       },
       {
         question:
-          "Apa yang dimaksud dengan berpegang teguh pada norma agama dan hukum?",
-        correct_answer: "Mengikuti aturan yang berlaku tanpa pengecualian",
-        incorrect_answer: [
-          "Melakukan kegiatan sesuai keinginan pribadi",
-          "Memilih aturan yang mudah diikuti",
-          "Tidak terpengaruh oleh teman-teman",
-        ],
-      },
-      {
-        question:
-          "Mengapa berpikir panjang sebelum bertindak penting bagi remaja?",
-        correct_answer: "Untuk memahami dampak baik dan buruk suatu tindakan",
-        incorrect_answer: [
-          "Agar terlihat lebih pintar dari teman-teman",
-          "Untuk memudahkan menyelesaikan tugas sekolah",
-          "Agar tidak melibatkan orang tua dalam masalah",
-        ],
-      },
-      {
-        question:
-          "Bagaimana penggunaan internet yang bijak dapat mencegah pergaulan bebas?",
-        correct_answer: "Dengan membatasi informasi yang berbahaya",
-        incorrect_answer: [
-          "Dengan mengajarkan cara berbelanja online",
-          "Dengan melarang penggunaan internet di rumah",
-          "Dengan meningkatkan waktu bermain",
-        ],
-      },
-      {
-        question:
-          "Jika Anda seorang guru, bagaimana Anda dapat membantu mencegah pergaulan bebas di kalangan siswa?",
+          "Apa perbedaan antara penggunaan internet secara bijak dan tidak bijak dalam kaitannya dengan pergaulan bebas?",
         correct_answer:
-          "Mengajarkan pentingnya norma dan dampaknya dalam kehidupan",
+          "Penggunaan bijak memperkuat karakter positif, sedangkan tidak bijak membuka peluang masuk ke pergaulan bebas.",
         incorrect_answer: [
-          "Memberikan hukuman berat kepada siswa yang salah",
-          "Membatasi siswa berinteraksi dengan teman-teman",
-          "Menyediakan waktu tambahan untuk bermain",
+          "Penggunaan bijak membuat remaja menjadi terkenal, sedangkan tidak bijak membuat remaja lebih kreatif.",
+          "Penggunaan bijak menghindarkan remaja dari pekerjaan, sedangkan tidak bijak meningkatkan prestasi.",
+          "Penggunaan bijak selalu buruk, sedangkan tidak bijak selalu baik.",
         ],
       },
       {
         question:
-          "Sebagai orang tua, bagaimana Anda dapat memastikan anak-anak tidak terpengaruh pergaulan bebas?",
-        correct_answer: "Mengawasi aktivitas mereka secara bijaksana",
-        incorrect_answer: [
-          "Melarang mereka bergaul dengan siapa pun",
-          "Memberikan kebebasan tanpa batas",
-          "Mengabaikan masalah mereka",
-        ],
-      },
-      {
-        question:
-          "Bagaimana Anda dapat membantu seorang teman yang hampir terjerumus dalam pergaulan bebas?",
-        correct_answer: "Menasehati mereka tentang dampak buruknya",
-        incorrect_answer: [
-          "Memberikan dukungan untuk apa pun yang mereka pilih",
-          "Menghindari mereka agar tidak ikut terpengaruh",
-          "Melaporkannya langsung kepada pihak berwenang",
-        ],
-      },
-      {
-        question:
-          "Jika Anda seorang pengguna internet, bagaimana Anda bisa menggunakan teknologi dengan bijak?",
-        correct_answer: "Mengakses situs yang bermanfaat dan sesuai norma",
-        incorrect_answer: [
-          "Menghabiskan waktu sebanyak mungkin di media sosial",
-          "Menggunakan internet hanya untuk bermain game",
-          "Membatasi penggunaannya untuk hiburan",
-        ],
-      },
-      {
-        question:
-          "Apa yang dapat dilakukan remaja untuk menjaga pergaulannya tetap sehat?",
+          "Bagaimana norma timur memengaruhi sikap masyarakat terhadap pergaulan bebas?",
         correct_answer:
-          "Memilih teman yang sejalan dengan norma hukum dan agama",
+          "Norma timur menolak perilaku yang melanggar nilai moral.",
         incorrect_answer: [
-          "Mengikuti setiap tren yang populer",
-          "Menghindari seluruh pergaulan sosial",
-          "Menggunakan internet tanpa batasan",
+          "Norma timur mendorong kebebasan tanpa batas.",
+          "Norma timur tidak relevan dengan kondisi saat ini.",
+          "Norma timur hanya diterapkan oleh kalangan tertentu.",
         ],
       },
       {
         question:
-          "Apa hubungan antara norma timur dan pengaruh pergaulan bebas?",
+          "Setujukah kamu bahwa salah satu penyebab pergaulan bebas adalah rasa gengsi? Berikan alasan singkat.",
         correct_answer:
-          "Norma timur memperkuat nilai-nilai moral yang mencegah pergaulan bebas",
+          "Setuju, karena gengsi membuat remaja ingin diterima kelompoknya.",
         incorrect_answer: [
-          "Norma timur menyebabkan pergaulan bebas semakin meningkat",
-          "Norma timur tidak berpengaruh terhadap pergaulan bebas",
-          "Norma timur mendukung kebebasan berekspresi tanpa batas",
+          "Tidak setuju, karena gengsi tidak memengaruhi pergaulan bebas.",
+          "Setuju, karena gengsi membuat remaja fokus pada pendidikan.",
+          "Tidak setuju, karena gengsi adalah sifat positif.",
         ],
       },
       {
         question:
-          "Mengapa teknologi dapat menjadi faktor penyebab pergaulan bebas?",
+          "Apakah tindakan tegas orang tua selalu efektif dalam mencegah pergaulan bebas?",
         correct_answer:
-          "Karena teknologi memudahkan akses pada konten yang tidak sesuai",
+          "Tidak selalu efektif, tergantung cara orang tua mendidik.",
         incorrect_answer: [
-          "Karena teknologi membantu remaja memahami norma agama",
-          "Karena teknologi selalu memberikan dampak positif",
-          "Karena teknologi hanya digunakan untuk tujuan edukasi",
+          "Selalu efektif, karena anak akan takut melanggar aturan.",
+          "Tidak efektif, karena anak akan semakin memberontak.",
+          "Sangat efektif, karena anak selalu mengikuti orang tua.",
         ],
       },
       {
         question:
-          "Bagaimana kombinasi rasa gengsi dan teknologi dapat memperburuk pergaulan bebas?",
+          "Bagaimana pendapatmu tentang teknologi sebagai salah satu faktor penyebab pergaulan bebas?",
         correct_answer:
-          "Dengan memotivasi remaja untuk mencari pujian di media sosial",
+          "Teknologi netral, pengaruhnya tergantung pada pengguna.",
         incorrect_answer: [
-          "Dengan mengurangi rasa percaya diri remaja",
-          "Dengan meningkatkan kontrol orang tua terhadap anak",
-          "Dengan meminimalkan dampak negatif pergaulan bebas",
+          "Teknologi adalah faktor utama dari pergaulan bebas.",
+          "Teknologi tidak relevan dengan pergaulan bebas.",
+          "Teknologi selalu memberikan dampak buruk.",
         ],
       },
       {
         question:
-          "Mengapa mudah terpengaruh teman dapat menyebabkan pergaulan bebas?",
-        correct_answer:
-          "Karena remaja cenderung ingin diterima dalam lingkungannya",
+          "Apa evaluasi yang bisa diberikan kepada teks terkait upaya menghindari pergaulan bebas?",
+        correct_answer: "Teks memberikan solusi konkret yang dapat diterapkan.",
         incorrect_answer: [
-          "Karena tidak memiliki kepercayaan diri yang cukup",
-          "Karena teman selalu memberikan pengaruh positif",
-          "Karena teman selalu menasihati untuk bertindak sesuai norma",
-        ],
-      },
-      {
-        question:
-          "Jika Anda merancang program pencegahan pergaulan bebas, apa yang menjadi fokus utama?",
-        correct_answer:
-          "Mengedukasi orang tua dan remaja tentang norma, teknologi, dan dampak pergaulan bebas",
-        incorrect_answer: [
-          "Membatasi seluruh interaksi sosial remaja",
-          "Membatasi penggunaan internet secara penuh",
-          "Mengurangi waktu belajar di sekolah",
+          "Teks hanya membahas penyebab tanpa memberikan solusi.",
+          "Teks terlalu menekankan pada teknologi sebagai masalah utama.",
+          "Teks tidak relevan untuk remaja masa kini.",
         ],
       },
     ],
