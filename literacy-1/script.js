@@ -79,12 +79,12 @@ function stopReading() {
 
   localStorage.setItem("readingSpeed", readingSpeed);
 
-  if (readingSpeed < 200) {
+  if (readingSpeed < 175) {
     resultText +=
       " Kecepatan membaca Anda terlalu lambat. Semangat Dalam Membaca Yaa :) ";
-  } else if (readingSpeed >= 200 && readingSpeed <= 250) {
+  } else if (readingSpeed >= 175 && readingSpeed <= 250) {
     resultText += " Kecepatan Membaca Anda Ideal";
-  } else if (readingSpeed > 250 && readingSpeed <= 300) {
+  } else if (readingSpeed > 250 && readingSpeed <= 400) {
     resultText += " Kecepatan Membaca Anda Cepat .";
   } else {
     resultText += " Kecepatan membaca Anda Cepat.";
