@@ -22,6 +22,37 @@ body {
   color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white; /* Warna teks putih */
+  padding: 10px 20px; /* Padding lebih besar */
+  transition: color 0.3s, background-color 0.3s, padding 0.3s;
+  display: inline-block; /* Agar padding berfungsi dengan baik */
+}
+
+.navbar-links a:hover {
+  color: white; /* Tetap putih saat hover */
+  background-color: rgba(74, 108, 247, 0.8); /* Warna hover lebih terang */
+  border-radius: 5px; /* Sudut membulat untuk estetika */
+}
+
+.navbar-links a:visited {
+  color: white; /* Tetapkan tetap putih setelah link dikunjungi */
+}
+
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+.brand h1 span {
+  color: rgb(92, 158, 223);
+}
+
 /* Global Container */
 .container {
   max-width: 1200px;
@@ -272,4 +303,156 @@ body {
   .card-content p {
     font-size: 12px;
   }
+}
+
+/* Footer Container */
+.footer {
+  background-color: rgba(74, 108, 247, 0.6);
+  padding: 30px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Column */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #333;
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Kolom 1 - Brand */
+.footer-col .brand h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+}
+
+.footer-col .brand h1 span {
+  color: rgb(92, 158, 223);
+}
+
+.footer-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.icon-email {
+  font-size: 1.2rem;
+  color: #ff6f00;
+}
+
+/* Kolom 2 - Pages */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Kolom 3 - Address */
+.footer-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.icon-address {
+  font-size: 1.2rem;
+  color: #277da1;
+}
+
+.reading-page {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.justified-text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: #333;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table caption {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.explanation {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.explanation h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.explanation p {
+  margin-bottom: 10px;
 }

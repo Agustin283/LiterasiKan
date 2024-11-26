@@ -1,6 +1,64 @@
 let startTime, endTime;
 let stopwatchInterval;
 
+// Function to show the form
+function openForm() {
+  document.querySelector(".popup-form").classList.add("show");
+  document.body.classList.add("popup-active");
+}
+
+// Function to close the form
+function closeForm() {
+  document.querySelector(".popup-form").classList.remove("show");
+  document.body.classList.remove("popup-active");
+}
+
+// Function to save data to localStorage
+function submitForm() {
+  const name = document.getElementById("name").value;
+  const absen = document.getElementById("absen").value;
+
+  if (name && absen) {
+    localStorage.setItem("nama", name);
+    localStorage.setItem("absen", absen);
+
+    // Close the form after saving
+    closeForm();
+  } else {
+    alert("Harap isi semua data!");
+  }
+}
+
+// Show the form when the page loads
+window.onload = function () {
+  openForm();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popupForm = document.getElementById("popup-form");
+  const userDataForm = document.getElementById("user-data-form");
+
+  // Tampilkan popup jika data belum ada di local storage
+  if (!localStorage.getItem("nama") || !localStorage.getItem("absen")) {
+    popupForm.classList.add("show");
+  }
+
+  // Simpan data ke local storage ketika form disubmit
+  userDataForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const nama = document.getElementById("nama").value.trim();
+    const absen = document.getElementById("absen").value.trim();
+
+    if (nama && absen) {
+      localStorage.setItem("nama", nama);
+      localStorage.setItem("absen", absen);
+
+      // Sembunyikan popup
+      popupForm.classList.remove("show");
+    }
+  });
+});
+
 function startReading() {
   startTime = new Date();
   document.querySelector('button[onclick="stopReading()"]').disabled = false;

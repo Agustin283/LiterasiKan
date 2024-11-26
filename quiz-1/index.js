@@ -260,14 +260,76 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const getNewQuestions = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-      const wpm = localStorage.getItem("readingSpeed") || 150;
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyGuzWzrcZeA557yR480r_zSBpcMT5s2WV-B6erpN7Fo147CcylYAKEuQ21Z-VSkviB/exec";
+
+      // Ambil data dari localStorage
+      const wpm = localStorage.getItem("readingSpeed");
+      const nama = localStorage.getItem("nama") || "12"; // Default '12' jika null
+      const absen = localStorage.getItem("absen") || "12"; // Default '12' jika null
+      const paket = localStorage.getItem("paket") || "1"; // Default '1' jika null
+
+      if (!wpm) {
+        console.error(
+          "Kecepatan Membaca atau Skor Quiz tidak ditemukan di LocalStorage."
+        );
+        return; // Hentikan jika data tidak valid
+      }
+
       const finalScore = parseInt((wpm * score) / 100);
+
+      // Data yang akan dikirim ke spreadsheet
+      const formData = {
+        nama: nama,
+        absen: absen,
+        hasil: finalScore,
+        paket: paket,
+      };
+
+      // Kirim data ke Google Apps Script
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors", // Menonaktifkan CORS
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Response gagal: " + response.statusText);
+          }
+          return response.json();
+        })
+        .then((result) => {
+          console.log("Response dari server:", result);
+          if (result.success) {
+            console.log("Data berhasil dikirim ke spreadsheet.");
+          } else {
+            console.error("Gagal mengirim data:", result.message);
+          }
+        })
+        .catch((error) => {
+          console.error("Terjadi kesalahan saat mengirim data:", error);
+        })
+        .finally(() => {
+          // Bersihkan localStorage dan kembali ke halaman utama
+          localStorage.removeItem("readingSpeed");
+          localStorage.removeItem("nama");
+          localStorage.removeItem("absen");
+        });
+
+      // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
         title: "Hasil KEM",
-        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b></div>`,
+        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+        Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>
+        Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>
+        Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b>
+      </div>`,
         icon: "success",
       }).finally(() => {
-        localStorage.removeItem("readingSpeed");
         window.location.href = "../index.html";
       });
     }
