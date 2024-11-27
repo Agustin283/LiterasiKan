@@ -77,15 +77,22 @@ function stopReading() {
 
   localStorage.setItem("readingSpeed", readingSpeed);
 
-  if (readingSpeed < 175) {
+  if (readingSpeed < 110) {
     resultText +=
-      " Kecepatan membaca Anda terlalu lambat. Semangat Dalam Membaca Yaa :) ";
-  } else if (readingSpeed >= 175 && readingSpeed <= 250) {
-    resultText += " Kecepatan Membaca Anda Ideal";
-  } else if (readingSpeed > 250 && readingSpeed <= 400) {
-    resultText += " Kecepatan Membaca Anda Cepat .";
+      " Kecepatan membaca Anda tidak cukup baik. Tetap semangat dalam berlatih membaca! :)";
+  } else if (readingSpeed >= 110 && readingSpeed < 200) {
+    resultText +=
+      " Kecepatan membaca Anda tidak cukup baik. Ayo tingkatkan lagi!";
+  } else if (readingSpeed >= 200 && readingSpeed < 240) {
+    resultText +=
+      " Kecepatan membaca Anda rata-rata. Pertahankan dan terus berlatih!";
+  } else if (readingSpeed >= 240 && readingSpeed < 300) {
+    resultText +=
+      " Kecepatan membaca Anda cukup baik. Bagus, terus tingkatkan!";
+  } else if (readingSpeed >= 300 && readingSpeed < 500) {
+    resultText += " Kecepatan membaca Anda baik. Luar biasa, pertahankan!";
   } else {
-    resultText += " Kecepatan membaca Anda Cepat.";
+    resultText += " Kecepatan membaca Anda sangat baik. Hebat sekali!";
   }
 
   document.getElementById("popup-result").innerText = resultText;
