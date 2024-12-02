@@ -72,7 +72,7 @@ function stopReading() {
   const textLength = document
     .getElementById("text")
     .innerText.split(" ").length;
-  const readingSpeed = Math.round((textLength / readingTime) * 120); // words per minute (WPM)
+  const readingSpeed = Math.round((textLength / readingTime) * 240); // words per minute (WPM)
   let resultText = `(WPM) Kecepatan membaca Anda adalah ${readingSpeed} kata per menit.`;
 
   localStorage.setItem("readingSpeed", readingSpeed);
