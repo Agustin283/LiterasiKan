@@ -21,187 +21,190 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizData = {
     result: [
       {
-        question: "Apa yang dimaksud dengan deforestasi?",
-        correct_answer: "Penggundulan hutan",
-        incorrect_answer: [
-          "Penanaman pohon di hutan",
-          "Peningkatan luas hutan",
-          "Pengelolaan hutan yang berkelanjutan",
-        ],
-      },
-      {
-        question: "Apa gas yang diserap oleh pohon-pohon di hutan?",
-        correct_answer: "Karbon dioksida",
-        incorrect_answer: ["Oksigen", "Nitrogen", "Hidrogen"],
-      },
-      {
-        question: "Salah satu dampak dari deforestasi adalah...",
-        correct_answer: "Erosi tanah",
-        incorrect_answer: [
-          "Peningkatan keanekaragaman hayati",
-          "Meningkatnya populasi hewan",
-          "Bertambahnya sumber air bersih",
-        ],
-      },
-      {
-        question: "Apa nama lain dari penanaman kembali hutan yang gundul?",
-        correct_answer: "Reboisasi",
-        incorrect_answer: ["Irigasi", "Deforestasi", "Urbanisasi"],
-      },
-      {
-        question: "Hutan sering disebut sebagai paru-paru dunia karena...",
+        question: "Apa peran utama hutan dalam kehidupan di bumi?",
         correct_answer: "Menyerap karbon dioksida dan melepaskan oksigen",
         incorrect_answer: [
-          "Menyerap oksigen dan melepaskan karbon dioksida",
-          "Menyediakan makanan untuk manusia",
-          "Menyimpan cadangan air tanah",
+          "Menyerap oksigen",
+          "Menghasilkan makanan untuk manusia",
+          "Menjaga keberagaman spesies manusia",
         ],
       },
       {
-        question: "Mengapa hutan disebut membantu mengurangi pemanasan global?",
-        correct_answer: "Karena menyerap karbon dioksida dari atmosfer",
-        incorrect_answer: [
-          "Karena menyediakan air bersih",
-          "Karena meningkatkan keanekaragaman hayati",
-          "Karena mencegah erosi tanah",
-        ],
-      },
-      {
-        question: "Mengapa deforestasi menjadi ancaman bagi kelestarian hutan?",
-        correct_answer: "Karena menyebabkan hilangnya habitat flora dan fauna",
-        incorrect_answer: [
-          "Karena meningkatkan populasi manusia",
-          "Karena memperbaiki sistem ekosistem",
-          "Karena mengurangi hasil tambang",
-        ],
-      },
-      {
-        question: "Apa yang dapat dilakukan individu untuk melestarikan hutan?",
-        correct_answer: "Mengurangi penggunaan produk dari hutan",
-        incorrect_answer: [
-          "Membuka lahan baru untuk pertanian",
-          "Membiarkan hutan terbengkalai",
-          "Menebang pohon untuk keperluan pribadi",
-        ],
-      },
-      {
-        question: "Apa kaitan antara hutan dan keanekaragaman hayati?",
-        correct_answer: "Hutan menyediakan habitat bagi flora dan fauna",
-        incorrect_answer: [
-          "Hutan menciptakan spesies baru",
-          "Hutan hanya memengaruhi tumbuhan, bukan hewan",
-          "Keanekaragaman hayati tidak bergantung pada hutan",
-        ],
-      },
-      {
-        question: "Mengapa pengelolaan hutan lestari penting?",
-        correct_answer: "Untuk menjaga keberlanjutan sumber daya alam",
-        incorrect_answer: [
-          "Untuk meningkatkan keuntungan ekonomi",
-          "Untuk menggantikan hutan dengan bangunan",
-          "Untuk mencegah banjir tanpa penanaman pohon",
-        ],
-      },
-      {
-        question:
-          "Jika terjadi banjir akibat deforestasi di suatu daerah, apa langkah awal yang dapat dilakukan?",
-        correct_answer: "Melakukan reboisasi di area yang terkena dampak",
-        incorrect_answer: [
-          "Menebang pohon-pohon yang tersisa",
-          "Mengalirkan air banjir ke sungai besar",
-          "Membangun lebih banyak jalan di daerah tersebut",
-        ],
-      },
-      {
-        question:
-          "Apa yang dapat dilakukan oleh organisasi untuk mendukung pelestarian hutan?",
-        correct_answer: "Membuat kebijakan tentang pengelolaan hutan",
-        incorrect_answer: [
-          "Membuka lahan hutan untuk pertanian",
-          "Mengurangi jumlah flora dan fauna di hutan",
-          "Membatasi reboisasi hanya di daerah perkotaan",
-        ],
-      },
-      {
-        question:
-          "Seorang siswa ingin berkontribusi melestarikan hutan. Apa yang dapat dilakukan?",
-        correct_answer: "Mengurangi penggunaan kertas berlebih",
-        incorrect_answer: [
-          "Membakar hutan untuk lahan pertanian",
-          "Menanam pohon di dalam ruangan",
-          "Menebang pohon yang tua",
-        ],
-      },
-      {
-        question:
-          "Bagaimana cara efektif mencegah hilangnya keanekaragaman hayati di hutan?",
+        question: "Mengapa hutan penting untuk kelangsungan hidup manusia?",
         correct_answer:
-          "Menjaga hutan dari kegiatan yang merusak seperti pembukaan lahan",
+          "Karena hutan menyerap karbon dioksida dan melepaskan oksigen",
         incorrect_answer: [
-          "Melarang semua orang memasuki hutan",
-          "Menanam satu jenis pohon di seluruh hutan",
-          "Mengalihkan fungsi hutan menjadi lahan pertanian",
+          "Karena hutan memberikan tempat tinggal bagi manusia",
+          "Karena hutan menyediakan produk komersial",
+          "Karena hutan mencegah banjir",
         ],
       },
       {
-        question:
-          "Jika sebuah perusahaan ingin membuka lahan, bagaimana mereka dapat melakukannya tanpa merusak hutan?",
-        correct_answer: "Dengan menerapkan prinsip pengelolaan hutan lestari",
+        question: "Hutan menyediakan tempat tinggal bagi...?",
+        correct_answer: "Spesies flora dan fauna di alam",
         incorrect_answer: [
-          "Dengan menebang seluruh pohon",
-          "Dengan membangun jalan di tengah hutan",
-          "Dengan membuang limbah ke dalam hutan",
+          "Hanya spesies manusia",
+          "Hanya spesies hewan",
+          "Spesies tumbuhan di bumi",
         ],
       },
       {
-        question:
-          "Apa yang terjadi jika deforestasi terus berlanjut tanpa pengawasan?",
-        correct_answer: "Perubahan iklim akan semakin parah",
-        incorrect_answer: [
-          "Keanekaragaman hayati meningkat",
-          "Produksi oksigen meningkat",
-          "Populasi hewan hutan bertambah",
-        ],
+        question: "Apa yang bergantung pada hutan untuk bertahan hidup?",
+        correct_answer: "Flora dan fauna",
+        incorrect_answer: ["Hanya manusia", "Hanya flora", "Hanya fauna"],
       },
       {
-        question:
-          "Mengapa penting mengurangi produk-produk yang berasal dari hutan?",
-        correct_answer: "Untuk mengurangi eksploitasi hutan secara berlebihan",
-        incorrect_answer: [
-          "Untuk meningkatkan biaya produksi",
-          "Untuk menghindari perubahan iklim",
-          "Untuk meningkatkan jumlah limbah",
-        ],
-      },
-      {
-        question:
-          "Bagaimana reboisasi dapat membantu mengatasi dampak deforestasi?",
-        correct_answer: "Dengan mengganti habitat yang hilang",
-        incorrect_answer: [
-          "Dengan meningkatkan produksi karbon dioksida",
-          "Dengan mengurangi populasi hewan",
-          "Dengan mempercepat penggundulan hutan",
-        ],
-      },
-      {
-        question: "Apakah langkah paling efektif untuk mengatasi deforestasi?",
+        question: "Bagaimana hutan membantu menjaga ketersediaan air bersih?",
         correct_answer:
-          "Melakukan reboisasi dan menerapkan kebijakan pengelolaan hutan",
+          "Dengan menyerap air hujan dan mengalirkannya ke sungai",
         incorrect_answer: [
-          "Menebang pohon tua di seluruh hutan",
-          "Membuka lahan baru untuk pertanian secara besar-besaran",
-          "Mengurangi penghijauan di sekitar hutan",
+          "Dengan menyaring air hujan",
+          "Dengan menjaga kelestarian tanah",
+          "Dengan mengatur aliran sungai",
+        ],
+      },
+      {
+        question: "Hutan dapat mencegah...?",
+        correct_answer: "Erosi tanah",
+        incorrect_answer: [
+          "Banjir",
+          "Penggundulan hutan",
+          "Penurunan kualitas udara",
         ],
       },
       {
         question:
-          "Bagaimana individu dapat berkontribusi secara maksimal terhadap pelestarian hutan?",
-        correct_answer:
-          "Dengan mendukung organisasi pelestari lingkungan dan mengurangi konsumsi produk hutan",
+          "Apa yang dapat merusak lingkungan terkait dengan erosi tanah?",
+        correct_answer: "Penggundulan hutan",
         incorrect_answer: [
-          "Dengan menggunakan produk berbasis kayu sebanyak mungkin",
-          "Dengan membuka lahan pertanian di sekitar hutan",
-          "Dengan menebang pohon untuk keperluan pribadi",
+          "Reboisasi",
+          "Pengelolaan hutan yang berkelanjutan",
+          "Pengurangan penggunaan produk hutan",
+        ],
+      },
+      {
+        question: "Untuk menjaga kelestarian hutan, apa yang perlu dilakukan?",
+        correct_answer: "Reboisasi secara rutin",
+        incorrect_answer: [
+          "Pengelolaan hutan yang tidak teratur",
+          "Mengurangi jumlah tanaman di hutan",
+          "Meningkatkan penebangan pohon",
+        ],
+      },
+      {
+        question: "Apa yang sangat penting dalam pengelolaan hutan?",
+        correct_answer: "Pengelolaan yang berkelanjutan",
+        incorrect_answer: [
+          "Menanam pohon secara sembarangan",
+          "Menurunkan kualitas udara",
+          "Menebang pohon lebih cepat",
+        ],
+      },
+      {
+        question: "Apa yang dapat membantu menjaga kelestarian hutan?",
+        correct_answer:
+          "Mengurangi penggunaan produk hutan yang tidak ramah lingkungan",
+        incorrect_answer: [
+          "Menebang pohon lebih sering",
+          "Menggunakan produk hutan tanpa batas",
+          "Mengurangi jumlah tanaman hutan",
+        ],
+      },
+      {
+        question: "Apa dampak negatif dari penggundulan hutan?",
+        correct_answer: "Mengurangi habitat untuk flora dan fauna",
+        incorrect_answer: [
+          "Menurunnya kualitas udara",
+          "Meningkatnya ketersediaan air bersih",
+          "Mengurangi kualitas tanah",
+        ],
+      },
+      {
+        question:
+          "Apa yang bisa terjadi jika hutan dikelola secara tidak berkelanjutan?",
+        correct_answer: "Kerusakan lingkungan akan semakin parah",
+        incorrect_answer: [
+          "Hutan akan tumbuh subur",
+          "Kualitas udara akan meningkat",
+          "Ketersediaan air bersih akan terjamin",
+        ],
+      },
+      {
+        question: "Apa yang dimaksud dengan reboisasi?",
+        correct_answer:
+          "Penanaman pohon kembali untuk menggantikan yang hilang",
+        incorrect_answer: [
+          "Menanam pohon secara serampangan",
+          "Penebangan pohon secara berkelanjutan",
+          "Penghentian penanaman pohon sama sekali",
+        ],
+      },
+      {
+        question: "Apa manfaat utama dari reboisasi?",
+        correct_answer: "Semua jawaban benar",
+        incorrect_answer: [
+          "Menjaga kelestarian hutan",
+          "Meningkatkan kualitas udara",
+          "Mengurangi erosi tanah",
+        ],
+      },
+      {
+        question: "Mengapa pengelolaan hutan yang berkelanjutan penting?",
+        correct_answer: "Agar hutan tetap ada untuk generasi berikutnya",
+        incorrect_answer: [
+          "Agar pohon dapat ditebang dengan bebas",
+          "Agar hutan bisa dimanfaatkan secara maksimal",
+          "Agar dapat mengurangi lahan pertanian",
+        ],
+      },
+      {
+        question:
+          "Apa dampak buruk dari penggunaan produk hutan yang tidak ramah lingkungan?",
+        correct_answer: "Mengancam kelestarian hutan dan lingkungan",
+        incorrect_answer: [
+          "Membantu melestarikan hutan",
+          "Meningkatkan kesejahteraan masyarakat",
+          "Meningkatkan keberagaman flora dan fauna",
+        ],
+      },
+      {
+        question:
+          "Apa yang harus dilakukan untuk menjaga kelestarian hutan bagi kehidupan manusia dan hewan?",
+        correct_answer: "Melakukan reboisasi dan pengelolaan berkelanjutan",
+        incorrect_answer: [
+          "Menghentikan penanaman pohon",
+          "Menambah jumlah penebangan pohon",
+          "Meningkatkan penggunaan produk hutan",
+        ],
+      },
+      {
+        question:
+          "Bagaimana hutan menjaga ketersediaan air bersih bagi manusia?",
+        correct_answer: "Dengan menjaga kualitas tanah dan air",
+        incorrect_answer: [
+          "Dengan mengurangi penyerapan air tanah",
+          "Dengan mengalirkan air hujan ke laut",
+          "Dengan menyediakan sumber air baru setiap hari",
+        ],
+      },
+      {
+        question: "Apa yang dapat membantu mengurangi penggundulan hutan?",
+        correct_answer: "Pengelolaan hutan yang bijaksana",
+        incorrect_answer: [
+          "Peningkatan penebangan pohon",
+          "Meningkatkan produksi kayu",
+          "Mengurangi penggunaan produk hutan",
+        ],
+      },
+      {
+        question:
+          "Apa yang harus dilakukan oleh setiap individu untuk membantu kelestarian hutan?",
+        correct_answer:
+          "Mengurangi penggunaan produk hutan yang tidak ramah lingkungan",
+        incorrect_answer: [
+          "Menghindari produk hutan",
+          "Menanam pohon di daerah yang tidak memiliki hutan",
+          "Tidak terlibat dalam reboisasi",
         ],
       },
     ],
@@ -248,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const wpm = localStorage.getItem("readingSpeed");
       const nama = localStorage.getItem("nama") || "12"; // Default '12' jika null
       const absen = localStorage.getItem("absen") || "12"; // Default '12' jika null
-      const paket = localStorage.getItem("paket") || "1"; // Default '1' jika null
+      const paket = localStorage.getItem("paket") || "3"; // Default '1' jika null
 
       if (!wpm) {
         console.error(
@@ -301,14 +304,33 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("absen");
         });
 
+      if (wpm >= 175) {
+        kpmMessage =
+          "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
+      } else if (wpm >= 105 && wpm < 175) {
+        kpmMessage =
+          "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
+      } else {
+        kpmMessage =
+          "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
+      }
+
       // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
         title: "Hasil KEM",
-        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
-        Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>
-        Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>
-        Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b>
-      </div>`,
+        html: `
+            <div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+              <span style="display: inline-block; width: 200px;">Nama</span>: <b>${nama}</b> <br>
+              <span style="display: inline-block; width: 200px;">Absen</span>: <b>${absen}</b> <br>
+              <span style="display: inline-block; width: 200px;">Kecepatan Membaca</span>: <b>${wpm} WPM</b> <br>
+              <span style="display: inline-block; width: 200px;">Skor Quiz</span>: <b>${score}%</b> <br>
+              <span style="display: inline-block; width: 200px;">Jumlah Soal Benar</span>: <b>${
+                score / CORRECT_BONUS
+              }</b> <br>
+              <span style="display: inline-block; width: 200px;">Hasil Akhir</span>: <b>${finalScore}</b> <br>
+              <br>
+              ${kpmMessage} <!-- Menambahkan pesan KPM -->
+            </div>`,
         icon: "success",
       }).finally(() => {
         window.location.href = "../index.html";

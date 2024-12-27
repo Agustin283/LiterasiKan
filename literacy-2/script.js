@@ -27,9 +27,32 @@ function submitForm() {
     alert("Harap isi semua data!");
   }
 }
-
 // Show the form when the page loads
 window.onload = function () {
+  // Cek apakah halaman sudah diakses sebelumnya dalam sesi ini
+  if (sessionStorage.getItem("hasAccessedLiterasi2")) {
+    // Jika sudah diakses, tampilkan pesan dan hentikan eksekusi
+    document.body.innerHTML = `
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+        color: #343a40;
+        text-align: center;
+      ">
+        <h1>Halaman ini sudah diakses!</h1>
+      </div>
+    `;
+    return; // Hentikan eksekusi lebih lanjut
+  }
+
+  // Jika belum diakses, tandai bahwa halaman telah diakses
+  sessionStorage.setItem("hasAccessedLiterasi2", "true");
+
+  // Lanjutkan ke konten halaman, seperti membuka form
   openForm();
 };
 
@@ -68,12 +91,13 @@ function startReading() {
 function stopReading() {
   endTime = new Date();
   clearInterval(stopwatchInterval);
-  const readingTime = (endTime - startTime) / 1000; // convert to seconds
+  const readingTimeInMinutes = (endTime - startTime) / 60000; // convert to minutes
   const textLength = document
     .getElementById("text")
     .innerText.split(" ").length;
-  const readingSpeed = Math.round((textLength / readingTime) * 240); // words per minute (WPM)
-  let resultText = `(WPM) Kecepatan membaca Anda adalah ${readingSpeed} kata per menit.`;
+  const readingSpeed = Math.round(textLength / readingTimeInMinutes); // words per minute (WPM)
+
+  let resultText = `Kecepatan membaca Anda adalah ${readingSpeed} kata per menit.`;
 
   localStorage.setItem("readingSpeed", readingSpeed);
 

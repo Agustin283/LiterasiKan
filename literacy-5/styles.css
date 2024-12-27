@@ -186,7 +186,12 @@ body.popup-active::before {
   margin: 40px auto;
   text-align: center;
 }
-
+.reading-image {
+  display: block;
+  margin: 0 auto;
+  width: 12cm;
+  height: 6cm;
+}
 .timer-container {
   margin-bottom: 20px;
 }

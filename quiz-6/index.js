@@ -21,199 +21,190 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizData = {
     result: [
       {
-        question:
-          "Apa yang dimaksud dengan makanan sehat menurut teks di atas?",
+        question: "Apa yang dimaksud dengan makanan sehat menurut teks?",
         correct_answer:
-          "Makanan yang mengandung vitamin dan protein yang cukup",
+          "Makanan yang mengandung nutrisi yang dibutuhkan tubuh seperti sayur, buah, biji-bijian, dan protein",
         incorrect_answer: [
-          "Makanan yang mengandung banyak gula",
-          "Makanan yang enak dan mengenyangkan",
-          "Makanan yang berasal dari restoran cepat saji",
+          "Makanan yang mengandung banyak kalori",
+          "Makanan yang hanya mengandung buah",
+          "Makanan yang tidak mengandung gula",
         ],
       },
       {
-        question: "Menurut teks, apa yang terkandung dalam buah jeruk?",
+        question: "Apa manfaat utama dari mengonsumsi makanan sehat?",
+        correct_answer: "Menjaga tubuh tetap bugar dan berenergi",
+        incorrect_answer: [
+          "Mengurangi rasa lapar",
+          "Meningkatkan berat badan",
+          "Meningkatkan konsumsi kalori",
+        ],
+      },
+      {
+        question:
+          "Apa yang terkandung dalam buah jeruk yang bermanfaat bagi tubuh?",
         correct_answer: "Vitamin C",
-        incorrect_answer: ["Zat besi", "Vitamin A", "Karbohidrat"],
+        incorrect_answer: ["Zat besi", "Karbohidrat", "Protein"],
+      },
+      {
+        question: "Sayuran bayam kaya akan...",
+        correct_answer: "Zat besi",
+        incorrect_answer: ["Vitamin A", "Protein", "Serat"],
       },
       {
         question:
-          "Sayuran apa yang disebutkan dalam teks yang kaya akan zat besi?",
-        correct_answer: "Bayam",
-        incorrect_answer: ["Wortel", "Kol", "Brokoli"],
-      },
-      {
-        question:
-          "Apa risiko yang dapat terjadi jika kita sering mengonsumsi makanan tidak sehat seperti makanan cepat saji?",
-        correct_answer: "Terkena obesitas dan diabetes",
+          "Apa yang terjadi jika mengonsumsi makanan tidak sehat seperti fast food?",
+        correct_answer: "Menurunkan daya tahan tubuh dan menyebabkan penyakit",
         incorrect_answer: [
-          "Menjadi lebih pintar",
-          "Menjadi lebih bugar",
-          "Tubuh menjadi lebih sehat",
+          "Meningkatkan energi tubuh",
+          "Menjaga kesehatan tubuh",
+          "Menambah massa otot",
         ],
       },
       {
-        question: "Mengapa penting untuk memilih makanan sehat setiap hari?",
-        correct_answer: "Agar tubuh tetap bugar dan sehat",
+        question: "Pola makan sehat dapat membantu tubuh...",
+        correct_answer: "Beraktivitas dengan lebih baik",
         incorrect_answer: [
-          "Agar tubuh lebih gemuk",
-          "Agar tubuh lebih tinggi",
-          "Agar tubuh lebih kuat dalam berolahraga",
+          "Menghasilkan lebih banyak energi",
+          "Menghasilkan lebih banyak lemak",
+          "Menghindari rasa lapar",
         ],
       },
       {
-        question:
-          "Apa manfaat utama dari mengonsumsi makanan sehat seperti yang dijelaskan dalam teks?",
-        correct_answer: "Meningkatkan daya tahan tubuh",
+        question: "Selain makanan sehat, apa yang juga penting untuk tubuh?",
+        correct_answer: "Camilan sehat dan air putih",
         incorrect_answer: [
-          "Membuat tubuh lebih tinggi",
-          "Membuat tubuh lebih kurus",
-          "Membuat tubuh lebih berat",
-        ],
-      },
-      {
-        question: "Apa yang dimaksud dengan 'nutrisi' dalam konteks teks ini?",
-        correct_answer:
-          "Zat-zat yang dibutuhkan tubuh untuk tumbuh dan berkembang",
-        incorrect_answer: [
-          "Proses pencernaan makanan",
-          "Jenis makanan yang enak",
-          "Makanan yang mengandung kalori tinggi",
-        ],
-      },
-      {
-        question:
-          "Bagaimana cara makanan sehat membantu meningkatkan daya tahan tubuh?",
-        correct_answer:
-          "Dengan menyediakan protein dan vitamin yang dibutuhkan",
-        incorrect_answer: [
-          "Dengan menyediakan kalori yang banyak",
-          "Dengan mengurangi berat badan",
-          "Dengan meningkatkan kecepatan tubuh bergerak",
-        ],
-      },
-      {
-        question:
-          "Apa akibat dari mengonsumsi makanan cepat saji secara berlebihan?",
-        correct_answer: "Lebih mudah terserang penyakit",
-        incorrect_answer: [
-          "Tubuh lebih berenergi",
-          "Tubuh lebih kuat",
-          "Berat badan lebih ideal",
-        ],
-      },
-      {
-        question: "Mengapa penting untuk merawat tubuh dengan makanan sehat?",
-        correct_answer: "Agar tubuh tetap sehat dan bugar",
-        incorrect_answer: [
-          "Agar tubuh terlihat lebih muda",
-          "Agar tubuh lebih tinggi",
-          "Agar tubuh lebih berat",
-        ],
-      },
-      {
-        question:
-          "Jika kamu ingin meningkatkan daya tahan tubuh, makanan apa yang harus dikonsumsi?",
-        correct_answer: "Buah jeruk dan sayuran hijau",
-        incorrect_answer: [
-          "Makanan cepat saji dan minuman bersoda",
-          "Makanan tinggi lemak",
-          "Makanan manis dan tinggi gula",
-        ],
-      },
-      {
-        question:
-          "Jika kamu merasa lelah dan mudah sakit, makanan apa yang perlu kamu konsumsi untuk membantu tubuh kembali bugar?",
-        correct_answer: "Sayuran hijau dan buah yang kaya vitamin",
-        incorrect_answer: [
+          "Makanan berat",
           "Makanan cepat saji",
-          "Makanan olahan dan camilan manis",
-          "Minuman bersoda",
+          "Minuman manis",
         ],
       },
       {
         question:
-          "Dalam situasi kamu harus memilih makanan sehat, makanan mana yang lebih baik untuk kesehatan?",
-        correct_answer: "Sayur sop dan buah potong",
+          "Apa yang dapat disimpulkan dari teks mengenai makanan sehat?",
+        correct_answer: "Makanan sehat membantu menjaga tubuh kuat dan sehat",
         incorrect_answer: [
-          "Sate ayam dan nasi goreng",
-          "Pizza dan soda",
-          "Donat dan es krim",
+          "Makanan sehat hanya penting untuk diet",
+          "Makanan sehat tidak memiliki manfaat jangka panjang",
+          "Makanan sehat hanya dibutuhkan oleh orang dewasa",
         ],
       },
       {
         question:
-          "Jika seseorang ingin menjaga stamina tubuhnya, makanan apa yang bisa membantu?",
-        correct_answer: "Sayuran yang mengandung zat besi",
-        incorrect_answer: [
-          "Makanan dengan banyak gula",
-          "Makanan dengan banyak garam",
-          "Makanan instan",
-        ],
-      },
-      {
-        question:
-          "Kamu ingin menjaga tubuh tetap sehat, makanan apa yang lebih baik dipilih?",
-        correct_answer: "Sayuran hijau, buah, dan biji-bijian",
-        incorrect_answer: [
-          "Makanan cepat saji dan camilan manis",
-          "Minuman bersoda dan makanan olahan",
-          "Daging olahan dan makanan berlemak tinggi",
-        ],
-      },
-      {
-        question:
-          "Apa yang bisa terjadi jika seseorang tidak menjaga pola makan dan sering makan makanan yang tidak sehat?",
+          "Mengapa konsumsi makanan sehat disebut sebagai investasi terbaik?",
         correct_answer:
-          "Tubuh menjadi lebih mudah lelah dan berisiko terkena penyakit",
+          "Karena dapat meningkatkan kualitas hidup dan panjang umur",
         incorrect_answer: [
-          "Tubuh tetap bugar dan sehat",
-          "Tubuh menjadi lebih tahan terhadap penyakit",
-          "Tubuh menjadi lebih kuat dan tahan banting",
+          "Karena dapat meningkatkan daya tahan tubuh secara instan",
+          "Karena tidak memerlukan biaya banyak",
+          "Karena hanya membutuhkan waktu singkat untuk terlihat hasilnya",
         ],
       },
       {
         question:
-          "Bagaimana makanan sehat berkontribusi terhadap masa depan tubuh kita?",
-        correct_answer:
-          "Dengan membuat tubuh lebih kuat dan sehat untuk jangka panjang",
+          "Apa yang dapat menyebabkan penurunan daya tahan tubuh menurut teks?",
+        correct_answer: "Konsumsi makanan tidak sehat seperti fast food",
         incorrect_answer: [
-          "Dengan mengurangi berat badan secara cepat",
-          "Dengan memberikan banyak kalori",
-          "Dengan membuat tubuh lebih tinggi",
+          "Konsumsi sayur dan buah",
+          "Konsumsi makanan sehat",
+          "Konsumsi air putih yang cukup",
+        ],
+      },
+      {
+        question: "Bagaimana cara menjaga tubuh tetap kuat menurut teks?",
+        correct_answer: "Dengan memilih makanan sehat",
+        incorrect_answer: [
+          "Dengan makan makanan cepat saji",
+          "Dengan hanya mengonsumsi camilan",
+          "Dengan minum banyak kopi",
+        ],
+      },
+      {
+        question: "Apa yang dimaksud dengan camilan sehat dalam teks?",
+        correct_answer: "Makanan ringan yang memberi manfaat bagi tubuh",
+        incorrect_answer: [
+          "Makanan ringan yang tinggi kalori",
+          "Makanan ringan yang rendah nutrisi",
+          "Makanan ringan yang hanya mengandung karbohidrat",
         ],
       },
       {
         question:
-          "Jika seseorang mengonsumsi makanan yang tidak sehat secara terus-menerus, apa yang mungkin terjadi pada tubuhnya dalam jangka panjang?",
+          "Apa yang disarankan untuk menjaga tubuh tetap bugar dan berenergi?",
         correct_answer:
-          "Mengalami masalah kesehatan seperti obesitas dan diabetes",
+          "Makan makanan yang mengandung nutrisi penting seperti sayur, buah, dan biji-bijian",
         incorrect_answer: [
-          "Menjadi lebih sehat",
-          "Menjadi lebih bugar",
-          "Menjadi lebih kuat",
+          "Mengonsumsi makanan cepat saji",
+          "Menghindari makan sama sekali",
+          "Mengonsumsi banyak gula",
+        ],
+      },
+      {
+        question: "Apa yang harus dihindari agar daya tahan tubuh tetap baik?",
+        correct_answer: "Mengonsumsi makanan tidak sehat seperti fast food",
+        incorrect_answer: [
+          "Makan buah dan sayur",
+          "Mengonsumsi air putih",
+          "Menghindari olahraga",
         ],
       },
       {
         question:
-          "Apa hubungan antara mengonsumsi makanan sehat dan sistem kekebalan tubuh?",
-        correct_answer:
-          "Makanan sehat meningkatkan daya tahan tubuh, membuat kita lebih tahan terhadap penyakit",
+          "Apa hubungan antara makanan sehat dan penyakit menurut teks?",
+        correct_answer: "Makanan sehat dapat mencegah penyakit",
         incorrect_answer: [
-          "Makanan sehat membuat kita lebih gemuk",
-          "Makanan sehat membuat tubuh lebih ringan",
-          "Makanan sehat mengurangi rasa lapar",
+          "Makanan sehat dapat menyebabkan penyakit",
+          "Makanan sehat tidak ada hubungannya dengan penyakit",
+          "Makanan sehat hanya untuk menjaga berat badan",
         ],
       },
       {
         question:
-          "Mengapa memilih makanan sehat disebut sebagai investasi terbaik untuk tubuh?",
-        correct_answer:
-          "Karena makanan sehat dapat membantu tubuh tetap sehat dan bugar untuk jangka panjang",
+          "Apa yang dimaksud dengan nutrisi dalam konteks makanan sehat?",
+        correct_answer: "Zat yang dibutuhkan tubuh untuk berfungsi dengan baik",
         incorrect_answer: [
-          "Karena makanan sehat membuat tubuh lebih besar",
-          "Karena makanan sehat lebih murah",
-          "Karena makanan sehat membuat tubuh lebih tinggi",
+          "Gizi yang tidak penting bagi tubuh",
+          "Hanya protein yang dibutuhkan tubuh",
+          "Hanya kalori yang diperlukan oleh tubuh",
+        ],
+      },
+      {
+        question: "Mengapa air putih penting untuk tubuh?",
+        correct_answer: "Membantu menjaga tubuh tetap terhidrasi",
+        incorrect_answer: [
+          "Membantu meningkatkan rasa lapar",
+          "Menambah rasa kenyang",
+          "Mengganti makanan",
+        ],
+      },
+      {
+        question: "Apa yang dapat meningkatkan daya tahan tubuh menurut teks?",
+        correct_answer:
+          "Mengonsumsi makanan sehat yang mengandung vitamin dan zat besi",
+        incorrect_answer: [
+          "Mengonsumsi makanan cepat saji",
+          "Menghindari semua jenis makanan",
+          "Mengurangi konsumsi air putih",
+        ],
+      },
+      {
+        question:
+          "Apa yang bisa menjadi akibat dari pola makan yang tidak sehat?",
+        correct_answer:
+          "Daya tahan tubuh menurun dan risiko penyakit meningkat",
+        incorrect_answer: [
+          "Tubuh menjadi lebih kuat",
+          "Tubuh tetap bugar dan berenergi",
+          "Tidak ada dampak apapun",
+        ],
+      },
+      {
+        question:
+          "Apa yang disarankan untuk hidup sehat dan panjang umur menurut teks?",
+        correct_answer: "Memilih makanan sehat sebagai bagian dari pola makan",
+        incorrect_answer: [
+          "Makan makanan cepat saji setiap hari",
+          "Menghindari makan malam",
+          "Tidak mengonsumsi buah dan sayur",
         ],
       },
     ],
@@ -260,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const wpm = localStorage.getItem("readingSpeed");
       const nama = localStorage.getItem("nama") || "12"; // Default '12' jika null
       const absen = localStorage.getItem("absen") || "12"; // Default '12' jika null
-      const paket = localStorage.getItem("paket") || "1"; // Default '1' jika null
+      const paket = localStorage.getItem("paket") || "6"; // Default '1' jika null
 
       if (!wpm) {
         console.error(
@@ -313,14 +304,33 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("absen");
         });
 
+      if (wpm >= 175) {
+        kpmMessage =
+          "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
+      } else if (wpm >= 105 && wpm < 175) {
+        kpmMessage =
+          "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
+      } else {
+        kpmMessage =
+          "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
+      }
+
       // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
         title: "Hasil KEM",
-        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
-        Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>
-        Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>
-        Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b>
-      </div>`,
+        html: `
+            <div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+              <span style="display: inline-block; width: 200px;">Nama</span>: <b>${nama}</b> <br>
+              <span style="display: inline-block; width: 200px;">Absen</span>: <b>${absen}</b> <br>
+              <span style="display: inline-block; width: 200px;">Kecepatan Membaca</span>: <b>${wpm} WPM</b> <br>
+              <span style="display: inline-block; width: 200px;">Skor Quiz</span>: <b>${score}%</b> <br>
+              <span style="display: inline-block; width: 200px;">Jumlah Soal Benar</span>: <b>${
+                score / CORRECT_BONUS
+              }</b> <br>
+              <span style="display: inline-block; width: 200px;">Hasil Akhir</span>: <b>${finalScore}</b> <br>
+              <br>
+              ${kpmMessage} <!-- Menambahkan pesan KPM -->
+            </div>`,
         icon: "success",
       }).finally(() => {
         window.location.href = "../index.html";

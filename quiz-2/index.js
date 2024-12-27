@@ -22,202 +22,194 @@ document.addEventListener("DOMContentLoaded", () => {
     result: [
       {
         question: "Apa yang dimaksud dengan kecerdasan buatan (AI)?",
-        correct_answer: "Teknologi yang meniru kecerdasan manusia",
+        correct_answer: "Teknologi yang membantu menyelesaikan tugas rumit",
         incorrect_answer: [
-          "Teknologi yang menggantikan manusia sepenuhnya",
-          "Teknologi yang hanya digunakan untuk bermain game",
-          "Teknologi yang tidak membutuhkan program",
+          "Teknologi yang digunakan untuk menggantikan manusia",
+          "Sistem yang mengatur keuangan pribadi",
+          "Sistem yang hanya digunakan di bidang teknologi",
         ],
       },
       {
-        question: "Contoh penerapan AI yang paling umum adalah...",
-        correct_answer: "Asisten virtual seperti Siri dan Alexa",
+        question: "Di bidang apa saja kecerdasan buatan (AI) digunakan?",
+        correct_answer: "Kesehatan, keuangan, dan asisten digital",
         incorrect_answer: [
-          "Pembuatan alat transportasi tradisional",
-          "Penggunaan papan tulis elektronik",
-          "Teknologi sederhana dalam rumah tangga",
+          "Hanya di bidang keuangan",
+          "Pendidikan dan teknologi informasi",
+          "Hanya dalam bidang teknologi",
         ],
       },
       {
-        question: "Dalam bidang apa saja AI digunakan, menurut teks?",
-        correct_answer: "Kesehatan, keuangan, dan manufaktur",
+        question: "Bagaimana AI membantu dalam bidang kesehatan?",
+        correct_answer: "Mendiagnosis penyakit",
         incorrect_answer: [
-          "Pendidikan, hiburan, dan budaya",
-          "Pariwisata, seni, dan sosial",
-          "Pertanian, seni, dan olahraga",
+          "Menyusun laporan keuangan rumah sakit",
+          "Mengatur jadwal dokter",
+          "Membuat keputusan medis tanpa bantuan manusia",
         ],
       },
       {
-        question: "Apa tugas yang dapat dilakukan oleh asisten virtual?",
-        correct_answer: "Mengatur alarm atau memutar musik",
+        question: "Bagaimana AI membantu di bidang keuangan?",
+        correct_answer: "Mempermudah memeriksa data pasar yang kompleks",
         incorrect_answer: [
-          "Mengemudi kendaraan",
-          "Mengelola keuangan perusahaan besar",
-          "Membuat keputusan hukum",
-        ],
-      },
-      {
-        question:
-          "Salah satu tantangan AI yang disebutkan dalam teks adalah...",
-        correct_answer: "Kekhawatiran akan hilangnya lapangan pekerjaan",
-        incorrect_answer: [
-          "Meningkatnya harga barang elektronik",
-          "Penurunan jumlah pengguna internet",
-          "Perkembangan teknologi yang terlalu lambat",
-        ],
-      },
-      {
-        question: "Mengapa AI disebut meniru kecerdasan manusia?",
-        correct_answer:
-          "Karena AI mampu menyelesaikan tugas kompleks yang biasanya dilakukan manusia",
-        incorrect_answer: [
-          "Karena AI dapat bekerja seperti manusia dalam segala hal",
-          "Karena AI menggantikan sepenuhnya peran manusia",
-          "Karena AI bekerja lebih lambat dibanding manusia",
-        ],
-      },
-      {
-        question: "Apa hubungan antara AI dan bidang manufaktur?",
-        correct_answer: "AI digunakan untuk meningkatkan efisiensi produksi",
-        incorrect_answer: [
-          "AI menggantikan pekerja manusia dalam setiap lini produksi",
-          "AI hanya digunakan untuk mengawasi pekerja",
-          "AI tidak digunakan dalam manufaktur",
+          "Membuat keputusan investasi tanpa pertimbangan manusia",
+          "Menyusun anggaran negara",
+          "Mengatur transaksi secara otomatis",
         ],
       },
       {
         question:
-          "Mengapa asisten virtual seperti Siri dan Alexa dianggap contoh penerapan AI?",
-        correct_answer:
-          "Karena mereka mampu memahami dan menjawab perintah suara",
+          "Apa keuntungan utama dari penggunaan AI dalam kehidupan sehari-hari?",
+        correct_answer: "Membantu mengatur jadwal lebih efisien dan tepat",
         incorrect_answer: [
-          "Karena mereka menggunakan suara manusia untuk berbicara",
-          "Karena mereka bisa menggantikan semua pekerjaan manusia",
-          "Karena mereka menggunakan energi listrik",
-        ],
-      },
-      {
-        question: "Apa manfaat AI dalam bidang kesehatan menurut teks?",
-        correct_answer: "Mendiagnosis penyakit dengan lebih akurat",
-        incorrect_answer: [
-          "Meningkatkan jumlah pasien di rumah sakit",
-          "Membuat obat-obatan baru tanpa riset",
-          "Menurunkan biaya perawatan",
-        ],
-      },
-      {
-        question: "Mengapa perkembangan AI menimbulkan kekhawatiran?",
-        correct_answer: "Karena AI dapat disalahgunakan untuk tujuan jahat",
-        incorrect_answer: [
-          "Karena AI tidak memiliki manfaat bagi manusia",
-          "Karena AI membuat pekerjaan lebih sulit",
-          "Karena AI tidak mendukung perkembangan teknologi lain",
+          "Mengurangi kualitas hidup manusia",
+          "Menggantikan pekerjaan manusia secara langsung",
+          "Memperkenalkan tantangan baru dalam teknologi",
         ],
       },
       {
         question:
-          "Jika kamu ingin AI membantu pekerjaan rumah tangga, teknologi apa yang bisa digunakan?",
-        correct_answer: "Asisten virtual seperti Alexa",
+          "Apa dampak negatif yang ditimbulkan oleh kecerdasan buatan (AI)?",
+        correct_answer: "Hilangnya pekerjaan akibat mesin",
         incorrect_answer: [
-          "Sistem AI berbasis virtual reality",
-          "Diagnostik AI dalam kesehatan",
-          "Analisis data keuangan",
+          "Meningkatkan biaya hidup",
+          "Penggunaan energi yang lebih efisien",
+          "Peningkatan jumlah pekerjaan manual",
         ],
       },
       {
-        question: "Dalam situasi apa AI dapat membantu di bidang keuangan?",
-        correct_answer:
-          "Saat menganalisis data pasar untuk pengambilan keputusan",
+        question: "Masalah lain yang ditimbulkan oleh AI adalah...?",
+        correct_answer: "Salah penggunaan teknologi yang merugikan",
         incorrect_answer: [
-          "Saat mengemudikan kendaraan pribadi",
-          "Saat memutar musik di acara kantor",
-          "Saat memberikan layanan kesehatan kepada pasien",
+          "Penurunan kualitas pekerjaan manusia",
+          "Kurangnya akses terhadap teknologi",
+          "Penurunan kualitas hidup secara umum",
+        ],
+      },
+      {
+        question: "Mengapa penting untuk mengelola perkembangan AI?",
+        correct_answer:
+          "Agar masyarakat dapat menggunakan teknologi dengan bijak",
+        incorrect_answer: [
+          "Agar teknologi berkembang tanpa hambatan",
+          "Untuk memastikan bahwa AI tidak menggantikan manusia sepenuhnya",
+          "Agar AI dapat digunakan untuk mengontrol kehidupan manusia",
         ],
       },
       {
         question:
-          "Bagaimana AI dapat diterapkan untuk mengurangi kesalahan manusia?",
-        correct_answer:
-          "Dengan menggunakan algoritma untuk tugas-tugas tertentu",
+          "Apa yang perlu dilakukan pemerintah terkait perkembangan AI?",
+        correct_answer: "Membuat aturan yang jelas dan tegas",
         incorrect_answer: [
-          "Dengan mengambil alih semua tugas manusia",
-          "Dengan menghapus pekerjaan manual sepenuhnya",
-          "Dengan meningkatkan kompleksitas teknologi",
+          "Mengizinkan penggunaan AI tanpa aturan",
+          "Menghentikan pengembangan AI",
+          "Menggunakan AI untuk meningkatkan kontrol sosial",
+        ],
+      },
+      {
+        question: "Apa yang perlu dipahami masyarakat dalam penggunaan AI?",
+        correct_answer: "Cara menggunakan AI dengan baik dan benar",
+        incorrect_answer: [
+          "Cara menggunakan AI secara sembarangan",
+          "Teknologi yang menggantikan pekerjaan manusia",
+          "Bagaimana AI dapat digunakan untuk merugikan orang lain",
         ],
       },
       {
         question:
-          "Jika ingin menggunakan AI untuk membantu belajar, teknologi apa yang cocok?",
-        correct_answer:
-          "AI berbasis pendidikan seperti aplikasi belajar otomatis",
+          "Mengapa kita perlu belajar keterampilan baru untuk masa depan?",
+        correct_answer: "Agar tetap relevan dengan perkembangan teknologi",
         incorrect_answer: [
-          "AI dalam pengenalan wajah",
-          "AI untuk menganalisis keuangan",
-          "AI dalam kendaraan tanpa pengemudi",
+          "Agar bisa menggantikan AI dalam pekerjaan",
+          "Untuk menanggulangi kehilangan pekerjaan akibat AI",
+          "Agar tidak terpengaruh oleh kemajuan teknologi",
+        ],
+      },
+      {
+        question: "Bagaimana AI membantu mengatur jadwal lebih efisien?",
+        correct_answer: "Dengan menggunakan algoritma untuk merencanakan waktu",
+        incorrect_answer: [
+          "Dengan menggantikan manusia dalam membuat keputusan",
+          "Dengan memantau setiap aktivitas manusia secara langsung",
+          "Dengan membuat keputusan untuk orang lain",
+        ],
+      },
+      {
+        question: "Apa tantangan utama dalam penggunaan AI?",
+        correct_answer: "Penyalahgunaan teknologi yang merugikan",
+        incorrect_answer: [
+          "Pengembangan AI yang terlalu cepat",
+          "Kesulitan dalam memahami cara kerja AI",
+          "AI yang tidak dapat berfungsi dengan baik di berbagai bidang",
         ],
       },
       {
         question:
-          "Bagaimana teknologi AI dapat membantu efisiensi produksi di pabrik?",
-        correct_answer: "Dengan mengotomatisasi proses produksi yang rumit",
+          "Apa yang seharusnya dilakukan masyarakat agar bisa memanfaatkan AI secara maksimal?",
+        correct_answer: "Memahami cara menggunakan AI dengan benar",
         incorrect_answer: [
-          "Dengan menggantikan semua manajer",
-          "Dengan mengatur jadwal shift pekerja",
-          "Dengan meningkatkan biaya produksi",
-        ],
-      },
-      {
-        question: "Apa yang menjadi kesamaan antara tantangan dan manfaat AI?",
-        correct_answer:
-          "Keduanya melibatkan perubahan besar pada pola kerja manusia",
-        incorrect_answer: [
-          "Keduanya berkaitan dengan pengurangan biaya",
-          "Keduanya berdampak langsung pada kesejahteraan manusia",
-          "Keduanya selalu memberikan dampak positif",
+          "Menghindari penggunaan AI dalam kehidupan sehari-hari",
+          "Menggunakan AI tanpa pemahaman yang cukup",
+          "Menggunakan AI hanya dalam bidang bisnis",
         ],
       },
       {
         question:
-          "Apa perbedaan mendasar antara manfaat AI di bidang kesehatan dan bidang keuangan?",
-        correct_answer:
-          "Di bidang kesehatan untuk diagnosa, di keuangan untuk analisis data",
+          "Apa yang dimaksud dengan 'salah penggunaan teknologi' dalam konteks ini?",
+        correct_answer: "Menggunakan teknologi tanpa pengetahuan yang tepat",
         incorrect_answer: [
-          "Di bidang kesehatan untuk hiburan, di keuangan untuk produksi",
-          "Di bidang kesehatan untuk produksi, di keuangan untuk diagnostik",
-          "Di bidang kesehatan dan keuangan tidak ada perbedaan manfaat",
+          "Penggunaan teknologi secara berlebihan",
+          "Menggunakan teknologi untuk tujuan positif",
+          "Menghindari penggunaan teknologi sama sekali",
         ],
       },
       {
         question:
-          "Mengapa kekhawatiran tentang otomatisasi pekerjaan bisa menjadi tantangan bagi AI?",
-        correct_answer:
-          "Karena AI dapat menghilangkan banyak pekerjaan manusia",
+          "Apa yang perlu dilakukan agar dampak buruk AI dapat diminimalkan?",
+        correct_answer: "Mengelola perkembangan AI secara bijak",
         incorrect_answer: [
-          "Karena AI meningkatkan ketergantungan manusia pada teknologi",
-          "Karena AI memperlambat proses produksi",
-          "Karena AI tidak memberikan dampak di bidang teknologi",
+          "Menghentikan pengembangan teknologi",
+          "Memberikan kebebasan penuh kepada AI",
+          "Menjauhkan AI dari kehidupan sehari-hari",
+        ],
+      },
+      {
+        question: "Apa yang bisa terjadi jika AI tidak dikelola dengan bijak?",
+        correct_answer: "Kehilangan pekerjaan akan meningkat",
+        incorrect_answer: [
+          "Pengembangan AI akan terhambat",
+          "Teknologi AI akan menggantikan semua pekerjaan manusia",
+          "Penggunaan AI akan terbatas hanya di bidang tertentu",
         ],
       },
       {
         question:
-          "Apa kaitan antara etika penggunaan AI dan potensi penyalahgunaan?",
-        correct_answer:
-          "Etika mengatur bagaimana AI digunakan dengan bertanggung jawab",
+          "Bagaimana teknologi AI dapat berkontribusi pada kehidupan sehari-hari?",
+        correct_answer: "Dengan membantu mempermudah tugas sehari-hari",
         incorrect_answer: [
-          "Etika membatasi manfaat AI sepenuhnya",
-          "Penyalahgunaan AI terjadi hanya di negara berkembang",
-          "Penyalahgunaan AI tidak terkait dengan etika",
+          "Dengan menggantikan semua pekerjaan manusia",
+          "Dengan membuat keputusan untuk manusia",
+          "Dengan membatasi kebebasan manusia",
         ],
       },
       {
         question:
-          "Bagaimana AI dapat berpotensi digunakan untuk tujuan yang jahat?",
+          "Apa yang harus dilakukan pemerintah dalam menghadapi perkembangan AI?",
         correct_answer:
-          "Dengan digunakan dalam kejahatan siber atau manipulasi data",
+          "Membuat aturan yang jelas dan tegas untuk mengatur penggunaan AI",
         incorrect_answer: [
-          "Dengan membuat algoritma untuk meningkatkan kreativitas",
-          "Dengan menolak untuk mengikuti perintah pengguna",
-          "Dengan tidak menghasilkan data yang diinginkan",
+          "Membiarkan pasar teknologi berkembang tanpa pengawasan",
+          "Membuat aturan yang mendukung perkembangan tanpa batas",
+          "Menghentikan seluruh penelitian terkait AI",
+        ],
+      },
+      {
+        question:
+          "Apa yang menjadi kebutuhan mendasar dalam memanfaatkan AI secara efektif?",
+        correct_answer: "Memahami cara penggunaan AI yang baik dan benar",
+        incorrect_answer: [
+          "Menghindari penggunaan AI dalam kehidupan sehari-hari",
+          "Memanfaatkan AI untuk mengontrol pekerjaan manusia",
+          "Meningkatkan ketergantungan pada teknologi AI",
         ],
       },
     ],
@@ -264,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const wpm = localStorage.getItem("readingSpeed");
       const nama = localStorage.getItem("nama") || "12"; // Default '12' jika null
       const absen = localStorage.getItem("absen") || "12"; // Default '12' jika null
-      const paket = localStorage.getItem("paket") || "1"; // Default '1' jika null
+      const paket = localStorage.getItem("paket") || "2"; // Default '1' jika null
 
       if (!wpm) {
         console.error(
@@ -317,14 +309,33 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("absen");
         });
 
+      if (wpm >= 175) {
+        kpmMessage =
+          "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
+      } else if (wpm >= 105 && wpm < 175) {
+        kpmMessage =
+          "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
+      } else {
+        kpmMessage =
+          "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
+      }
+
       // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
         title: "Hasil KEM",
-        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
-        Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>
-        Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>
-        Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b>
-      </div>`,
+        html: `
+            <div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+              <span style="display: inline-block; width: 200px;">Nama</span>: <b>${nama}</b> <br>
+              <span style="display: inline-block; width: 200px;">Absen</span>: <b>${absen}</b> <br>
+              <span style="display: inline-block; width: 200px;">Kecepatan Membaca</span>: <b>${wpm} WPM</b> <br>
+              <span style="display: inline-block; width: 200px;">Skor Quiz</span>: <b>${score}%</b> <br>
+              <span style="display: inline-block; width: 200px;">Jumlah Soal Benar</span>: <b>${
+                score / CORRECT_BONUS
+              }</b> <br>
+              <span style="display: inline-block; width: 200px;">Hasil Akhir</span>: <b>${finalScore}</b> <br>
+              <br>
+              ${kpmMessage} <!-- Menambahkan pesan KPM -->
+            </div>`,
         icon: "success",
       }).finally(() => {
         window.location.href = "../index.html";

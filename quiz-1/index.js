@@ -21,17 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizData = {
     result: [
       {
-        question: "Apa yang dimaksud dengan pergaulan bebas menurut teks?",
-        correct_answer: "Perilaku buruk yang tidak sesuai norma",
-        incorrect_answer: [
-          "Perilaku sesuai norma",
-          "Perilaku baik yang diterima masyarakat",
-          "Perilaku yang bebas tanpa batas",
-        ],
-      },
-      {
         question:
-          "Apa saja penyebab remaja terjerumus ke dalam pergaulan bebas?",
+          "Apa yang menjadi faktor utama yang memengaruhi pergaulan bebas pada remaja?",
         correct_answer: "Gengsi, rasa penasaran, dan pengaruh teknologi",
         incorrect_answer: [
           "Pendidikan yang tinggi",
@@ -41,183 +32,189 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         question:
-          "Siapa yang diharapkan berperan dalam mengawasi anak agar tidak terjerumus ke pergaulan bebas?",
-        correct_answer: "Orang tua",
-        incorrect_answer: ["Guru", "Tetangga", "Teman sebaya"],
-      },
-      {
-        question:
-          "Teknologi yang makin maju dapat memiliki pengaruh terhadap...",
-        correct_answer: "Pergaulan bebas",
+          "Apa yang sering kali tidak dipikirkan oleh remaja dalam pergaulan bebas?",
+        correct_answer: "Akibat buruknya",
         incorrect_answer: [
-          "Pendidikan yang baik",
-          "Karakter bangsa",
-          "Kebiasaan hidup sehat",
+          "Dampak sosial",
+          "Cara memilih teman",
+          "Kebebasan pribadi",
         ],
       },
       {
-        question: "Apa pesan utama dari teks yang dibahas?",
+        question:
+          "Apa yang harus dilakukan orang tua untuk menghindari pergaulan bebas pada remaja?",
+        correct_answer: "Mengawasi anak dengan baik",
+        incorrect_answer: [
+          "Memberikan uang saku yang cukup",
+          "Mengizinkan anak bergaul dengan siapa saja",
+          "Membatasi penggunaan teknologi",
+        ],
+      },
+      {
+        question:
+          "Apa yang perlu diajarkan orang tua kepada anak dalam penggunaan internet",
+        correct_answer: "Menggunakan internet secara bijak",
+        incorrect_answer: [
+          "Memanfaatkan internet untuk bisnis",
+          "Mengakses internet tanpa batasan",
+          "Menghindari media sosial",
+        ],
+      },
+      {
+        question: "Mengapa memilih teman yang baik penting bagi remaja",
+        correct_answer: "Agar tidak terjerumus dalam pergaulan bebas",
+        incorrect_answer: [
+          "Agar bisa mengikuti tren",
+          "Untuk diterima dalam kelompok tertentu",
+          "Agar bisa mendapatkan keuntungan sosial",
+        ],
+      },
+      {
+        question:
+          "Apa yang harus dilakukan remaja agar terhindar dari pergaulan bebas",
+        correct_answer: "Memilih teman yang baik",
+        incorrect_answer: [
+          "Mengikuti arus teman",
+          "Mengikuti segala aturan",
+          "Tidak bergaul dengan teman seumuran",
+        ],
+      },
+      {
+        question:
+          "Mengapa berpikir matang dan bertanggung jawab penting bagi remaja",
+        correct_answer: "Agar terhindar dari pergaulan bebas",
+        incorrect_answer: [
+          "Agar bisa lebih populer",
+          "Untuk memuaskan orang tua",
+          "Agar dapat mengatur waktu lebih baik",
+        ],
+      },
+      {
+        question:
+          "Siapa saja yang berperan dalam memberikan pendidikan yang baik kepada remaja",
+        correct_answer: "Orang tua dan guru",
+        incorrect_answer: [
+          "Hanya orang tua",
+          "Hanya guru",
+          "Hanya teman sebaya",
+        ],
+      },
+      {
+        question:
+          "Apa yang harus dilakukan masyarakat untuk menciptakan masa depan yang lebih baik bagi remaja?",
+        correct_answer: "Memberikan pendidikan yang baik",
+        incorrect_answer: [
+          "Memberikan kebebasan kepada remaja",
+          "Menghindari interaksi dengan remaja",
+          "Memisahkan remaja dari masalah sosial",
+        ],
+      },
+      {
+        question:
+          "Mengapa remaja sering kali ingin diterima dalam kelompok sosial tertentu?",
+        correct_answer: "Karena gengsi dan rasa ingin tahu",
+        incorrect_answer: [
+          "Untuk mendapatkan persetujuan orang tua",
+          "Agar bisa mendapatkan keuntungan materi",
+          "Untuk mencari pengaruh dalam masyarakat",
+        ],
+      },
+      {
+        question:
+          "Apa yang dapat terjadi jika remaja tidak memikirkan akibat buruk pergaulan bebas?",
+        correct_answer: "Mereka bisa mengalami kerugian sosial dan emosional",
+        incorrect_answer: [
+          "Mereka bisa menjadi lebih sukses",
+          "Mereka akan dihormati oleh teman-teman",
+          "Mereka akan lebih mandiri",
+        ],
+      },
+      {
+        question:
+          "Apa peran orang tua dalam membimbing anak untuk menggunakan internet?",
+        correct_answer: "Mengajarkan cara mencari informasi dengan benar",
+        incorrect_answer: [
+          "Membatasi akses internet sepenuhnya",
+          "Mengawasi penggunaan internet sepanjang waktu",
+          "Menyediakan perangkat teknologi canggih",
+        ],
+      },
+      {
+        question: "Bagaimana cara yang tepat bagi remaja untuk memilih teman?",
+        correct_answer: "Berdasarkan karakter yang baik dan positif",
+        incorrect_answer: [
+          "Berdasarkan status sosial teman",
+          "Berdasarkan kesenangan dan minat yang sama",
+          "Berdasarkan pengaruh teman dalam kelompok",
+        ],
+      },
+      {
+        question: "Apa yang dimaksud dengan berpikir matang dalam konteks ini?",
+        correct_answer: "Mempertimbangkan segala dampak sebelum bertindak",
+        incorrect_answer: [
+          "Menunda keputusan sampai semua pilihan diketahui",
+          "Mengikuti keputusan teman-teman tanpa pertimbangan",
+          "Memilih jalan yang paling cepat dan mudah",
+        ],
+      },
+      {
+        question: "Mengapa pergaulan bebas dapat berdampak buruk bagi remaja?",
+        correct_answer: "Dapat memengaruhi perkembangan emosional dan sosial",
+        incorrect_answer: [
+          "Dapat memperburuk kesehatan fisik",
+          "Dapat mengganggu prestasi akademik",
+          "Dapat meningkatkan popularitas",
+        ],
+      },
+      {
+        question:
+          "Apa yang dimaksud dengan 'memilih teman yang baik' dalam konteks teks ini?",
         correct_answer:
-          "Pergaulan bebas memiliki dampak buruk yang harus dihindari.",
+          "Memilih teman yang memiliki nilai-nilai positif dan mendukung kebaikan",
         incorrect_answer: [
-          "Remaja perlu menjaga hubungan baik dengan teman.",
-          "Teknologi modern mempermudah kehidupan manusia.",
-          "Orang tua tidak perlu khawatir terhadap perkembangan anak.",
+          "Memilih teman yang bisa memberikan manfaat ekonomi",
+          "Memilih teman yang dapat memengaruhi keputusan hidup",
+          "Memilih teman yang paling populer",
         ],
       },
       {
         question:
-          "Mengapa orang tua perlu mengajarkan penggunaan internet yang bijak kepada anak?",
-        correct_answer: "Agar anak tidak masuk ke dalam hal buruk",
+          "Apa yang harus dilakukan orang tua, guru, dan masyarakat untuk mencegah pergaulan bebas pada remaja?",
+        correct_answer: "Meningkatkan pengawasan terhadap aktivitas remaja",
         incorrect_answer: [
-          "Agar anak tidak ketinggalan zaman",
-          "Agar anak memahami teknologi baru",
-          "Agar anak memiliki banyak teman",
-        ],
-      },
-      {
-        question: 'Apa yang dimaksud dengan "salah bergaul" dalam teks?',
-        correct_answer: "Terpengaruh oleh teman yang tidak baik",
-        incorrect_answer: [
-          "Tidak memiliki teman yang banyak",
-          "Memilih-milih teman dalam bergaul",
-          "Tidak mengikuti tren yang ada",
+          "Memberikan kebebasan penuh kepada remaja",
+          "Menghindari memberikan pendidikan yang ketat",
+          "Menciptakan aturan yang lebih longgar",
         ],
       },
       {
         question:
-          "Apa tujuan remaja yang terjerumus dalam pergaulan bebas ingin dipuji?",
-        correct_answer: "Agar terlihat keren dan gaul",
+          "Apa dampak dari tidak mengikuti aturan agama dan hukum dalam pergaulan bebas?",
+        correct_answer: "Dapat menyebabkan kerugian sosial dan moral",
         incorrect_answer: [
-          "Agar merasa lebih dewasa",
-          "Agar mendapat banyak teman",
-          "Agar lebih dihormati oleh guru",
+          "Dapat menyebabkan rasa takut pada orang tua",
+          "Dapat membuat remaja merasa lebih bebas",
+          "Dapat meningkatkan kreativitas remaja",
         ],
       },
       {
-        question: "Bagaimana seorang remaja dapat menghindari pergaulan bebas?",
-        correct_answer: "Dengan tetap mematuhi norma-norma agama dan hukum",
+        question: "Apa peran teknologi dalam pergaulan bebas remaja?",
+        correct_answer: "Membuka akses ke dunia tanpa batas",
         incorrect_answer: [
-          "Dengan menjauhi semua teman",
-          "Dengan mengikuti semua tren terbaru",
-          "Dengan menghindari penggunaan teknologi",
-        ],
-      },
-      {
-        question:
-          "Apa tindakan pertama yang dapat dilakukan orang tua untuk mencegah anak masuk dalam pergaulan bebas?",
-        correct_answer: "Mengawasi dan mendidik anak dengan tegas",
-        incorrect_answer: [
-          "Membelikan gadget terbaru",
-          "Memarahi anak setiap hari",
-          "Membatasi pergaulan anak sepenuhnya",
+          "Membantu remaja menemukan teman-teman baru",
+          "Membuat remaja lebih bijak dalam memilih teman",
+          "Mengurangi interaksi sosial di dunia nyata",
         ],
       },
       {
         question:
-          "Seorang teman mengajak kamu melakukan hal yang tidak sesuai norma. Apa langkah terbaik yang bisa kamu ambil?",
-        correct_answer: "Menolak dengan sopan dan memberi alasan",
-        incorrect_answer: [
-          "Mengikuti agar tidak dianggap ketinggalan zaman",
-          "Melaporkan kepada guru atau orang tua",
-          "Membalas dengan melakukan hal yang sama",
-        ],
-      },
-      {
-        question:
-          "Jika kamu melihat teman terjerumus dalam pergaulan bebas, apa yang sebaiknya kamu lakukan?",
-        correct_answer: "Mengajak dia untuk berbicara dan memberi saran",
-        incorrect_answer: [
-          "Membiarkan karena itu bukan urusanmu",
-          "Melaporkan dia ke pihak berwajib",
-          "Menyindir dia di media sosial",
-        ],
-      },
-      {
-        question:
-          "Apa hubungan antara kemajuan teknologi dan pergaulan bebas dalam teks?",
+          "Mengapa semua pihak harus bekerja sama dalam menciptakan masa depan yang lebih baik untuk remaja?",
         correct_answer:
-          "Kemajuan teknologi mempermudah akses terhadap hal buruk.",
+          "Agar remaja terhindar dari pergaulan bebas dan dampak negatifnya",
         incorrect_answer: [
-          "Kemajuan teknologi selalu membawa dampak positif.",
-          "Teknologi membuat remaja lebih religius.",
-          "Teknologi tidak terkait dengan pergaulan bebas.",
-        ],
-      },
-      {
-        question:
-          "Mengapa norma agama dan hukum dianggap penting dalam mencegah pergaulan bebas?",
-        correct_answer:
-          "Karena norma tersebut menjadi panduan hidup yang benar.",
-        incorrect_answer: [
-          "Karena norma tersebut memberikan sanksi berat.",
-          "Karena norma tersebut tidak bisa dilanggar.",
-          "Karena norma tersebut membatasi kreativitas remaja.",
-        ],
-      },
-      {
-        question:
-          "Apa perbedaan antara penggunaan internet secara bijak dan tidak bijak dalam kaitannya dengan pergaulan bebas?",
-        correct_answer:
-          "Penggunaan bijak memperkuat karakter positif, sedangkan tidak bijak membuka peluang masuk ke pergaulan bebas.",
-        incorrect_answer: [
-          "Penggunaan bijak membuat remaja menjadi terkenal, sedangkan tidak bijak membuat remaja lebih kreatif.",
-          "Penggunaan bijak menghindarkan remaja dari pekerjaan, sedangkan tidak bijak meningkatkan prestasi.",
-          "Penggunaan bijak selalu buruk, sedangkan tidak bijak selalu baik.",
-        ],
-      },
-      {
-        question:
-          "Bagaimana norma timur memengaruhi sikap masyarakat terhadap pergaulan bebas?",
-        correct_answer:
-          "Norma timur menolak perilaku yang melanggar nilai moral.",
-        incorrect_answer: [
-          "Norma timur mendorong kebebasan tanpa batas.",
-          "Norma timur tidak relevan dengan kondisi saat ini.",
-          "Norma timur hanya diterapkan oleh kalangan tertentu.",
-        ],
-      },
-      {
-        question:
-          "Setujukah kamu bahwa salah satu penyebab pergaulan bebas adalah rasa gengsi? Berikan alasan singkat.",
-        correct_answer:
-          "Setuju, karena gengsi membuat remaja ingin diterima kelompoknya.",
-        incorrect_answer: [
-          "Tidak setuju, karena gengsi tidak memengaruhi pergaulan bebas.",
-          "Setuju, karena gengsi membuat remaja fokus pada pendidikan.",
-          "Tidak setuju, karena gengsi adalah sifat positif.",
-        ],
-      },
-      {
-        question:
-          "Apakah tindakan tegas orang tua selalu efektif dalam mencegah pergaulan bebas?",
-        correct_answer:
-          "Tidak selalu efektif, tergantung cara orang tua mendidik.",
-        incorrect_answer: [
-          "Selalu efektif, karena anak akan takut melanggar aturan.",
-          "Tidak efektif, karena anak akan semakin memberontak.",
-          "Sangat efektif, karena anak selalu mengikuti orang tua.",
-        ],
-      },
-      {
-        question:
-          "Bagaimana pendapatmu tentang teknologi sebagai salah satu faktor penyebab pergaulan bebas?",
-        correct_answer:
-          "Teknologi netral, pengaruhnya tergantung pada pengguna.",
-        incorrect_answer: [
-          "Teknologi adalah faktor utama dari pergaulan bebas.",
-          "Teknologi tidak relevan dengan pergaulan bebas.",
-          "Teknologi selalu memberikan dampak buruk.",
-        ],
-      },
-      {
-        question:
-          "Apa evaluasi yang bisa diberikan kepada teks terkait upaya menghindari pergaulan bebas?",
-        correct_answer: "Teks memberikan solusi konkret yang dapat diterapkan.",
-        incorrect_answer: [
-          "Teks hanya membahas penyebab tanpa memberikan solusi.",
-          "Teks terlalu menekankan pada teknologi sebagai masalah utama.",
-          "Teks tidak relevan untuk remaja masa kini.",
+          "Agar remaja dapat lebih bebas",
+          "Agar remaja bisa memperoleh banyak pengalaman",
+          "Agar remaja dapat mencapai tujuan pribadi mereka",
         ],
       },
     ],
@@ -317,14 +314,36 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("absen");
         });
 
+      // Setelah menghitung finalScore dan sebelum menampilkan SweetAlert
+      let kpmMessage = ""; // Variabel untuk menyimpan pesan KPM
+
+      if (wpm >= 175) {
+        kpmMessage =
+          "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
+      } else if (wpm >= 105 && wpm < 175) {
+        kpmMessage =
+          "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
+      } else {
+        kpmMessage =
+          "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
+      }
+
       // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
         title: "Hasil KEM",
-        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
-        Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>
-        Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>
-        Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b>
-      </div>`,
+        html: `
+          <div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+            <span style="display: inline-block; width: 200px;">Nama</span>: <b>${nama}</b> <br>
+            <span style="display: inline-block; width: 200px;">Absen</span>: <b>${absen}</b> <br>
+            <span style="display: inline-block; width: 200px;">Kecepatan Membaca</span>: <b>${wpm} WPM</b> <br>
+            <span style="display: inline-block; width: 200px;">Skor Quiz</span>: <b>${score}%</b> <br>
+            <span style="display: inline-block; width: 200px;">Jumlah Soal Benar</span>: <b>${
+              score / CORRECT_BONUS
+            }</b> <br>
+            <span style="display: inline-block; width: 200px;">Hasil Akhir</span>: <b>${finalScore}</b> <br>
+            <br>
+            ${kpmMessage} <!-- Menambahkan pesan KPM -->
+          </div>`,
         icon: "success",
       }).finally(() => {
         window.location.href = "../index.html";

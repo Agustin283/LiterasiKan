@@ -21,196 +21,206 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizData = {
     result: [
       {
-        question: "Apa arti dari kesehatan mental menurut teks?",
+        question: "Apa yang dimaksud dengan kesehatan mental?",
         correct_answer:
-          "Kemampuan menghadapi tantangan hidup dan membangun hubungan sehat",
+          "Kesehatan jiwa yang memungkinkan seseorang untuk menghadapi tantangan hidup",
         incorrect_answer: [
-          "Hidup tanpa penyakit fisik",
-          "Tidak memiliki tekanan pekerjaan",
-          "Menjaga gaya hidup tidak sehat",
+          "Kesehatan tubuh yang baik",
+          "Kesehatan yang bebas dari penyakit",
+          "Kesehatan yang diukur dengan pemeriksaan medis",
+        ],
+      },
+      {
+        question: "Mengapa kesehatan mental penting?",
+        correct_answer:
+          "Karena mempengaruhi hubungan dan kemampuan mencapai tujuan hidup",
+        incorrect_answer: [
+          "Karena mempengaruhi penampilan fisik",
+          "Karena bisa disembuhkan dengan obat-obatan",
+          "Karena bisa meningkatkan kemampuan intelektual",
         ],
       },
       {
         question:
-          "Sebutkan salah satu aktivitas yang disebutkan dalam teks untuk meningkatkan kesehatan mental!",
-        correct_answer: "Meditasi",
+          "Apa yang sering dialami oleh banyak orang terkait dengan kesehatan mental?",
+        correct_answer: "Stres, depresi, dan kecemasan",
         incorrect_answer: [
-          "Belanja",
-          "Makan berlebihan",
-          "Bermain game sepanjang hari",
+          "Kelelahan fisik dan nyeri tubuh",
+          "Penurunan nafsu makan",
+          "Ketegangan otot",
         ],
       },
       {
         question:
-          "Apa yang disebutkan sebagai faktor yang memengaruhi kesehatan mental?",
+          "Faktor apa yang sering menyebabkan masalah kesehatan mental pada remaja?",
+        correct_answer: "Pola hidup tidak sehat",
+        incorrect_answer: [
+          "Makanan yang tidak bergizi",
+          "Waktu tidur yang cukup",
+          "Kegiatan sosial yang banyak",
+        ],
+      },
+      {
+        question: "Apa yang dapat memperburuk kesehatan mental seseorang?",
+        correct_answer: "Trauma masa lalu dan masalah hubungan",
+        incorrect_answer: [
+          "Olahraga yang rutin",
+          "Tidur yang cukup",
+          "Melakukan meditasi secara teratur",
+        ],
+      },
+      {
+        question:
+          "Bagaimana stres, depresi, dan kecemasan mempengaruhi kehidupan seseorang?",
+        correct_answer: "Mengganggu kemampuan untuk menghadapi tantangan hidup",
+        incorrect_answer: [
+          "Meningkatkan produktivitas",
+          "Meningkatkan hubungan sosial",
+          "Menurunkan kebutuhan tidur",
+        ],
+      },
+      {
+        question:
+          "Apa saja yang dapat membantu dalam menjaga kesehatan mental?",
+        correct_answer: "Olahraga, meditasi, dan waktu di alam",
+        incorrect_answer: [
+          "Menonton TV sepanjang hari",
+          "Makan makanan tinggi gula",
+          "Menghindari pertemuan dengan orang lain",
+        ],
+      },
+      {
+        question:
+          "Apa yang sebaiknya dilakukan jika masalah mental mengganggu?",
+        correct_answer: "Mencari dukungan dari ahli psikologi",
+        incorrect_answer: [
+          "Menghindari stres dengan tidur lebih banyak",
+          "Mengabaikan masalah tersebut",
+          "Menjalani pola hidup tidak sehat",
+        ],
+      },
+      {
+        question: "Apa dampak dari menjaga kesehatan mental?",
+        correct_answer: "Hidup yang lebih bahagia dan produktif",
+        incorrect_answer: [
+          "Mengurangi kemampuan untuk berinteraksi sosial",
+          "Meningkatkan kecemasan",
+          "Menurunkan kemampuan fisik",
+        ],
+      },
+      {
+        question: "Mengapa penting untuk memperhatikan kesehatan mental?",
+        correct_answer: "Agar bisa lebih produktif dan bahagia dalam hidup",
+        incorrect_answer: [
+          "Agar lebih mudah mencapai tujuan fisik",
+          "Agar bisa bekerja lebih lama tanpa istirahat",
+          "Agar tidak terlalu bergantung pada obat-obatan",
+        ],
+      },
+      {
+        question:
+          "Apa hubungan antara kesehatan mental yang baik dan hubungan sosial?",
+        correct_answer:
+          "Kesehatan mental yang buruk dapat memperburuk hubungan sosial",
+        incorrect_answer: [
+          "Kesehatan mental tidak ada kaitannya dengan hubungan sosial",
+          "Kesehatan mental yang baik hanya berpengaruh pada pekerjaan",
+          "Kesehatan mental yang baik memperburuk hubungan dengan orang lain",
+        ],
+      },
+      {
+        question:
+          "Apa yang bisa menjadi penyebab kesehatan mental terganggu selain pola hidup tidak sehat?",
         correct_answer: "Tekanan pekerjaan",
         incorrect_answer: [
-          "Tidur cukup setiap hari",
-          "Makanan sehat",
-          "Olahraga teratur",
+          "Olahraga yang berlebihan",
+          "Waktu tidur yang cukup",
+          "Menghabiskan waktu dengan keluarga",
         ],
       },
       {
         question:
-          "Menurut teks, siapa yang bisa memberikan dukungan kesehatan mental?",
-        correct_answer: "Teman atau profesional kesehatan mental",
-        incorrect_answer: ["Rekan kerja", "Media sosial", "Tetangga sekitar"],
-      },
-      {
-        question: "Apa manfaat menjaga kesehatan mental menurut teks?",
-        correct_answer: "Hidup bahagia dan produktif",
-        incorrect_answer: [
-          "Memiliki lebih banyak waktu luang",
-          "Menghilangkan semua masalah",
-          "Menjadi lebih populer",
-        ],
-      },
-      {
-        question:
-          "Mengapa tekanan pekerjaan bisa memengaruhi kesehatan mental?",
-        correct_answer: "Karena dapat menyebabkan stres",
-        incorrect_answer: [
-          "Karena membuat seseorang lebih kaya",
-          "Karena mendukung hubungan sosial",
-          "Karena memberikan banyak istirahat",
-        ],
-      },
-      {
-        question:
-          "Jelaskan bagaimana olahraga dapat membantu kesehatan mental!",
-        correct_answer: "Dengan mengurangi stres dan memperbaiki suasana hati",
-        incorrect_answer: [
-          "Dengan meningkatkan tekanan darah",
-          "Dengan menambah pekerjaan tambahan",
-          "Dengan memakan banyak waktu",
-        ],
-      },
-      {
-        question:
-          "Apa hubungan antara keseimbangan bekerja dan beristirahat dengan kesehatan mental?",
-        correct_answer: "Membantu mengelola stres dengan baik",
-        incorrect_answer: [
-          "Tidak ada hubungan sama sekali",
-          "Membuat seseorang sibuk sepanjang hari",
-          "Memastikan kesuksesan karier",
-        ],
-      },
-      {
-        question:
-          "Mengapa membangun hubungan sosial yang positif penting untuk kesehatan mental?",
-        correct_answer: "Agar memiliki dukungan emosional",
-        incorrect_answer: [
-          "Agar terlihat populer",
-          "Agar mendapatkan keuntungan finansial",
-          "Agar terlihat sibuk",
-        ],
-      },
-      {
-        question: "Bagaimana meditasi membantu meningkatkan kesehatan mental?",
-        correct_answer: "Dengan memberikan ketenangan dan fokus",
-        incorrect_answer: [
-          "Dengan membuat kita lebih sibuk",
-          "Dengan meningkatkan tekanan pekerjaan",
-          "Dengan mengurangi waktu bersama keluarga",
-        ],
-      },
-      {
-        question:
-          "Jika seseorang merasa stres, apa langkah pertama yang bisa dia lakukan sesuai teks?",
-        correct_answer: "Mengelola stres dengan baik",
-        incorrect_answer: [
-          "Meningkatkan beban kerja",
-          "Mengabaikan masalah",
-          "Tidur sepanjang hari",
-        ],
-      },
-      {
-        question:
-          "Seorang siswa SMP sering merasa cemas menjelang ujian. Apa yang bisa dia lakukan berdasarkan teks?",
-        correct_answer: "Berolahraga atau meditasi",
-        incorrect_answer: [
-          "Menunda belajar hingga menit terakhir",
-          "Menghindari teman-teman sekelas",
-          "Menghabiskan waktu bermain game",
-        ],
-      },
-      {
-        question:
-          "Jika seseorang mengalami trauma masa lalu, siapa yang sebaiknya dia hubungi?",
-        correct_answer: "Profesional kesehatan mental",
-        incorrect_answer: ["Media sosial", "Rekan kerja", "Tetangga sekitar"],
-      },
-      {
-        question:
-          "Seorang teman Anda kesulitan menjaga keseimbangan hidup. Apa saran yang tepat untuknya berdasarkan teks?",
+          "Apa yang sebaiknya dilakukan untuk menghindari masalah kesehatan mental?",
         correct_answer:
-          "Mencoba menyeimbangkan antara bekerja dan beristirahat",
+          "Menjaga pola hidup sehat, termasuk olahraga dan meditasi",
         incorrect_answer: [
-          "Fokus hanya pada pekerjaan",
-          "Menghindari semua aktivitas sosial",
-          "Tidur sepanjang waktu",
+          "Fokus pada pekerjaan tanpa istirahat",
+          "Mengabaikan masalah yang ada",
+          "Menghindari berinteraksi dengan orang lain",
         ],
       },
       {
-        question:
-          "Bagaimana cara seorang siswa membangun hubungan sosial yang positif sesuai teks?",
-        correct_answer: "Dengan membicarakan masalah kepada teman",
-        incorrect_answer: [
-          "Dengan sering berdebat",
-          "Dengan menghindari teman yang baik",
-          "Dengan mengabaikan teman-temannya",
-        ],
-      },
-      {
-        question:
-          "Apa yang menjadi perbedaan utama antara kesehatan mental dan kesehatan fisik berdasarkan teks?",
+        question: "Bagaimana olahraga dapat membantu menjaga kesehatan mental?",
         correct_answer:
-          "Kesehatan mental berkaitan dengan emosional, sedangkan kesehatan fisik berkaitan dengan tubuh",
+          "Membantu melepaskan stres dan meningkatkan suasana hati",
         incorrect_answer: [
-          "Kesehatan mental tidak bisa dirawat",
-          "Kesehatan fisik lebih penting daripada kesehatan mental",
-          "Kesehatan mental hanya untuk orang dewasa",
+          "Meningkatkan kecemasan dan stres",
+          "Meningkatkan rasa cemas",
+          "Menyebabkan kelelahan mental",
         ],
       },
       {
-        question: "Mengapa depresi semakin umum terjadi di masyarakat modern?",
-        correct_answer: "Karena tekanan pekerjaan dan trauma masa lalu",
-        incorrect_answer: [
-          "Karena gaya hidup sehat menjadi populer",
-          "Karena akses ke profesional kesehatan mental semakin mudah",
-          "Karena orang lebih bahagia",
-        ],
-      },
-      {
-        question:
-          "Apa hubungan antara gaya hidup tidak sehat dengan masalah kesehatan mental?",
+        question: 'Apa yang dimaksud dengan "dukungan dari ahli psikologi"?',
         correct_answer:
-          "Gaya hidup tidak sehat dapat meningkatkan risiko stres dan depresi",
+          "Mencari bantuan dari profesional untuk menangani masalah mental",
         incorrect_answer: [
-          "Gaya hidup tidak sehat mendukung kesehatan mental",
-          "Gaya hidup tidak sehat menghilangkan masalah",
-          "Gaya hidup tidak sehat tidak berpengaruh apa-apa",
+          "Membaca buku psikologi",
+          "Berbicara dengan teman tentang masalah mental",
+          "Mengikuti kursus psikologi",
         ],
       },
       {
         question:
-          "Jika seseorang tidak mengelola stres dengan baik, apa yang kemungkinan akan terjadi?",
-        correct_answer: "Dia dapat mengalami gangguan kesehatan mental",
+          "Apa yang dapat memperburuk masalah kesehatan mental pada seseorang?",
+        correct_answer: "Tekanan pekerjaan dan masalah hubungan",
         incorrect_answer: [
-          "Kesehatan mentalnya akan membaik",
-          "Dia akan lebih produktif",
-          "Tidak ada perubahan sama sekali",
+          "Menghindari pekerjaan",
+          "Tidur yang cukup",
+          "Melakukan aktivitas di alam",
         ],
       },
       {
         question:
-          "Apakah mencari dukungan dari profesional kesehatan mental selalu diperlukan? Jelaskan!",
+          "Apa yang dimaksud dengan meditasi dalam konteks kesehatan mental?",
         correct_answer:
-          "Ya, karena mereka memiliki keahlian yang diperlukan untuk membantu",
+          "Proses merenung dan menenangkan pikiran untuk mengurangi stres",
         incorrect_answer: [
-          "Tidak, karena kesehatan mental bisa diselesaikan sendiri",
-          "Tidak, karena masalah mental tidak serius",
-          "Ya, karena semua orang membutuhkan terapi",
+          "Tidur siang yang panjang",
+          "Berolahraga secara intens",
+          "Menghindari interaksi sosial",
+        ],
+      },
+      {
+        question:
+          "Mengapa remaja lebih rentan terhadap masalah kesehatan mental?",
+        correct_answer:
+          "Karena mereka sering terpapar media sosial dan tekanan teman sebaya",
+        incorrect_answer: [
+          "Karena mereka lebih banyak berolahraga",
+          "Karena mereka lebih banyak tidur",
+          "Karena mereka tidak memiliki masalah mental",
+        ],
+      },
+      {
+        question:
+          "Apa yang dapat membantu seseorang yang sedang mengalami kecemasan?",
+        correct_answer:
+          "Mencari dukungan dari ahli psikologi dan melakukan meditasi",
+        incorrect_answer: [
+          "Menghindari semua interaksi sosial",
+          "Menghabiskan waktu sendirian tanpa aktivitas",
+          "Mengabaikan perasaan kecemasan tersebut",
+        ],
+      },
+      {
+        question:
+          "Bagaimana menjaga kesehatan mental dapat mempengaruhi produktivitas?",
+        correct_answer:
+          "Dengan menjaga kesehatan mental, seseorang bisa lebih fokus dan produktif",
+        incorrect_answer: [
+          "Dengan mengabaikan perasaan dan fokus pada pekerjaan",
+          "Dengan menambah jam kerja",
+          "Dengan beristirahat sepanjang hari",
         ],
       },
     ],
@@ -257,7 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const wpm = localStorage.getItem("readingSpeed");
       const nama = localStorage.getItem("nama") || "12"; // Default '12' jika null
       const absen = localStorage.getItem("absen") || "12"; // Default '12' jika null
-      const paket = localStorage.getItem("paket") || "1"; // Default '1' jika null
+      const paket = localStorage.getItem("paket") || "4"; // Default '1' jika null
 
       if (!wpm) {
         console.error(
@@ -310,14 +320,33 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("absen");
         });
 
+      if (wpm >= 175) {
+        kpmMessage =
+          "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
+      } else if (wpm >= 105 && wpm < 175) {
+        kpmMessage =
+          "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
+      } else {
+        kpmMessage =
+          "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
+      }
+
       // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
         title: "Hasil KEM",
-        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
-        Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>
-        Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>
-        Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b>
-      </div>`,
+        html: `
+            <div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+              <span style="display: inline-block; width: 200px;">Nama</span>: <b>${nama}</b> <br>
+              <span style="display: inline-block; width: 200px;">Absen</span>: <b>${absen}</b> <br>
+              <span style="display: inline-block; width: 200px;">Kecepatan Membaca</span>: <b>${wpm} WPM</b> <br>
+              <span style="display: inline-block; width: 200px;">Skor Quiz</span>: <b>${score}%</b> <br>
+              <span style="display: inline-block; width: 200px;">Jumlah Soal Benar</span>: <b>${
+                score / CORRECT_BONUS
+              }</b> <br>
+              <span style="display: inline-block; width: 200px;">Hasil Akhir</span>: <b>${finalScore}</b> <br>
+              <br>
+              ${kpmMessage} <!-- Menambahkan pesan KPM -->
+            </div>`,
         icon: "success",
       }).finally(() => {
         window.location.href = "../index.html";

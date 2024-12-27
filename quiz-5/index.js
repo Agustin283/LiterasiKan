@@ -21,208 +21,212 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizData = {
     result: [
       {
-        question: "Apa tujuan utama dari pendidikan karakter?",
-        correct_answer: "Membentuk pribadi yang berakhlak mulia",
-        incorrect_answer: [
-          "Meningkatkan kecerdasan intelektual",
-          "Menambah pengetahuan umum",
-          "Melatih keterampilan akademik",
-        ],
-      },
-      {
-        question:
-          "Siapa saja yang berperan dalam pendidikan karakter menurut teks?",
-        correct_answer: "Sekolah, keluarga, dan masyarakat",
-        incorrect_answer: [
-          "Guru di sekolah saja",
-          "Orang tua saja",
-          "Pemerintah pusat",
-        ],
-      },
-      {
-        question:
-          "Nilai-nilai karakter apa yang disebutkan perlu ditanamkan sejak dini?",
+        question: "Apa yang dimaksud dengan pendidikan karakter dalam teks?",
         correct_answer:
-          "Kejujuran, tanggung jawab, hormat, peduli, dan gotong royong",
+          "Pendidikan yang menanamkan nilai moral dan sikap positif",
         incorrect_answer: [
-          "Ambisi, persaingan, dan ego",
-          "Keberanian, kesombongan, dan kemandirian",
-          "Kekuasaan, kecerdasan, dan keberuntungan",
+          "Pendidikan yang mengutamakan kecerdasan",
+          "Pendidikan yang hanya mengajarkan keterampilan praktis",
+          "Pendidikan yang fokus pada pengajaran akademik",
         ],
       },
       {
-        question: "Apa dampak memiliki karakter yang baik bagi seseorang?",
-        correct_answer: "Lebih mudah beradaptasi dengan lingkungan sosial",
-        incorrect_answer: [
-          "Lebih mudah mendapatkan pekerjaan",
-          "Mendapatkan banyak pujian",
-          "Meningkatkan status sosial",
-        ],
-      },
-      {
-        question:
-          "Apa yang dimaksud dengan 'memberikan contoh yang baik' dalam pendidikan karakter?",
+        question: "Mengapa pendidikan karakter penting bagi pribadi seseorang?",
         correct_answer:
-          "Menunjukkan perilaku positif dalam kehidupan sehari-hari",
+          "Untuk membantu dalam adaptasi, hubungan sehat, dan kesuksesan",
         incorrect_answer: [
-          "Memberikan hadiah kepada siswa yang rajin",
-          "Membuat peraturan ketat di sekolah",
-          "Menghindari diskusi tentang moralitas",
+          "Agar menjadi pintar",
+          "Untuk mempelajari hal-hal baru",
+          "Agar dapat mengikuti tren masa kini",
         ],
       },
       {
-        question: "Mengapa remaja mudah terjerumus ke dalam pergaulan bebas?",
-        correct_answer: "Karena ingin dianggap gaul oleh teman-temannya",
+        question: "Di mana pendidikan karakter wajib diajarkan?",
+        correct_answer: "Di keluarga dan masyarakat luas",
         incorrect_answer: [
-          "Karena kurang perhatian dari keluarga",
-          "Karena tuntutan lingkungan sosial",
-          "Karena aturan yang terlalu ketat",
-        ],
-      },
-      {
-        question: "Apa arti 'salah bergaul' menurut teks?",
-        correct_answer: "Mudah terpengaruh oleh teman yang tidak benar",
-        incorrect_answer: [
-          "Memilih teman berdasarkan status sosial",
-          "Berteman dengan orang yang tidak seiman",
-          "Menghindari semua bentuk pergaulan",
+          "Hanya di sekolah",
+          "Hanya di masyarakat",
+          "Di tempat kerja",
         ],
       },
       {
         question:
-          "Bagaimana pendidikan karakter dilakukan secara efektif menurut teks?",
+          "Apa yang dimaksud dengan nilai-nilai seperti jujur, tanggung jawab, dan gotong royong dalam pendidikan karakter?",
         correct_answer:
-          "Dengan memberikan contoh, pengajaran langsung, dan kegiatan positif",
+          "Nilai-nilai moral yang perlu diterapkan dalam kehidupan sehari-hari",
         incorrect_answer: [
-          "Dengan memberikan hukuman keras",
-          "Dengan fokus pada nilai akademik saja",
-          "Dengan membatasi interaksi siswa dengan masyarakat",
+          "Nilai-nilai untuk mencapai kesuksesan",
+          "Nilai-nilai untuk meningkatkan kecerdasan",
+          "Nilai-nilai untuk menghadapi ujian di sekolah",
         ],
       },
       {
         question:
-          "Apa yang harus dilakukan remaja sebelum melakukan suatu tindakan?",
-        correct_answer: "Berpikir panjang tentang dampaknya",
-        incorrect_answer: [
-          "Bertanya pada teman",
-          "Mencari popularitas",
-          "Mengikuti tren terkini",
-        ],
-      },
-      {
-        question: "Mengapa norma agama dan hukum penting dalam pergaulan?",
+          "Apa tantangan yang dihadapi dalam pendidikan karakter bagi remaja?",
         correct_answer:
-          "Untuk menjaga perilaku agar tetap sesuai dengan nilai moral",
+          "Pengaruh buruk dari pergaulan remaja dan teman-temannya",
         incorrect_answer: [
-          "Untuk mencegah remaja menjadi terlalu mandiri",
-          "Agar remaja dihormati oleh teman-temannya",
-          "Untuk menghindari aturan yang terlalu bebas",
+          "Persaingan akademik",
+          "Kurangnya fasilitas pendidikan",
+          "Keterbatasan waktu untuk belajar",
         ],
       },
       {
         question:
-          "Apa kaitan antara pendidikan karakter dan keberhasilan hidup seseorang?",
+          "Bagaimana cara remaja bijak dalam memilih teman menurut teks?",
+        correct_answer: "Dengan mempertimbangkan norma agama dan hukum",
+        incorrect_answer: [
+          "Dengan mengikuti tren teman-temannya",
+          "Dengan selalu menyenangkan hati teman",
+          "Dengan menilai teman berdasarkan popularitasnya",
+        ],
+      },
+      {
+        question: "Apa manfaat pendidikan karakter bagi remaja?",
         correct_answer:
-          "Pendidikan karakter membantu seseorang membangun koneksi sosial yang sehat",
+          "Membantu remaja berpikir panjang dan matang serta memahami dampak tindakan",
         incorrect_answer: [
-          "Pendidikan karakter hanya berfokus pada nilai moral tanpa efek nyata pada kehidupan",
-          "Pendidikan karakter menjamin kesuksesan finansial",
-          "Pendidikan karakter mengajarkan bagaimana memenangkan persaingan",
+          "Membantu remaja mencapai tujuan akademik",
+          "Membantu remaja lebih populer di kalangan teman",
+          "Membantu remaja meniru tindakan orang dewasa",
         ],
       },
       {
         question:
-          "Jika seorang siswa mengalami kesulitan bersikap jujur, apa langkah terbaik yang dapat dilakukan oleh gurunya?",
-        correct_answer: "Memberikan nasihat dan contoh sikap jujur",
-        incorrect_answer: [
-          "Memberikan hukuman fisik",
-          "Mengabaikan masalah tersebut",
-          "Meminta siswa tersebut menulis esai tentang kejujuran",
-        ],
-      },
-      {
-        question: "Apa dampak negatif dari pergaulan bebas bagi remaja?",
-        correct_answer: "Kehilangan kendali atas nilai moralnya",
-        incorrect_answer: [
-          "Mendapatkan banyak pengalaman sosial",
-          "Menjadi lebih terkenal di kalangan teman-temannya",
-          "Memiliki lebih banyak waktu luang",
-        ],
-      },
-      {
-        question:
-          "Mengapa berpikir panjang sebelum bertindak sangat penting bagi remaja?",
+          "Apa yang dapat dilakukan pendidikan karakter untuk mencegah masalah sosial?",
         correct_answer:
-          "Untuk mempertimbangkan dampak baik dan buruk bagi dirinya, keluarga, dan orang lain",
+          "Mencegah remaja dari tindakan yang merugikan diri dan orang lain",
         incorrect_answer: [
-          "Untuk memastikan tindakan tersebut sesuai tren",
-          "Agar tidak dimarahi oleh orang tua",
-          "Agar lebih cepat mengambil keputusan",
+          "Membantu remaja menghindari ujian",
+          "Membantu remaja menghindari pergaulan sosial",
+          "Mengurangi beban pekerjaan di sekolah",
         ],
       },
       {
         question:
-          "Bagaimana cara orang tua dapat mendukung pendidikan karakter anak?",
+          "Apa tujuan utama dari menerapkan pendidikan karakter di semua aspek kehidupan?",
         correct_answer:
-          "Dengan menunjukkan sikap yang mencerminkan nilai-nilai moral",
+          "Untuk menciptakan individu yang bijak dan bertanggung jawab",
         incorrect_answer: [
-          "Dengan memberikan kebebasan tanpa batas",
-          "Dengan memarahi anak jika berbuat salah",
-          "Dengan menyerahkan seluruh pendidikan pada sekolah",
+          "Agar remaja bisa lebih pintar",
+          "Agar remaja bisa bekerja lebih keras",
+          "Agar remaja bisa menjadi lebih populer",
         ],
       },
       {
         question:
-          "Apa hubungan antara pendidikan karakter dan penghindaran pergaulan bebas?",
+          "Bagaimana pendidikan karakter mempengaruhi kesuksesan seseorang?",
         correct_answer:
-          "Pendidikan karakter memberikan pemahaman moral agar siswa tidak mudah terpengaruh",
+          "Membantu individu memiliki sikap positif yang mendukung kesuksesan",
         incorrect_answer: [
-          "Pendidikan karakter mengajarkan siswa cara memilih teman yang populer",
-          "Pendidikan karakter membuat siswa takut bersosialisasi",
-          "Pendidikan karakter tidak memiliki hubungan dengan pergaulan",
+          "Membantu meningkatkan nilai akademik",
+          "Membantu meningkatkan kemampuan berolahraga",
+          "Membantu individu meniru orang sukses",
         ],
       },
       {
         question:
-          "Apa yang terjadi jika remaja tidak memiliki pendidikan karakter yang baik?",
+          "Apa yang harus dilakukan untuk mengatasi pengaruh buruk teman dalam pergaulan remaja?",
         correct_answer:
-          "Mereka dapat terjerumus dalam tindakan yang tidak bermoral",
+          "Menaati norma agama dan hukum serta memilih teman yang baik",
         incorrect_answer: [
-          "Mereka akan lebih berani menghadapi dunia",
-          "Mereka akan menjadi lebih mandiri",
-          "Mereka lebih mudah sukses di kehidupan sosial",
+          "Menghindari pertemanan sama sekali",
+          "Selalu mengikuti pendapat teman",
+          "Mengabaikan norma dan berfokus pada kebebasan",
         ],
       },
       {
-        question:
-          "Bagaimana seseorang bisa memberikan contoh baik dalam lingkungan masyarakat?",
+        question: "Mengapa pendidikan karakter harus diterapkan sejak dini?",
         correct_answer:
-          "Dengan bersikap jujur dan peduli terhadap orang sekitar",
+          "Untuk membentuk individu yang berpikir matang dan bertanggung jawab",
         incorrect_answer: [
-          "Dengan mengikuti semua keinginan orang lain",
-          "Dengan tidak terlibat dalam aktivitas sosial",
-          "Dengan menunjukkan kekuasaan yang dimiliki",
+          "Agar remaja bisa mendapat pekerjaan lebih cepat",
+          "Agar remaja bisa mengikuti semua kegiatan sosial",
+          "Untuk mengurangi stres remaja",
         ],
       },
       {
         question:
-          "Apa yang membuat generasi muda menjadi generasi berkualitas dan berintegritas?",
-        correct_answer: "Pendidikan karakter yang efektif",
+          "Apa yang dapat dilakukan oleh keluarga dalam mendukung pendidikan karakter?",
+        correct_answer: "Mengajarkan nilai moral dan sikap positif kepada anak",
         incorrect_answer: [
-          "Fokus pada nilai akademik",
-          "Keberhasilan finansial sejak dini",
-          "Memiliki hubungan sosial yang luas",
+          "Mengajarkan nilai-nilai akademik",
+          "Menyediakan fasilitas belajar yang lengkap",
+          "Mengajarkan keterampilan teknis",
         ],
       },
       {
         question:
-          "Jika Anda adalah seorang guru, bagaimana cara melibatkan siswa dalam kegiatan yang menumbuhkan karakter positif?",
+          "Bagaimana pendidikan karakter dapat berkontribusi pada masyarakat?",
         correct_answer:
-          "Mengadakan kegiatan gotong royong di lingkungan sekolah",
+          "Membantu menciptakan masyarakat yang lebih bertanggung jawab dan beretika",
         incorrect_answer: [
-          "Memberikan tugas rumah yang banyak",
-          "Memberikan ceramah moral setiap hari",
-          "Membatasi interaksi siswa di luar kelas",
+          "Membantu menciptakan individu yang sukses secara finansial",
+          "Membantu menciptakan masyarakat yang lebih kaya",
+          "Membantu menciptakan masyarakat yang lebih cepat beradaptasi dengan teknologi",
+        ],
+      },
+      {
+        question:
+          "Apa yang dimaksud dengan 'berpikir panjang dan matang' dalam konteks pendidikan karakter?",
+        correct_answer:
+          "Mempertimbangkan segala dampak dari tindakan sebelum mengambil keputusan",
+        incorrect_answer: [
+          "Berpikir hanya untuk kepentingan pribadi",
+          "Berpikir cepat tanpa pertimbangan",
+          "Berpikir hanya berdasarkan pendapat teman",
+        ],
+      },
+      {
+        question:
+          "Apa yang harus dilakukan oleh semua pihak untuk mendukung pendidikan karakter?",
+        correct_answer:
+          "Menerapkan pendidikan karakter di semua aspek kehidupan",
+        incorrect_answer: [
+          "Hanya mendukung melalui pendidikan formal",
+          "Mengandalkan sekolah sebagai satu-satunya tempat pendidikan karakter",
+          "Mengabaikan nilai moral dalam pendidikan",
+        ],
+      },
+      {
+        question:
+          "Apa yang dapat membantu remaja menghindari pengaruh buruk dalam pergaulan?",
+        correct_answer: "Memilih teman yang memiliki karakter baik dan positif",
+        incorrect_answer: [
+          "Mengikuti semua tren yang ada",
+          "Menghindari interaksi sosial sama sekali",
+          "Fokus hanya pada kesenangan pribadi",
+        ],
+      },
+      {
+        question: "Apa peran keluarga dalam pendidikan karakter?",
+        correct_answer: "Mengajarkan nilai-nilai moral dan norma-norma sosial",
+        incorrect_answer: [
+          "Menyediakan pendidikan formal",
+          "Memberikan banyak uang kepada anak",
+          "Menyediakan waktu luang sebanyak mungkin",
+        ],
+      },
+      {
+        question:
+          "Bagaimana pendidikan karakter dapat membantu remaja dalam hidup mereka?",
+        correct_answer:
+          "Membantu remaja menjadi lebih bijak dalam membuat keputusan dan berperilaku",
+        incorrect_answer: [
+          "Membantu remaja menjadi populer di kalangan teman-temannya",
+          "Membantu remaja menghindari pendidikan formal",
+          "Membantu remaja mencapai kesuksesan akademik secara instan",
+        ],
+      },
+      {
+        question:
+          "Mengapa penting untuk menciptakan individu dengan karakter yang baik?",
+        correct_answer:
+          "Agar mereka bisa berkontribusi positif bagi masyarakat dan negara",
+        incorrect_answer: [
+          "Agar mereka dapat beradaptasi dengan mudah dalam dunia digital",
+          "Agar mereka dapat bekerja keras tanpa mengenal lelah",
+          "Agar mereka bisa lebih kaya secara finansial",
         ],
       },
     ],
@@ -269,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const wpm = localStorage.getItem("readingSpeed");
       const nama = localStorage.getItem("nama") || "12"; // Default '12' jika null
       const absen = localStorage.getItem("absen") || "12"; // Default '12' jika null
-      const paket = localStorage.getItem("paket") || "1"; // Default '1' jika null
+      const paket = localStorage.getItem("paket") || "5"; // Default '1' jika null
 
       if (!wpm) {
         console.error(
@@ -322,14 +326,33 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("absen");
         });
 
+      if (wpm >= 175) {
+        kpmMessage =
+          "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
+      } else if (wpm >= 105 && wpm < 175) {
+        kpmMessage =
+          "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
+      } else {
+        kpmMessage =
+          "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
+      }
+
       // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
         title: "Hasil KEM",
-        html: `<div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
-        Kecepatan Membaca &nbsp;: <b>${wpm} WPM</b> <br>
-        Skor Quiz   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <b>${score}%</b> <br>
-        Hasil Akhir &nbsp;&nbsp;&ensp;&emsp;&emsp;&emsp;&emsp;: <b>${finalScore}</b>
-      </div>`,
+        html: `
+            <div style="text-align: justify; justify-content: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+              <span style="display: inline-block; width: 200px;">Nama</span>: <b>${nama}</b> <br>
+              <span style="display: inline-block; width: 200px;">Absen</span>: <b>${absen}</b> <br>
+              <span style="display: inline-block; width: 200px;">Kecepatan Membaca</span>: <b>${wpm} WPM</b> <br>
+              <span style="display: inline-block; width: 200px;">Skor Quiz</span>: <b>${score}%</b> <br>
+              <span style="display: inline-block; width: 200px;">Jumlah Soal Benar</span>: <b>${
+                score / CORRECT_BONUS
+              }</b> <br>
+              <span style="display: inline-block; width: 200px;">Hasil Akhir</span>: <b>${finalScore}</b> <br>
+              <br>
+              ${kpmMessage} <!-- Menambahkan pesan KPM -->
+            </div>`,
         icon: "success",
       }).finally(() => {
         window.location.href = "../index.html";
