@@ -108,16 +108,15 @@ function stopReading() {
     resultText +=
       " Kecepatan membaca Anda cukup baik. Pertahankan dan terus berlatih!";
   } else if (readingSpeed >= 200 && readingSpeed < 250) {
-    resultText +=
+    resultText += 
       " Kecepatan membaca Anda rata-rata. Bagus, terus tingkatkan!";
-  } else if (readingSpeed >= 240 && readingSpeed < 300) {
+  } else if (readingSpeed >= 250 && readingSpeed < 500) {
     resultText +=
-      " Kecepatan membaca Anda cukup baik. Bagus, terus tingkatkan!";
-  } else if (readingSpeed >= 300 && readingSpeed < 500) {
-    resultText += " Kecepatan membaca Anda baik. Luar biasa, pertahankan!";
+      " Kecepatan membaca Anda sangat baik. Luar biasa, pertahankan!";
   } else {
     resultText += " Kecepatan membaca Anda sangat baik. Hebat sekali!";
   }
+
 
   document.getElementById("popup-result").innerText = resultText;
   openPopup();
