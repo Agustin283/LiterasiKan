@@ -104,12 +104,12 @@ function stopReading() {
   if (readingSpeed < 110) {
     resultText +=
       " Kecepatan membaca Anda tidak cukup baik. Tetap semangat dalam berlatih membaca! :)";
-  } else if (readingSpeed >= 110 && readingSpeed < 200) {
+  } else if (readingSpeed >= 110 && readingSpeed < 199) {
     resultText +=
-      " Kecepatan membaca Anda tidak cukup baik. Ayo tingkatkan lagi!";
-  } else if (readingSpeed >= 200 && readingSpeed < 240) {
+      " Kecepatan membaca Anda cukup baik. Pertahankan dan terus berlatih!";
+  } else if (readingSpeed >= 200 && readingSpeed < 250) {
     resultText +=
-      " Kecepatan membaca Anda rata-rata. Pertahankan dan terus berlatih!";
+      " Kecepatan membaca Anda rata-rata. Bagus, terus tingkatkan!";
   } else if (readingSpeed >= 240 && readingSpeed < 300) {
     resultText +=
       " Kecepatan membaca Anda cukup baik. Bagus, terus tingkatkan!";
