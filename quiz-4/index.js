@@ -320,16 +320,17 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("absen");
         });
 
-      if (wpm >= 175) {
-        kpmMessage =
-          "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
-      } else if (wpm >= 105 && wpm < 175) {
-        kpmMessage =
-          "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
-      } else {
-        kpmMessage =
-          "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
-      }
+        if (finalScore >= 175) {
+          kpmMessage =
+            "Sesuai dengan Kriteria Ketuntasan Minimal (KKM) untuk siswa SMP, mencakup kecepatan dan pemahaman yang baik.";
+        } else if (finalScore >= 105 && finalScore < 175) {
+          kpmMessage =
+            "Memerlukan latihan intensif dan pengayaan kosakata untuk meningkatkan pemahaman serta KEM.";
+        } else {
+          kpmMessage =
+            "Membutuhkan dukungan berupa metode pengajaran inovatif dan motivasi tambahan.";
+        }
+  
 
       // Tampilkan popup SweetAlert setelah pengiriman data
       Swal.fire({
