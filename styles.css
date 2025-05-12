@@ -2,7 +2,7 @@
 
 /* Body Styling */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 body {
@@ -26,43 +26,16 @@ a {
   text-decoration: none;
 }
 
-.navbar-links a {
-  text-decoration: none;
-  color: white; /* Warna teks putih */
-  padding: 10px 20px; /* Padding lebih besar */
-  transition: color 0.3s, background-color 0.3s, padding 0.3s;
-  display: inline-block; /* Agar padding berfungsi dengan baik */
-}
-
-.navbar-links a:hover {
-  color: white; /* Tetap putih saat hover */
-  background-color: rgba(74, 108, 247, 0.8); /* Warna hover lebih terang */
-  border-radius: 5px; /* Sudut membulat untuk estetika */
-}
-
-.navbar-links a:visited {
-  color: white; /* Tetapkan tetap putih setelah link dikunjungi */
-}
-
-.brand h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: white;
-}
-.brand h1 span {
-  color: rgb(92, 158, 223);
-}
-
 /* Global Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* Menyamakan dengan guide-container dan card-container */
+  padding: 0 20px;
 }
 
 /* Navbar */
 .navbar {
-  background-color: rgba(74, 108, 247, 0.6); /* Transparan */
+  background-color: rgba(74, 108, 247, 0.6);
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
@@ -80,30 +53,87 @@ a {
   height: 60px;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+
+.brand h1 span {
+  color: rgb(92, 158, 223);
 }
 
 .navbar-links {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-links li {
   margin-left: 1.5rem;
-  cursor: pointer;
+  position: relative;
 }
 
-.navbar-links li:hover {
-  text-decoration: underline;
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  transition: color 0.3s, background-color 0.3s;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(74, 108, 247, 0.8);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  display: none;
+  z-index: 20;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.2s;
+  border-radius: 0;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+  color: #4a6cf7;
 }
 
 /* Hero Section */
 .hero {
   display: flex;
   align-items: center;
-  margin-top: 60px; /* Menyesuaikan dengan tinggi navbar */
+  margin-top: 60px;
   padding: 4rem 0;
 }
 
@@ -133,6 +163,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
 .hero-btn:hover {
@@ -151,20 +182,13 @@ a {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-/* Responsiveness */
-@media (max-width: 768px) {
-  .navbar-links {
-    display: none;
-  }
 
-  .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .text-content {
-    margin-bottom: 2rem;
-  }
+/* Guide Section */
+.guide-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
 }
 
 .guide-container {
@@ -182,6 +206,12 @@ a {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
 }
 
 .guide-card .icon {
@@ -217,13 +247,7 @@ a {
   color: #90be6d;
 }
 
-.guide-title {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  margin: 20px 0;
-}
-
+/* Card Section */
 .card-title {
   text-align: center;
   font-size: 24px;
@@ -231,17 +255,15 @@ a {
   margin: 20px 0;
 }
 
-/* Card Container Styling */
 .card-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Card Styling */
 .card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -249,6 +271,7 @@ a {
   overflow: hidden;
   transition: transform 0.3s;
   text-align: center;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -256,18 +279,18 @@ a {
 }
 
 .card-image {
-  width: 100%; /* Lebar penuh dari card */
-  aspect-ratio: 1 / 1; /* Pastikan area berbentuk kotak 1:1 */
+  width: 100%;
+  aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Potong bagian gambar yang keluar area */
+  overflow: hidden;
 }
 
 .card-image img {
-  width: 100%; /* Gambar mengikuti lebar card-image */
-  height: 100%; /* Gambar mengikuti tinggi card-image */
-  object-fit: cover; /* Memastikan gambar tetap proporsional dan memenuhi kotak */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-content {
@@ -285,30 +308,12 @@ a {
   color: #666;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .navbar-menu a {
-    font-size: 14px;
-  }
-
-  .card-content h3 {
-    font-size: 16px;
-  }
-
-  .card-content p {
-    font-size: 12px;
-  }
-}
-
-/* Footer Container */
+/* Footer */
 .footer {
   background-color: rgba(74, 108, 247, 0.6);
   padding: 30px 20px;
   border-top: 1px solid #ddd;
+  margin-top: 40px;
 }
 
 .footer-container {
@@ -319,12 +324,10 @@ a {
   margin: 0 auto;
 }
 
-/* Footer Column */
 .footer-col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #333;
 }
 
 .footer-col h3 {
@@ -333,7 +336,6 @@ a {
   color: white;
 }
 
-/* Kolom 1 - Brand */
 .footer-col .brand h1 {
   text-transform: uppercase;
   color: white;
@@ -344,7 +346,7 @@ a {
   color: rgb(92, 158, 223);
 }
 
-.footer-email {
+.footer-email, .footer-address {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -357,7 +359,11 @@ a {
   color: #ff6f00;
 }
 
-/* Kolom 2 - Pages */
+.icon-address {
+  font-size: 1.2rem;
+  color: #277da1;
+}
+
 .footer-links {
   list-style: none;
   padding: 0;
@@ -372,34 +378,20 @@ a {
   text-decoration: none;
   color: white;
   font-size: 0.95rem;
-  cursor: pointer;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
 }
 
-/* Kolom 3 - Address */
-.footer-address {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
-  color: white;
-}
-
-.icon-address {
-  font-size: 1.2rem;
-  color: #277da1;
-}
-
+/* Reading Page */
 .reading-page {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 80px auto 40px;
   text-align: center;
 }
 
@@ -411,13 +403,7 @@ a {
   color: #333;
 }
 
-.card-title {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  margin: 20px 0;
-}
-
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -440,6 +426,7 @@ table th {
   background-color: #f2f2f2;
 }
 
+/* Explanation Section */
 .explanation {
   margin-top: 30px;
   text-align: left;
@@ -456,6 +443,7 @@ table th {
   margin-bottom: 10px;
 }
 
+/* Animations */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -498,4 +486,36 @@ table th {
 
 .hero-btn.tilt-shake {
   animation: tilt-shake 1s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 12px;
+  }
+  
+  .brand h1 {
+    font-size: 2rem;
+  }
 }

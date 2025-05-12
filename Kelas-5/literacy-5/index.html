@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Penidikan Karakter</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/36/f3/c8/36f3c844dd9e3c261eca7dc805fd32d5.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Pendidikan Karakter</p>
+        <div class="paragraph">
+          <p id="text">
+            Cuci tangan dengan sabun adalah kebiasaan sederhana yang memiliki
+            dampak besar bagi kesehatan. Tangan kita sering bersentuhan dengan
+            berbagai benda yang dapat menjadi tempat berkembangnya kuman dan
+            bakteri, seperti gagang pintu, meja, dan uang. Kuman-kuman ini bisa
+            masuk ke tubuh jika kita tidak mencuci tangan dengan benar, terutama
+            melalui makanan yang kita konsumsi atau saat kita menyentuh wajah.
+            Hal ini bisa menyebabkan berbagai penyakit, mulai dari diare, flu,
+            hingga infeksi saluran pernapasan. Oleh karena itu, mencuci tangan
+            adalah langkah pertama yang sangat penting dalam menjaga kesehatan
+            tubuh.
+          </p>
+
+          <p id="text">
+            Mencuci tangan dengan sabun lebih efektif daripada hanya menggunakan
+            air. Sabun mengandung bahan yang dapat memecah lapisan minyak pada
+            kulit tangan, yang sering menjadi tempat bagi kuman dan bakteri
+            untuk menempel. Ketika kita mencuci tangan dengan sabun, kuman-kuman
+            tersebut akan terangkat dan mati, sehingga tangan kita menjadi
+            bersih dan aman dari potensi penyebaran penyakit. Sabun bekerja
+            dengan cara mengikat dan menghilangkan kuman yang menempel di kulit,
+            sehingga kuman tidak dapat menempel lagi setelah tangan dibilas
+            dengan air bersih.
+          </p>
+
+          <p id="text">
+            Ada lima waktu penting yang harus diperhatikan untuk mencuci tangan
+            dengan sabun. Waktu pertama adalah sebelum makan. Ini sangat penting
+            karena tangan kita seringkali menyentuh benda-benda yang tidak
+            bersih, dan saat kita makan, kuman-kuman tersebut bisa masuk ke
+            tubuh melalui makanan. Kedua, setelah menggunakan toilet. Toilet
+            adalah tempat yang penuh dengan kuman, dan mencuci tangan setelah
+            menggunakannya dapat mencegah penyebaran bakteri.
+          </p>
+
+          <p id="text">
+            Ketiga, setelah memegang hewan peliharaan. Hewan peliharaan bisa
+            membawa kuman dan bakteri dari luar, sehingga perlu mencuci tangan
+            setelah bermain atau memegangnya. Keempat, setelah batuk atau
+            bersin. Virus dan bakteri sering kali terkandung dalam percikan air
+            liur saat batuk atau bersin, dan dapat menyebar ke tangan jika kita
+            tidak mencucinya. Kelima, setelah bermain di luar rumah. Di luar
+            rumah, tangan kita bisa bersentuhan dengan banyak benda yang
+            terkontaminasi kuman, jadi penting untuk mencucinya setelah bermain
+            di luar.
+          </p>
+
+          <p id="text">
+            Cara mencuci tangan yang benar melibatkan enam langkah. Pertama,
+            basahi tangan dengan air bersih. Kedua, gunakan sabun dan gosok
+            telapak tangan. Ketiga, gosok punggung tangan dan sela-sela jari.
+            Keempat, bersihkan bagian kuku dan ujung jari. Kelima, bilas dengan
+            air bersih. Terakhir, keringkan tangan dengan handuk atau tisu
+            bersih. Proses ini sebaiknya dilakukan selama 20 detik untuk
+            memastikan kuman benar-benar hilang.
+          </p>
+
+          <p id="text">
+            Selain mencegah penyakit, mencuci tangan dengan sabun juga mendukung
+            gaya hidup sehat. Kebiasaan ini mudah diterapkan di rumah, sekolah,
+            maupun tempat kerja. Bahkan, Organisasi Kesehatan Dunia (WHO)
+            mendorong masyarakat di seluruh dunia untuk rutin mencuci tangan
+            sebagai bagian dari pencegahan penyakit menular. Dengan membiasakan
+            diri mencuci tangan secara rutin, kita tidak hanya melindungi diri
+            sendiri tetapi juga orang-orang di sekitar kita dari ancaman
+            penyakit.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

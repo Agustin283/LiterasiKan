@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Kesehatan Mental</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/12/8e/4c/128e4c63241e0839464487d355916462.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kesehatan Mental</p>
+        <div class="paragraph">
+          <p id="text">
+            Kompas magnetik adalah alat sederhana yang telah digunakan manusia
+            selama berabad-abad untuk menentukan arah. Alat ini sangat berguna,
+            terutama bagi para pelaut, pendaki gunung, dan penjelajah, karena
+            dapat membantu mereka menemukan arah meskipun berada di tempat
+            terpencil tanpa petunjuk jalan. Cara kerja kompas magnetik
+            didasarkan pada prinsip magnetisme bumi, yang menjadi dasar bagi
+            fungsi alat ini.
+          </p>
+
+          <p id="text">
+            Bumi memiliki inti yang mengandung besi cair, yang menciptakan medan
+            magnet alami. Medan magnet ini mengalir dari kutub selatan ke kutub
+            utara, membentuk garis-garis medan magnet bumi yang dapat diikuti
+            oleh jarum kompas. Jarum kompas, yang terbuat dari bahan magnetik,
+            akan bergerak mengikuti medan magnet bumi. Ketika kompas diletakkan
+            pada permukaan datar dan stabil, jarumnya akan berputar hingga
+            sejajar dengan medan magnet bumi.
+          </p>
+
+          <p id="text">
+            Jarum kompas biasanya memiliki ujung berwarna merah, yang menandakan
+            arah utara. Dengan demikian, ketika kompas digunakan, ujung merah
+            akan menunjuk ke arah utara magnetik, sementara ujung lainnya akan
+            menunjukkan arah selatan. Dengan cara ini, kita dapat dengan mudah
+            mengetahui arah utara, selatan, timur, dan barat. Namun, perlu
+            diketahui bahwa ada perbedaan antara utara magnetik dan utara
+            geografis. Utara geografis adalah titik tetap di permukaan bumi, di
+            mana semua garis bujur bertemu. Sementara itu, utara magnetik adalah
+            titik di belahan utara bumi di mana medan magnet bumi paling kuat.
+          </p>
+
+          <p id="text">
+            Karena perbedaan ini, pengguna kompas harus memperhitungkan
+            deklinasi magnetik, yaitu sudut antara utara magnetik dan utara
+            geografis. Deklinasi ini bervariasi di berbagai lokasi di bumi,
+            sehingga penting bagi pengguna kompas untuk mengetahui nilai
+            deklinasi di daerah yang mereka jelajahi.
+          </p>
+
+          <p id="text">
+            Penggunaan kompas sangat sederhana. Cukup pegang kompas dengan rata
+            dan tunggu hingga jarumnya berhenti bergerak. Setelah itu, arah
+            utara, selatan, timur, dan barat akan teridentifikasi dengan jelas.
+            Kompas magnetik adalah contoh bagaimana teknologi yang sederhana,
+            yang didasarkan pada prinsip fisika dasar, dapat membantu manusia
+            dalam kehidupan sehari-hari.
+          </p>
+
+          <p id="text">
+            Meskipun teknologi modern seperti GPS telah menggantikan kompas
+            dalam banyak situasi, kompas tetap memiliki peranan penting,
+            terutama di tempat-tempat yang tidak memiliki sinyal atau daya
+            listrik. Alat ini juga mengajarkan kita pentingnya memahami alam dan
+            memanfaatkan prinsip-prinsip dasar ilmu pengetahuan untuk memecahkan
+            berbagai masalah yang kita hadapi.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-4/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

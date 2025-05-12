@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Dampak Pergaulan Bebas</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/35/0e/9a/350e9a860c9ad32d9a8559aeecbe4930.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Pergaulan Bebas</p>
+        <div class="paragraph">
+          <p id="text">
+            Pergaulan bebas memengaruhi banyak remaja. Gengsi, rasa ingin tahu,
+            dan teknologi sering jadi pemicu utama. Remaja sering tidak
+            memikirkan akibat buruknya. Orang tua penting mengawasi anak dengan
+            baik. Mereka harus mengajari anak menggunakan internet secara bijak.
+            Salah memilih teman juga menjadi faktor utama remaja terjerumus.
+            Banyak remaja yang ingin diterima tanpa memikirkan dampaknya. Oleh
+            sebab itu, remaja harus memilih teman yang baik. Remaja juga perlu
+            mengikuti aturan agama dan hukum. Berpikir matang dan bertanggung
+            jawab bisa menghindarkan pergaulan bebas. Orang tua, guru, dan
+            masyarakat harus memberi pendidikan yang baik. Semua pihak harus
+            bekerja sama menciptakan masa depan yang lebih baik.
+          </p>
+          <p id="text">
+            Selain itu, pendidikan moral di lingkungan keluarga sangat penting.
+            Orang tua sebaiknya menjadi panutan dengan menunjukkan sikap positif
+            yang dapat ditiru anak. Misalnya, membangun komunikasi yang terbuka
+            sehingga anak merasa nyaman untuk berbagi masalah atau pengalaman
+            mereka. Di sekolah, guru dapat memperkuat pendidikan karakter dengan
+            memberikan pemahaman mengenai pentingnya menjaga nilai-nilai moral
+            dan etika dalam kehidupan sehari-hari. Lingkungan masyarakat juga
+            berperan besar. Komunitas yang sehat dapat mencegah remaja dari
+            perilaku yang menyimpang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-1/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

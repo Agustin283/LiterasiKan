@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Tema Kesehatan dan Kebersihan</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/0b/e1/13/0be1136b92422d71018b31deb66ff55e.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Pentingnya Menjaga Kebersihan Lingkungan</p>
+        <div class="paragraph">
+          <p id="text">
+            Kebersihan lingkungan merupakan hal yang tak terpisahkan dari
+            kehidupan manusia. Bayangkan, jika lingkungan yang kita tempati kita
+            kotor, dipenuhi oleh banyak sampah, dan berbau tak sedap. Bagaimana
+            rasanya? Tentu saja, kita tidak akan merasa nyaman dan tidak sehat.
+            Lingkungan yang sehat menjadi kunci utama untuk hidup bahagia dan
+            sejahtera bagi kita semua.
+          </p>
+          <p id="text">
+            Dengan lingkungan yang bersih, kita tidak akan mudah terserang
+            berbagai penyakit seperti demam berdarah, malaria, muntaber, dan
+            lainnya. Nyamuk, lalat, dan tikus yang menjadi pembawa penyakit akan
+            sulit untuk berkembang biak di lingkungan yang bersih. Bayangkan,
+            jika kita tinggal di lingkungan yang kumuh, dipenuhi oleh sampah,
+            dan banyak genangan air, maka tubuh kita akan lebih rentan terkena
+            penyakit.
+          </p>
+          <p id="text">
+            Tidak hanya di bidang kesehatan, kebersihan lingkungan juga sangat
+            berpengaruh terhadap kenyamanan, keindahan, dan keasrian lingkungan
+            yang nantinya bermuara pada kedamaian. Bayangkan, jika lingkungan
+            kita bersih, tertata rapi, dan dipenuhi tanaman hijau, pasti akan
+            terasa lebih nyaman, indah, dan damai. Kita akan merasa betah berada
+            di lingkungan tersebut, dan suasana hati pun akan lebih tenang.
+          </p>
+          <p id="text">
+            Semua ini dapat kita raih dengan melakukan perbuatan kecil dan
+            sederhana, mulai dari menjaga kebersihan lingkungan di sekitar kita.
+            Mulailah dari diri sendiri, jangan membuang sampah sembarangan.
+            Ingat, sampah yang berserakan di jalan, di sungai, atau di taman
+            akan mencemari lingkungan dan mengganggu keindahannya.
+          </p>
+          <p id="text">
+            Salah satu faktor penyebab banjir di Indonesia adalah banyaknya
+            tumpukan sampah yang menyumbat saluran air. Jika kita membuang
+            sampah pada tempatnya, saluran air akan lancar dan terhindar dari
+            banjir. Bayangkan, jika rumah kita terendam banjir akibat tumpukan
+            sampah, pasti akan sangat merepotkan dan merugikan. Kita harus tahu
+            tentang manfaat menjaga kebersihan lingkungan, karena menjaga
+            kebersihan lingkungan sangatlah berguna untuk kita semua karena
+            dapat menciptakan kehidupan yang aman, bersih, sejuk, dan sehat.
+          </p>
+          <p id="text">
+            Selain manfaat di atas, hal yang tidak kalah penting adalah menanam
+            tanaman. Tanaman mempunyai banyak fungsi yaitu sebagai penyaring
+            debu, penyimpan air tanah, penyejuk, dan pendingin alami. Bayangkan,
+            jika di sekitar rumah kita banyak ditanami pohon, udara akan terasa
+            lebih segar dan sejuk. Selain itu, tanaman juga dapat dijadikan
+            sebagai taman yang akan memberikan suasana asri dan indah lingkungan
+            sekitar kita. Dengan adanya pohon yang rindang, taman yang asri,
+            otomatis kita akan menjadi nyaman dan betah di rumah maupun di
+            kantor dalam melaksanakan tugas sehari-hari.
+          </p>
+          <p id="text">
+            Mari kita bersama-sama menjaga kebersihan lingkungan, mulai dari
+            hal-hal kecil. Dengan menjaga kebersihan lingkungan, kita telah
+            menciptakan kehidupan yang lebih sehat, nyaman, dan damai.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

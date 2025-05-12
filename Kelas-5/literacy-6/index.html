@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Makanan Sehat</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/d8/8d/8c/d88d8c56495c976f6ac90b8944223b72.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Makanan Sehat</p>
+        <div class="paragraph">
+          <p id="text">
+            Tsunami adalah gelombang besar yang terjadi di laut akibat adanya
+            gangguan di dasar laut, seperti gempa bumi, letusan gunung berapi,
+            atau tanah longsor bawah laut. Kata “tsunami” berasal dari bahasa
+            Jepang yang berarti “gelombang pelabuhan”. Tsunami sering kali
+            datang tanpa peringatan dan memiliki kekuatan yang sangat besar,
+            sehingga dapat menyebabkan kerusakan hebat di daerah pesisir.
+          </p>
+
+          <p id="text">
+            Penyebab utama tsunami adalah gempa bumi bawah laut yang memiliki
+            kekuatan besar, biasanya lebih dari 7 skala Richter. Ketika
+            lempeng-lempeng bumi di dasar laut bergerak dan bertabrakan, energi
+            yang dihasilkan dapat memicu pergeseran besar di dasar laut.
+            Pergeseran ini menyebabkan air di atasnya bergerak, menciptakan
+            gelombang raksasa yang merambat dengan kecepatan tinggi. Gelombang
+            tersebut bisa menjalar ribuan kilometer tanpa kehilangan kekuatan
+            yang signifikan, sehingga ketika mencapai pantai, tsunami dapat
+            menghancurkan apa saja yang ada di jalurnya.
+          </p>
+
+          <p id="text">
+            Selain gempa bumi, letusan gunung berapi bawah laut juga bisa
+            menyebabkan tsunami. Letusan ini mengeluarkan sejumlah besar energi
+            dan material yang memindahkan air di sekitar gunung berapi,
+            menciptakan gelombang besar yang bisa menghancurkan daerah pesisir.
+            Tanah longsor bawah laut juga berpotensi menyebabkan tsunami dengan
+            cara yang mirip, yaitu memindahkan sejumlah besar air dalam waktu
+            singkat.
+          </p>
+
+          <p id="text">
+            Tsunami memiliki dampak yang sangat merusak. Gelombang yang besar
+            dapat menghancurkan bangunan, jalan, dan infrastruktur lainnya di
+            daerah pesisir. Selain itu, tsunami sering kali menimbulkan banyak
+            korban jiwa karena kekuatannya yang sangat besar. Air laut yang
+            tersisa setelah tsunami juga dapat mencemari sumur dan sumber air
+            bersih, yang berpotensi menyebabkan wabah penyakit. Karena itu,
+            persiapan dan kewaspadaan sangat penting untuk mengurangi dampak
+            bencana ini.
+          </p>
+
+          <p id="text">
+            Untuk mengurangi dampak tsunami, penting bagi masyarakat yang
+            tinggal di daerah pesisir untuk memahami tanda-tanda awal tsunami.
+            Salah satu tanda yang paling umum adalah surutnya air laut secara
+            tiba-tiba sebelum gelombang besar datang. Jika tanda ini terlihat,
+            orang-orang harus segera mencari tempat yang lebih tinggi untuk
+            berlindung. Selain itu, pemerintah juga harus memasang sistem
+            peringatan dini tsunami yang dapat mendeteksi aktivitas gempa bumi
+            bawah laut dan memberi tahu masyarakat untuk mengungsi lebih awal.
+          </p>
+
+          <p id="text">
+            Kesadaran dan persiapan adalah kunci dalam menghadapi bencana
+            tsunami. Dengan memahami penyebab dan dampaknya, serta mempersiapkan
+            langkah-langkah pencegahan, kita dapat meminimalkan kerugian yang
+            ditimbulkan oleh bencana ini. Tsunami memang tidak bisa dicegah,
+            tetapi dampaknya dapat dikurangi jika kita semua waspada dan siap.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

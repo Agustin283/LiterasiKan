@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Kecerdasan Buatan atau AI</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/c6/3e/07/c63e070316d4802f5e0ae119c4e8922b.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kecerdasan Buatan</p>
+        <div class="paragraph">
+          <p id="text">
+            Kecerdasan buatan (AI) berkembang pesat dan digunakan di banyak
+            bidang. Contohnya adalah asisten digital, kesehatan, dan keuangan.
+            AI membantu menyelesaikan tugas rumit, seperti mendiagnosis
+            penyakit. Teknologi ini juga mempermudah memeriksa data pasar yang
+            kompleks. Dalam hidup sehari-hari, AI membantu mengatur jadwal lebih
+            efisien dan tepat. Namun, AI menimbulkan tantangan, seperti
+            hilangnya pekerjaan akibat mesin. Masalah lain adalah salah
+            penggunaan teknologi yang merugikan. Kita perlu mengelola
+            perkembangan AI secara bijak. Pemerintah harus membuat aturan yang
+            jelas dan tegas. Masyarakat juga perlu memahami cara memakai AI
+            dengan baik dan benar. Kita harus siap belajar keterampilan baru
+            untuk masa depan yang lebih baik.
+          </p>
+          <p id="text">
+            Selain itu, AI memiliki potensi besar untuk meningkatkan
+            produktivitas di berbagai sektor. Dalam dunia pendidikan, AI dapat
+            digunakan untuk menciptakan sistem pembelajaran yang lebih personal
+            dan adaptif sesuai kebutuhan siswa. Di bidang pertanian, AI membantu
+            petani memantau kondisi tanah dan cuaca secara lebih akurat,
+            sehingga hasil panen bisa lebih maksimal. Pada saat yang sama, AI
+            juga mendorong inovasi dalam industri transportasi, seperti
+            kendaraan otonom yang lebih aman dan efisien.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
