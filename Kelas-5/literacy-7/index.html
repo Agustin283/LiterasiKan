@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: PAHLAWAN NASIONAL</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/51/07/87/510787c182e23f58ca711b62d4d652b4.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Perjuangan RA Kartini: Cahaya Perempuan Indonesia</p>
+        <div class="paragraph">
+          <p id="text">
+            Raden Adjeng Kartini adalah salah satu tokoh penting dalam sejarah
+            Indonesia yang dikenal sebagai pelopor emansipasi wanita. Lahir pada
+            21 April 1879 di Jepara, Jawa Tengah, Kartini berasal dari keluarga
+            bangsawan. Sebagai anak dari seorang bupati, ia mendapatkan
+            kesempatan yang tidak biasa bagi kebanyakan perempuan pada masa itu,
+            yaitu kesempatan untuk mengenyam pendidikan. Meskipun hidup di
+            tengah keterbatasan bagi perempuan, Kartini memiliki semangat dan
+            pemikiran maju dalam memperjuangkan hak-hak perempuan, terutama
+            dalam hal pendidikan.
+          </p>
+
+          <p id="text">
+            Kartini mendapat kesempatan untuk belajar di sekolah Belanda, yaitu
+            ELS (Europese Lagere School), yang memberikan pendidikan formal
+            kepada anak-anak bangsawan. Di sekolah ini, Kartini belajar membaca,
+            menulis, dan berbicara dalam bahasa Belanda. Sayangnya, pada usia 12
+            tahun, tradisi pingitan yang berlaku pada gadis-gadis bangsawan
+            mengharuskannya berhenti sekolah. Namun, meskipun terbatas oleh
+            tradisi, Kartini tidak menyerah dalam mencari ilmu. Ia terus
+            berusaha belajar melalui buku, surat kabar, dan majalah berbahasa
+            Belanda. Dari bacaan-bacaan ini, Kartini memperluas wawasannya
+            tentang kesetaraan gender dan hak-hak perempuan.
+          </p>
+
+          <p id="text">
+            Kartini sangat prihatin dengan kondisi perempuan di zamannya yang
+            sering kali tidak diberi kesempatan untuk menuntut ilmu dan
+            berkembang. Dalam surat-suratnya yang ditulis kepada sahabat pena di
+            Belanda, Kartini mengungkapkan keinginannya agar perempuan Indonesia
+            memiliki akses yang sama terhadap pendidikan. Ia berjuang agar
+            perempuan tidak hanya menjadi sosok yang terbelenggu oleh tradisi,
+            tetapi juga dapat berpartisipasi aktif dalam masyarakat. Dalam
+            surat-suratnya, Kartini juga menulis tentang pentingnya kebebasan
+            bagi perempuan untuk memilih jalan hidupnya sendiri.
+          </p>
+
+          <p id="text">
+            Surat-surat ini kemudian diterbitkan dalam sebuah buku berjudul
+            <em>Habis Gelap Terbitlah Terang</em>, yang menjadi salah satu karya
+            penting dalam perjuangan emansipasi wanita di Indonesia.
+          </p>
+
+          <p id="text">
+            Selain melalui tulisan, perjuangan Kartini juga diwujudkan dalam
+            tindakan nyata. Ia mendirikan sekolah untuk anak-anak perempuan di
+            rumahnya. Sekolah ini bertujuan untuk memberikan pendidikan dasar
+            kepada perempuan, termasuk keterampilan membaca, menulis, dan ilmu
+            pengetahuan lainnya yang berguna untuk kehidupan. Melalui sekolah
+            ini, Kartini berharap perempuan Indonesia dapat bangkit dari
+            keterbelakangan dan menjadi lebih mandiri.
+          </p>
+
+          <p id="text">
+            Sayangnya, perjuangan Kartini harus berhenti lebih cepat. Ia
+            meninggal dunia pada usia yang masih sangat muda, yaitu 25 tahun,
+            tepatnya pada 17 September 1904, setelah melahirkan anak pertamanya.
+            Meskipun hidupnya singkat, semangat, dan pemikiran Kartini terus
+            dikenang hingga kini. Pemerintah Indonesia menetapkan tanggal 21
+            April, yang merupakan hari kelahirannya, sebagai Hari Kartini untuk
+            menghormati perjuangannya dalam memperjuangkan hak-hak perempuan dan
+            emansipasi wanita di Indonesia.
+          </p>
+
+          <p id="text">
+            Kartini adalah sosok yang menginspirasi banyak perempuan Indonesia
+            untuk berani bermimpi dan mengejar pendidikan. Semangatnya adalah
+            bukti bahwa perubahan besar dapat dimulai dari langkah kecil.
+            Kartini telah menyalakan cahaya bagi perempuan Indonesia untuk
+            keluar dari kegelapan menuju masa depan yang lebih terang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

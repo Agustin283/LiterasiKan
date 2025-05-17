@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Kancil, Semut, dan Cicak Badung</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/5a/1c/4f/5a1c4fbea284a6e9fbc86939bcf28f86.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kancil, Semut, dan Cicak Badung</p>
+        <div class="paragraph">
+          <p id="text">
+            Di sebuah hutan tinggallah seekor kancil bersama dengan sekelompok
+            semut. Mereka berteman sangatlah baik. Suatu hari ketika kancil dan
+            sekelompok semut sedang bermain di tepian sungai, mereka melihat ada
+            sebuah pohon apel yang buahnya terlihat matang. Dengan segera kancil
+            menghampiri pohon apel dan menyundul buah apelnya agar berjatuhan.
+            Para semut bergotong royong membawa buah apel tersebut ke tempat
+            yang nyaman untuk beristirahat.
+            <br /><br />
+            Ketika mereka sedang asyik menikmati buah apel hasil buruan, datang
+            seekor cicak yang mengambil buah apel yang belum dimakan. Ternyata
+            aksi tersebut terlihat oleh beberapa semut hingga salah satu dari
+            mereka berteriak, “Pencuri! Pencuri! Ada pencuri!”. Mendengar
+            teriakan itu, kancil terkejut bukan main. Ia mencari tahu siapa
+            pencuri yang dimaksud dan ternyata pencurinya adalah cicak badung
+            yang selalu membuat ulah. Salah satu kawanan semut mulai berbicara,
+            “Kancil, bagaimana ini? Besok ia pasti akan datang lagi untuk
+            mencuri hasil buruan kita.” Kancil menjawab lantang, “Sudah, kalian
+            tak perlu bersedih lagi. Aku punya cara untuk membuat cicak badung
+            jera dengan perbuatannya.”
+            <br /><br />
+            Kancil mengungkapkan rencananya kepada semut yaitu mengganti buah
+            apel dengan makanan lain yang berwarna merah, yaitu cabai. Semut
+            setuju dengan rencana kancil, dan keesokan harinya mereka mencari
+            pohon cabai merah di hutan, lalu memetiknya. Cabai hasil buruannya
+            dibawa ke tempat mereka beristirahat.
+          </p>
+
+          <p id="text">
+            Cicak badung datang menghampiri tempat kawanan semut dan diam-diam
+            mengambil benda berwarna merah yang terletak di pinggir. Setelah
+            cicak mengambilnya, terdengar suara beberapa semut yang tertawa.
+            Cicak sebenarnya menyadari keanehan tersebut, tapi ia tak ingin
+            ambil pusing. Di tempatnya, ia langsung menyantap cabai merah itu
+            dengan puas, lalu ketiduran karena kekenyangan.
+            <br /><br />
+            Esoknya, cicak yang penasaran berusaha mencari tahu mengapa semut
+            tertawa ketika makanannya diambil. Cicak pun mencari tempat yang
+            aman untuk menguping. Di pertengahan hari, semut membuka pembicaraan
+            kepada kancil, “Cil, sepertinya rencana kita berhasil. Cicak pasti
+            sekarang kepedasan setelah memakan cabai merah yang dicurinya
+            kemarin.” Mereka pun tertawa terbahak-bahak.
+            <br /><br />
+            Mendengar hal tersebut, cicak merasa tertipu. Namun sebelum cicak
+            pergi dari tempatnya menguping, kancil memberi tahu bahwa kemarin
+            dirinya menukar cabai dengan buah stroberi. Kancil menjelaskan
+            alasannya. “Aku sengaja menggantinya karena aku rasa cicak akan
+            mencuri lagi jika ia sadar yang diambilnya adalah cabai merah.
+            Karena itu aku menukar dengan stroberi agar cicak tidak datang ke
+            sini lagi. Besok aku akan menemui cicak dan membawakannya satu
+            keranjang buah stroberi sekaligus memintanya untuk tidak mencuri
+            makanan kita lagi.”
+            <br /><br />
+            Mendengar hal tersebut, semut pun mengangguk tanda setuju. Cicak
+            yang menguping pun menangis mendengar pembicaraan kancil dan para
+            semut.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-1/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Perlunya Kesadaran Lingkungan dalam Pendidikan Global
+        untuk Generasi Mendatang
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/86/e2/b0/86e2b0c96194eabe70767d3957a6499c.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>
+          Perlunya Kesadaran Lingkungan dalam Pendidikan Global untuk Generasi
+          Mendatang
+        </p>
+        <div class="paragraph">
+          <p id="text">
+            Kesadaran lingkungan telah menjadi isu penting dalam pendidikan
+            global saat ini. Dengan meningkatnya tantangan yang dihadapi planet
+            kita, seperti perubahan iklim, pencemaran, dan hilangnya
+            keanekaragaman hayati, penting bagi generasi mendatang untuk
+            memahami dan mengatasi masalah ini. Pendidikan lingkungan tidak
+            hanya memberikan pengetahuan, tetapi juga membentuk sikap dan
+            perilaku yang mendukung kesejahteraan.
+          </p>
+
+          <p id="text">
+            Di banyak negara, kurikulum pendidikan mulai memasukkan materi
+            tentang lingkungan. Misalnya, di Finlandia, pendidikan lingkungan
+            diajarkan sejak usia dini, dengan fokus pada pengalaman langsung di
+            alam. Siswa diajak untuk memahami ekosistem lokal mereka dan dampak
+            tindakan manusia terhadap lingkungan. Data menunjukkan bahwa siswa
+            yang terlibat dalam pendidikan lingkungan cenderung lebih peduli dan
+            aktif dalam isu-isu lingkungan di masyarakat mereka.
+          </p>
+
+          <p id="text">
+            Pendidikan lingkungan juga berperan dalam membangun keterampilan
+            penting yang diperlukan untuk menghadapi tantangan global. Siswa
+            mengajar untuk menganalisis informasi, berpikir kritis tentang
+            sumber daya alam, dan menyebarkan dampak dari pilihan yang mereka
+            buat. Misalnya, melalui proyek-proyek berbasis komunitas, siswa
+            dapat belajar tentang pengelolaan limbah dan cara-cara untuk
+            mengurangi jejak karbon mereka. Hal ini tidak hanya meningkatkan
+            pemahaman mereka tentang isu-isu lingkungan tetapi juga mendorong
+            tindakan nyata.
+          </p>
+
+          <p id="text">
+            Namun, tantangan tetap ada. Banyak sekolah yang masih kekurangan
+            sumber daya untuk mengimplementasikan program pendidikan lingkungan
+            secara efektif. Selain itu, ada kebutuhan untuk melibatkan orang tua
+            dan masyarakat dalam proses pendidikan ini. Kesadaran lingkungan
+            harus menjadi tanggung jawab bersama agar dapat mencapai dampak yang
+            lebih luas.
+          </p>
+
+          <p id="text">
+            Salah satu pendekatan yang dapat diterapkan adalah integrasi
+            pendidikan lingkungan ke dalam berbagai mata pelajaran. Misalnya,
+            pelajaran sains dapat mengajarkan tentang ekosistem dan siklus
+            udara, sedangkan pelajaran sosial dapat membahas dampak sosial dari
+            perubahan iklim dan pencemaran. Dengan cara ini, siswa tidak hanya
+            mempelajari teori tetapi juga melihat relevansinya dalam kehidupan
+            sehari-hari. Integrasi ini akan membantu siswa memahami hubungan
+            antara berbagai disiplin ilmu dan isu-isu lingkungan. Selain itu,
+            penggunaan teknologi juga dapat meningkatkan efektivitas pendidikan
+            lingkungan. Dengan adanya teknologi informasi dan komunikasi (TIK),
+            siswa dapat mengakses informasi terbaru tentang isu-isu lingkungan
+            dari seluruh dunia. Mereka juga dapat berpartisipasi dalam proyek
+            kolaboratif dengan sekolah-sekolah lain di negara berbeda melalui
+            platform online. Ini akan memperluas wawasan mereka dan memberikan
+            perspektif global mengenai tantangan yang dihadapi planet kita.
+          </p>
+
+          <p id="text">
+            Pentingnya kesadaran lingkungan juga harus ditekankan dalam konteks
+            budaya lokal. Setiap daerah mempunyai tantangan lingkungan yang
+            unik, sehingga pendidikan harus disesuaikan dengan kondisi lokal.
+            Misalnya, di daerah pesisir, siswa bisa belajar tentang dampak
+            perubahan iklim terhadap ekosistem laut dan bagaimana menjaga
+            kelestariannya. Dengan memahami konteks lokal mereka, siswa akan
+            lebih termotivasi untuk terlibat aktif dalam upaya pelestarian
+            lingkungan.
+          </p>
+
+          <p id="text">
+            Sebagai penutup, kesadaran lingkungan dalam pendidikan global sangat
+            penting untuk menciptakan generasi yang peduli terhadap planet
+            mereka. Dengan memberikan pengetahuan dan keterampilan yang
+            diperlukan, kita dapat membekali siswa untuk menjadi pemimpin masa
+            depan yang mampu menghadapi tantangan lingkungan. Melalui kolaborasi
+            antara sekolah, orang tua, dan masyarakat, kita dapat memastikan
+            bahwa generasi mendatang memiliki kesadaran dan komitmen yang kuat
+            terhadap kebencian terhadap lingkungan.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-4/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

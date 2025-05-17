@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Globalisasi dan Lingkungan: Dua Sisi Mata Uang
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/b5/05/fe/b505feafe5abf070746bad26c4bc7a3e.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Globalisasi dan Lingkungan: Dua Sisi Mata Uang</p>
+        <div class="paragraph">
+          <p class="text">
+            Globalisasi, merupakan proses yang semakin mempererat berinteraksi
+            antarnegara dalam berbagai aspek kehidupan, telah membawakan dampak
+            yang signifikan terhadap lingkungan. Dalam satu sisi, globalisasi
+            menawarkan peluangnya bagaimana mengatasi permasalahan lingkungan
+            melalui kolaborasi internasional dan mengakses terhadap teknologi
+            yang lebih ramah lingkungan. Tetapi di sisi lain, globalisasi juga
+            menjadikannya pendorong utama dari berbagai permasalahan
+            lingkungannya yang semakin kompleks dan mendesak. Salah satunya
+            dampak positif globalisasi terhadap lingkungan merupakan peningkatan
+            kesadaran global terhadap isu-isu lingkungan. Melalui media bahkan
+            internet, informasi mengenai perubahan iklim, kerusakan hutan, serta
+            polusi dapat tersebar dengan cepat ke seluruh dunia. Hal ini
+            mendorong terbentuknya berbagai gerakan lingkungan internasional dan
+            perjanjian internasional seperti Protokol Kyoto dan Perjanjian
+            Paris, yang bertujuan untuk mengurangi emisi gas rumah kaca dan
+            melindungi lingkungan.
+          </p>
+          <p class="text">
+            Kolaborasi antarnegara dalam penelitian dan pengembangan teknologi
+            ramah lingkungan juga semakin intensif, menghasilkan inovasi-inovasi
+            yang berpotensi besar untuk mengatasi permasalahan lingkungan.
+            Contohnya, pengembangan energi terbarukan seperti tenaga surya dan
+            angin, serta teknologi pengolahan limbah yang lebih efisien. Namun,
+            di balik dampak positif tersebut, globalisasi juga menimbulkan
+            berbagai tantangan lingkungan yang serius. Peningkatan aktivitas
+            ekonomi global yang pesat telah mendorong peningkatan konsumsi
+            energi dan sumber daya alam secara signifikan. Eksploitasi sumber
+            daya alam yang berlebihan untuk memenuhi kebutuhan pasar global
+            menyebabkan deforestasi, degradasi lahan, dan kepunahan spesies.
+            Produksi dan distribusi barang-barang konsumsi global juga
+            menghasilkan limbah dalam jumlah besar, mencemari udara, air, dan
+            tanah. Fenomena ini diperparah oleh meningkatnya transportasi global
+            yang menghasilkan emisi gas rumah kaca dalam jumlah signifikan.
+          </p>
+          <p class="text">
+            Globalisasi juga menyebabkan homogenisasi budaya dan gaya hidup,
+            yang dapat mengancam keanekaragaman hayati. Penggunaan produk-produk
+            global yang seragam seringkali menggeser penggunaan produk lokal
+            yang lebih ramah lingkungan. Contohnya, penggunaan plastik sekali
+            pakai yang masif di berbagai negara, meskipun sudah banyak
+            alternatif yang lebih ramah lingkungan tersedia di tingkat lokal.
+          </p>
+          <p class="text">
+            Oleh karena itu, diperlukan pendekatan yang lebih terintegrasi dan
+            berkelanjutan dalam menghadapi tantangan lingkungan di era
+            globalisasi. Pemerintah, sektor swasta, dan masyarakat sipil perlu
+            bekerja sama untuk menciptakan kebijakan dan praktik yang lebih
+            ramah lingkungan. Hal ini meliputi pengurangan emisi gas rumah kaca,
+            pengelolaan sumber daya alam yang berkelanjutan, pengurangan limbah,
+            dan peningkatan kesadaran masyarakat akan pentingnya pelestarian
+            lingkungan. Pendidikan dan kesadaran lingkungan sejak dini sangat
+            penting untuk membentuk generasi yang bertanggung jawab terhadap
+            lingkungan.
+          </p>
+          <p class="text">
+            Simpulannya, globalisasi dan lingkungan merupakan dua sisi mata uang
+            yang saling berkaitan erat. Globalisasi menawarkan peluang untuk
+            mengatasi masalah lingkungan, tetapi juga menimbulkan berbagai
+            tantangan baru. Untuk mencapai keseimbangan yang berkelanjutan,
+            diperlukan upaya kolektif dari seluruh pemangku kepentingan untuk
+            menciptakan model pembangunan yang lebih ramah lingkungan dan
+            berkelanjutan di era globalisasi.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-3/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

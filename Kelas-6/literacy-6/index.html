@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Petualangan di Tengah Bencana Alam
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/1e/3d/b5/1e3db5b258275ee16aed7ba3f80bd93b.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Petualangan di Tengah Bencana Alam</p>
+        <div class="paragraph">
+          <p id="text">
+            Di sebuah desa kecil yang dikelilingi oleh pegunungan, hiduplah
+            seorang anak bernama Budi. Budi adalah anak yang cerdas dan selalu
+            ingin tahu tentang alam sekitarnya. Suatu hari, ketika sedang
+            bermain di tepi sungai bersama teman-temannya, Budi merasakan
+            getaran di tanah. "Gempa bumi!" teriak Budi. Semua anak-anak segera
+            berlari ke tempat yang aman. Gempa bumi itu cukup kuat, tetapi
+            untungnya tidak ada yang terluka. Namun, gempa tersebut menyebabkan
+            tanah longsor di bukit dekat desa. Budi dan teman-temannya melihat
+            tanah dan batu-batu besar bergulir turun dengan cepat. Mereka segera
+            melaporkan kejadian itu kepada orang dewasa di desa.
+            <br /><br />
+            Pak Rudi, kepala desa, segera mengumpulkan warga untuk membantu
+            membersihkan jalan yang tertutup tanah longsor. Budi dan
+            teman-temannya juga ikut membantu dengan semangat. Mereka belajar
+            bahwa bekerja sama adalah kunci untuk mengatasi bencana.
+            <br /><br />
+            Beberapa hari kemudian, hujan deras turun tanpa henti. Sungai di
+            desa mulai meluap dan air mulai masuk ke rumah-rumah warga. Budi dan
+            keluarganya harus mengungsi ke tempat yang lebih tinggi. Di tempat
+            pengungsian, Budi bertemu dengan banyak teman baru. Mereka bermain
+            dan belajar bersama sambil menunggu air surut. Pak Rudi memberikan
+            penjelasan kepada warga tentang pentingnya menjaga lingkungan. "Kita
+            harus menanam lebih banyak pohon di bukit untuk mencegah tanah
+            longsor," kata Pak Rudi. "Dan kita harus menjaga kebersihan sungai
+            agar tidak terjadi banjir."
+          </p>
+
+          <p id="text">
+            Setelah beberapa hari, air mulai surut dan warga bisa kembali ke
+            rumah mereka. Budi merasa senang bisa kembali ke rumah, tetapi dia
+            juga belajar banyak dari pengalaman tersebut. Dia berjanji untuk
+            selalu menjaga lingkungan dan membantu sesama. Budi dan
+            teman-temannya mulai menanam pohon di bukit dan membersihkan sungai
+            secara rutin. Mereka juga membuat poster tentang cara menghadapi
+            bencana alam dan menempelkannya di sekolah. Budi merasa bangga bisa
+            berkontribusi untuk desanya.
+            <br /><br />
+            Suatu hari, Budi dan teman-temannya mengadakan kegiatan simulasi
+            bencana di sekolah. Mereka belajar cara-cara menyelamatkan diri saat
+            terjadi gempa bumi, banjir, dan tanah longsor. Kegiatan ini sangat
+            bermanfaat karena membuat mereka lebih siap menghadapi bencana yang
+            mungkin terjadi di masa depan. Budi juga mengajak teman-temannya
+            untuk selalu waspada dan tidak panik saat terjadi bencana. "Kita
+            harus tetap tenang dan mengikuti petunjuk dari guru atau orang
+            dewasa," kata Budi. Teman-temannya setuju dan berjanji untuk selalu
+            siap siaga.
+            <br /><br />
+            Pengalaman menghadapi bencana alam membuat Budi dan teman-temannya
+            peduli terhadap lingkungan. Mereka rajin membersihkan sungai,
+            menanam pohon, dan tidak membuang sampah sembarangan. Mereka sering
+            mengingatkan warga desa untuk menjaga kebersihan lingkungan. Budi
+            merasa bangga karena bisa membantu desanya menjadi lebih aman dan
+            bersih.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

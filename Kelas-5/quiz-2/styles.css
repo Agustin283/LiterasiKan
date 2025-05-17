@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://i.pinimg.com/736x/e6/04/83/e60483df64f74fa2bf2d3966105302b6.jpg);
+  color: #4335a7; /* Warna ungu gelap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quiz {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.quiz-header h1,
+.quiz-header h2 {
+  color: #4335a7; /* Warna ungu gelap */
+  margin: 10px 0;
+}
+
+#game {
+  padding: 20px;
+  background-color: #fff6e9; /* Warna krem terang */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih ringan */
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #4335a7; /* Warna ungu gelap */
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choices button {
+  padding: 10px;
+  background-color: #ff7f3e; /* Warna oranye cerah */
+  color: #fff6e9; /* Teks warna krem terang */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.choices button:hover {
+  background-color: #e66a2f; /* Warna oranye sedikit lebih gelap */
+}
+
+#scoreText {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4335a7;
+}
+
+.choices button {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.choices span {
+  font-weight: bold;
+  color: #fff6e9;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.flex-label {
+  flex: 0 0 5%;
+  background-color: #e66a2f;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.flex-button {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  text-align: left;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: center; /* Posisikan elemen di tengah */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  margin: 20px 0; /* Jarak atas dan bawah */
+  background-color: #fff6e9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* Hilangkan margin default */
+}

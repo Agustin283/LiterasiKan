@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Etika dan Moralitas dalam Kehidupan Remaja
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/74/0c/35/740c3562a4428e991ec5d8590e6150c8.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Etika dan Moralitas dalam Kehidupan Remaja</p>
+        <div class="paragraph">
+          <p class="text">
+            Etika dan moralitas merupakan dua hal penting yang harus dipahami
+            oleh setiap individu, terutama oleh remaja. Etika mengacu pada
+            aturan atau pedoman perilaku yang berlaku dalam masyarakat,
+            sedangkan moralitas lebih berhubungan dengan nilai-nilai yang
+            diyakini benar atau salah oleh seseorang. Pada masa remaja, banyak
+            keputusan yang diambil dapat berdampak besar pada kehidupan di masa
+            depan. Oleh karena itu, memiliki pemahaman yang baik tentang etika
+            dan moralitas dapat membantu remaja untuk bertindak bijak dan
+            bertanggung jawab dalam setiap situasi.
+          </p>
+          <p class="text">
+            Salah satu aspek penting dari etika adalah rasa hormat terhadap
+            orang lain. Sebagai remaja, menghormati pendapat, hak, dan privasi
+            orang lain adalah hal yang sangat mendasar. Misalnya, dalam
+            interaksi sehari-hari di sekolah, menghormati guru dan teman
+            menunjukkan bahwa seseorang memahami pentingnya etika. Selain itu,
+            moralitas juga menuntut remaja untuk jujur dalam tindakan dan
+            perkataan. Kejujuran tidak hanya mencerminkan karakter yang baik,
+            tetapi juga menciptakan rasa percaya antara individu dalam sebuah
+            komunitas.
+          </p>
+          <p class="text">
+            Pentingnya etika dan moralitas semakin nyata dalam penggunaan
+            teknologi, terutama media sosial. Banyak remaja yang kurang
+            menyadari bahwa setiap unggahan, komentar, atau tindakan di dunia
+            maya dapat membawa konsekuensi serius. Misalnya, menyebarkan
+            informasi palsu atau berkomentar kasar dapat merugikan orang lain
+            dan merusak reputasi diri sendiri. Dengan memahami etika digital,
+            remaja dapat belajar untuk bertanggung jawab dalam menggunakan
+            teknologi secara bijak.
+          </p>
+          <p class="text">
+            Di samping itu, moralitas juga mengajarkan kita untuk peduli
+            terhadap sesama. Perilaku empati, seperti membantu teman yang sedang
+            mengalami kesulitan atau ikut serta dalam kegiatan sosial,
+            mencerminkan moralitas yang baik. Perilaku ini tidak hanya
+            memperkuat hubungan sosial, tetapi juga memberikan makna mendalam
+            pada kehidupan seseorang. Ketika remaja belajar untuk mempraktikkan
+            nilai-nilai moral ini, mereka akan tumbuh menjadi individu yang
+            lebih dewasa dan bijaksana.
+          </p>
+          <p class="text">
+            Oleh karena itu, pemahaman tentang etika dan moralitas perlu terus
+            ditanamkan pada remaja. Hal ini dapat dilakukan melalui pendidikan
+            formal di sekolah maupun melalui pengalaman sehari-hari di keluarga
+            dan masyarakat. Dengan menjadikan etika dan moralitas sebagai
+            panduan, remaja dapat menghadapi berbagai tantangan kehidupan dengan
+            sikap yang positif dan konstruktif. Pada akhirnya, nilai-nilai ini
+            akan membentuk karakter mereka sebagai generasi penerus yang
+            bermartabat.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

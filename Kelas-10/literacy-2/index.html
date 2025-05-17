@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Pengaruh Agama terhadap Etika dan Moralitas Individu
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/db/c2/53/dbc25314de95d9febdbc65d6a1359066.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Pengaruh Agama terhadap Etika dan Moralitas Individu</p>
+        <div class="paragraph">
+          <p id="text">
+            Agama memiliki peran fundamental dalam membentuk etika dan moralitas
+            individu. Dalam berbagai budaya, agama sering menjadi pedoman utama
+            yang mengarahkan perilaku manusia. Melalui nilai-nilai yang
+            terkandung dalam kitab suci, tradisi keagamaan, dan ritual, individu
+            diajarkan untuk membedakan antara yang baik dan buruk, benar dan
+            salah. Nilai-nilai ini tidak hanya menjadi standar moral pribadi,
+            tetapi juga menjadi landasan dalam menjalani kehidupan sehari-hari
+            serta dalam berinteraksi dengan orang lain.
+          </p>
+
+          <p id="text">
+            Misalnya, hampir semua agama besar di dunia mengajarkan nilai-nilai
+            universal seperti kasih sayang, kejujuran, toleransi, dan saling
+            menghormati. Ajaran ini berfungsi sebagai norma sosial yang mengatur
+            hubungan antar individu dan menciptakan rasa kesatuan dalam
+            masyarakat. Dalam komunitas yang memiliki latar belakang agama yang
+            sama, nilai-nilai ini dapat memperkuat ikatan sosial dan menciptakan
+            harmoni. Bahkan dalam masyarakat yang beragam, agama dapat menjadi
+            alat yang efektif untuk membangun dialog dan kerja sama, asalkan
+            diinterpretasikan dengan cara yang inklusif.
+          </p>
+
+          <p id="text">
+            Namun pengaruh agama terhadap etika dan moralitas tidak selalu
+            bersifat positif. Dalam beberapa kasus, interpretasi ajaran agama
+            yang ekstrem atau sempit dapat menjadi pemicu konflik, diskriminasi,
+            atau ketegangan antar kelompok. Misalnya, perbedaan pandangan
+            mengenai hak asasi manusia, peran gender, atau kebebasan individu
+            sering kali dipengaruhi oleh penafsiran tertentu terhadap ajaran
+            agama. Oleh karena itu, penting bagi individu dan pemimpin agama
+            untuk mengedepankan pemahaman yang bijaksana dan membuka ruang untuk
+            dialog antaragama demi menghindari konflik yang tidak perlu.
+          </p>
+
+          <p id="text">
+            Pendidikan agama juga memainkan peran yang signifikan dalam
+            membentuk moralitas individu. Melalui pendidikan ini, seseorang
+            tidak hanya belajar tentang aspek spiritual tetapi juga memahami
+            tanggung jawab sosialnya. Pendidikan agama yang inklusif dapat
+            menanamkan nilai-nilai seperti empati, kepedulian terhadap sesama,
+            dan dorongan untuk berkontribusi secara positif bagi masyarakat.
+            Ketika ajaran agama diterapkan dengan benar, individu tidak hanya
+            memiliki landasan moral yang kuat tetapi juga menjadi agen perubahan
+            yang mendorong kebaikan bersama.
+          </p>
+
+          <p id="text">
+            Selain itu, komunitas keagamaan dalam memperkuat moralitas juga
+            tidak dapat diabaikan. Melalui interaksi sosial di tempat ibadah
+            atau kegiatan keagamaan, individu diajarkan untuk berbagi, membantu
+            sesama, dan mengutamakan kepentingan bersama. Nilai-nilai ini
+            memperkuat solidaritas dan mendorong terciptanya masyarakat yang
+            lebih adil dan seimbang.
+          </p>
+
+          <p id="text">
+            Simpulannya, agama juga mempunyai pengaruh besar dalam membentuk
+            etika dan moralitas individu. Agama dapat menjadi sumber inspirasi
+            yang membimbing manusia menuju arah yang lebih baik, namun juga
+            dapat menimbulkan tantangan jika ajarannya diinterpretasikan secara
+            sempit atau ekstrem. Dengan pendekatan yang inklusif, pendidikan
+            yang baik, serta penghormatan terhadap nilai-nilai kemanusiaan,
+            agama dapat berfungsi sebagai alat untuk menciptakan masyarakat yang
+            harmonis dan saling menghormati, tanpa membedakan perbedaan yang
+            ada.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Anak Tukang Becak Indonesia yang Berhasil Sukses
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/20/f2/55/20f255e8e8ea99eae62c1b54af4994f5.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Anak Tukang Becak Indonesia yang Berhasil Sukses</p>
+        <div class="paragraph">
+          <p class="text">
+            Indonesia adalah negara yang penuh dengan kisah inspiratif yang
+            membuktikan bahwa kerja keras dan tekad dapat membawa seseorang
+            meraih kesuksesan. Salah satu cerita yang paling berkesan adalah
+            kisah Raeni, anak seorang tukang becak yang berhasil mengubah
+            hidupnya melalui pendidikan. Pada tahun 2014, kisah Raeni menjadi
+            viral di media sosial karena keberhasilannya lulus dari universitas
+            dengan prestasi gemilang, meskipun ia berasal dari keluarga yang
+            sederhana. Dengan semangat belajar yang tinggi dan dukungan penuh
+            dari sang ayah, Raeni membuktikan bahwa keterbatasan ekonomi
+            bukanlah penghalang untuk meraih impian.
+          </p>
+
+          <p class="text">
+            Raeni adalah putri dari Mugiono, seorang tukang becak yang
+            penghasilannya sangat terbatas. Meski hidup dalam keterbatasan,
+            semangat belajar Raeni tidak pernah pudar. Pada hari wisudanya, ia
+            diantar sang ayah menggunakan becak sederhana, kendaraan yang selama
+            ini menjadi sumber penghasilan keluarga. Momen tersebut diabadikan
+            dalam sebuah foto yang kemudian viral di media sosial, menyentuh
+            hati banyak orang. Foto itu tidak hanya menggambarkan kasih sayang
+            seorang ayah, tetapi juga perjuangan dan pengorbanan luar biasa di
+            tengah kesulitan hidup. Raeni menjadi contoh nyata bahwa mimpi besar
+            bisa terwujud jika disertai dengan usaha, keteguhan, dan dukungan
+            keluarga yang tulus.
+          </p>
+
+          <p class="text">
+            Meskipun ia hidup dalam keterbatasan ekonomi, Raeni tidak pernah
+            menyerah pada mimpinya untuk meraih pendidikan yang lebih tinggi.
+            Sejak kecil, ia dikenal sebagai anak yang cerdas dan rajin belajar.
+            Dengan semangat yang tak pernah padam, Raeni menjadikan kondisi
+            sulit yang dialaminya sebagai motivasi untuk bekerja lebih keras.
+            Keinginannya yang kuat untuk mengubah nasib keluarganya mendorongnya
+            untuk terus berusaha, meskipun banyak rintangan yang harus dihadapi.
+            Raeni percaya bahwa pendidikan adalah jalan untuk memperbaiki masa
+            depan, tidak hanya bagi dirinya sendiri, tetapi juga bagi
+            orang-orang yang ia cintai.
+          </p>
+
+          <p class="text">
+            Berkat ketekunannya dalam belajar, Raeni berhasil mendapatkan
+            beasiswa Bidikmisi, yang membantunya melanjutkan pendidikan ke
+            perguruan tinggi. Ia memilih Universitas Negeri Semarang dan
+            mengambil jurusan Pendidikan Akuntansi. Di sana, Raeni menunjukkan
+            dedikasi luar biasa, hingga berhasil lulus dengan Indeks Prestasi
+            Kumulatif (IPK) hampir sempurna, yaitu 3,96. Namun, perjuangan dan
+            kesuksesannya tidak berhenti di situ. Raeni kemudian meraih beasiswa
+            LPDP, yang memberinya kesempatan untuk melanjutkan studi S2 di
+            Birmingham, Inggris.
+          </p>
+
+          <p class="text">
+            Setelah berhasil menyelesaikan pendidikan masternya di Birmingham,
+            Inggris, Raeni kembali ke Indonesia dan mengabdikan diri sebagai
+            tenaga pengajar di almamaternya, Universitas Negeri Semarang.
+            Langkah ini menunjukkan dedikasinya untuk berbagi ilmu dan
+            memberikan inspirasi kepada generasi muda. Kisah hidup Raeni menjadi
+            bukti nyata bahwa dengan tekad yang kuat dan ketekunan, seseorang
+            dapat mengatasi berbagai rintangan untuk mencapai impian yang besar.
+            Ia tidak hanya berhasil mengubah hidupnya, tetapi juga menjadi
+            teladan bagi banyak orang tentang pentingnya pendidikan, kerja
+            keras, dan semangat pantang menyerah.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

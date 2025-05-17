@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Tema Perilaku Hidup Bersih dan Sehat (PHBS)
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/73/e4/a8/73e4a8ee7e42aa32d200207dff6ba199.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Olahraga Seru, Badan Bugar!</p>
+        <div class="paragraph">
+          <p id="text">
+            Olahraga itu penting, lho! Bukan cuma untuk badan bugar, tapi juga
+            untuk otak yang cerdas. Kalau badan sehat, belajar jadi lebih
+            semangat. Olahraga bikin kita lebih fokus dan ingat pelajaran lebih
+            lama. Banyak jenis olahraga yang seru dan asyik. Kita bisa memilih
+            olahraga yang kita sukai. Ada lari pagi yang menyegarkan. Ada
+            bersepeda yang menyenangkan. Ada juga berenang yang menantang. Atau
+            bermain bola basket yang seru bareng teman-teman. Jangan lupa, pilih
+            olahraga yang sesuai dengan kemampuan kita. Jangan memaksakan diri
+            kalau belum kuat. Lakukan pola olahraga secara bertahap. Mulailah
+            dengan olahraga ringan.
+          </p>
+
+          <p id="text">
+            Olahraga juga bisa dilakukan di rumah, lho! Senam sederhana, lompat
+            tali, atau berputar-putar pun bermanfaat. Yang penting, kita
+            bergerak aktif. Gerakan aktif membuat tubuh kita sehat. Olahraga
+            juga membantu kita tidur lebih nyenyak. Tidur yang cukup membuat
+            kita segar di pagi hari. Tubuh yang sehat dan segar membuat kita
+            lebih bersemangat belajar. Olahraga juga bisa menjadi kegiatan yang
+            menyenangkan bersama keluarga. Ajak ayah dan ibu berolahraga
+            bersama. Kita bisa bermain badminton atau jalan-jalan santai di
+            taman. Olahraga bersama keluarga akan mempererat hubungan kita.
+          </p>
+
+          <p id="text">
+            Olahraga bukan hanya tentang fisik, tapi juga mental. Olahraga
+            membantu kita mengurangi stres dan meningkatkan mood. Setelah
+            berolahraga, kita merasa lebih rileks dan tenang. Olahraga juga
+            melatih kedisiplinan kita. Kita harus disiplin dalam berolahraga
+            agar mendapatkan manfaatnya. Kita harus konsisten berolahraga agar
+            tubuh kita tetap sehat. Olahraga juga mengajarkan kita tentang kerja
+            sama tim. Dalam olahraga beregu, kita belajar bekerja sama dengan
+            teman. Kita belajar menghargai kerja sama tim. Kita belajar menerima
+            kekalahan dan meraih kemenangan. Olahraga juga melatih kita untuk
+            pantang menyerah. Ketika kita merasa lelah, kita harus tetap
+            berusaha. Kita harus terus berlatih agar semakin terampil. Olahraga
+            juga mengajarkan kita tentang sportifitas. Kita harus menghormati
+            lawan main kita. Kita harus jujur dan adil dalam bermain.
+            Sportivitas penting dalam setiap pertandingan. Olahraga mengajarkan
+            banyak hal yang bermanfaat. Olahraga tidak hanya membuat badan
+            bugar, tapi juga membentuk karakter yang baik.
+          </p>
+
+          <p id="text">
+            Ingat, olahraga yang teratur itu penting. Lakukan olahraga minimal
+            30 menit setiap hari. Pilih olahraga yang kita sukai agar kita tidak
+            bosan. Ajak teman atau keluarga untuk berolahraga bersama. Olahraga
+            akan lebih seru dan menyenangkan jika dilakukan bersama-sama. Jangan
+            lupa untuk selalu minum air putih yang cukup sebelum, selama, dan
+            sesudah berolahraga. Dengan berolahraga, kita menjaga kesehatan
+            tubuh dan pikiran. Kita akan lebih sehat, lebih kuat, dan lebih
+            cerdas. Badan bugar, pikiran pun cerdas. Ayo, kita rajin olahraga!
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

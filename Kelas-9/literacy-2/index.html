@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Transformasi Digital</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/ea/fa/96/eafa9620ce06effc1c3628f9777d6955.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Transformasi Digital</p>
+        <div class="paragraph">
+          <p class="text">
+            Teknologi dan inovasi telah menjadi pilar utama dalam perkembangan
+            masyarakat modern. Di era digital saat ini, kemajuan teknologi tidak
+            hanya mempengaruhi cara kita berkomunikasi, tetapi juga cara kita
+            bekerja, belajar, dan berinteraksi dengan lingkungan sekitar.
+            Inovasi dalam teknologi telah membawa perubahan signifikan dalam
+            berbagai sektor, mulai dari kesehatan, pendidikan, hingga industri.
+            Dengan adanya teknologi, banyak tantangan yang sebelumnya sulit
+            diatasi kini dapat diselesaikan dengan lebih efisien dan efektif.
+          </p>
+
+          <p class="text">
+            Salah satu contoh nyata dari inovasi teknologi adalah kemunculan
+            kecerdasan buatan (AI) dan otomatisasi. AI telah mengubah cara
+            perusahaan beroperasi, memungkinkan analisis data yang lebih cepat
+            dan akurat, serta meningkatkan produktivitas. Dalam bidang
+            kesehatan, teknologi seperti telemedicine memungkinkan pasien untuk
+            berkonsultasi dengan dokter tanpa harus datang ke rumah sakit, yang
+            sangat membantu terutama di masa pandemi.
+          </p>
+
+          <p class="text">
+            Selain itu, inovasi dalam energi terbarukan, seperti panel surya dan
+            turbin angin, memberikan solusi untuk mengurangi ketergantungan pada
+            bahan bakar fosil dan mengatasi masalah perubahan iklim. Dengan
+            demikian, teknologi tidak hanya meningkatkan efisiensi, tetapi juga
+            berkontribusi pada keberlanjutan lingkungan.
+          </p>
+
+          <p class="text">
+            Di sisi lain, meskipun teknologi dan inovasi membawa banyak manfaat,
+            tantangan baru juga muncul. Isu privasi data, keamanan siber, dan
+            kesenjangan digital menjadi perhatian utama yang perlu diatasi. Oleh
+            karena itu, penting bagi kita untuk tidak hanya fokus pada
+            pengembangan teknologi, tetapi juga pada etika dan tanggung jawab
+            dalam penggunaannya.
+          </p>
+
+          <p class="text">
+            Pendidikan dan kesadaran masyarakat tentang teknologi harus
+            ditingkatkan agar semua orang dapat memanfaatkan inovasi dengan
+            bijak. Dengan pendekatan yang seimbang antara kemajuan teknologi dan
+            tanggung jawab sosial, kita dapat menciptakan masa depan yang lebih
+            baik dan berkelanjutan. Teknologi dan inovasi, jika dikelola dengan
+            baik, memiliki potensi untuk mengubah dunia menjadi tempat yang
+            lebih baik bagi semua.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

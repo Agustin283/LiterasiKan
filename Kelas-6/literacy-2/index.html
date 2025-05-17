@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Petualangan Sehat di Desa Hijau</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/9b/40/67/9b40677bafeabecda644051bb4cfad13.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Petualangan Sehat di Desa Hijau</p>
+        <div class="paragraph">
+          <p id="text">
+            Di sebuah desa yang dikelilingi perbukitan hijau, hiduplah seorang
+            anak bernama Bima. Bima adalah anak yang ceria dan penuh semangat.
+            Setiap hari, dia bermain dengan teman-temannya di lapangan desa.
+            Namun, belakangan ini, Bima merasa tubuhnya cepat lelah dan kurang
+            bersemangat.
+            <br /><br />
+            Suatu hari, sekolah Bima mengadakan acara kesehatan yang dihadiri
+            oleh Dokter Siti, seorang dokter yang baik hati. Dokter Siti
+            memberikan ceramah tentang pentingnya menjaga kesehatan tubuh. Dia
+            membawa poster besar yang menunjukkan berbagai makanan sehat dan
+            manfaat olahraga. Bima mendengarkan dengan penuh perhatian.
+            <br /><br />
+            "Anak-anak, kesehatan itu sangat penting. Makanlah makanan yang
+            sehat seperti sayur-sayuran dan buah-buahan, serta jangan lupa
+            berolahraga setiap hari," kata Dokter Siti.
+            <br /><br />
+            Bima merasa terinspirasi oleh ceramah Dokter Siti. Dia memutuskan
+            untuk mengubah kebiasaannya. Mulai hari itu, Bima mengurangi makanan
+            manis dan lebih banyak makan buah dan sayuran. Dia juga mulai
+            berolahraga setiap pagi dengan berlari mengelilingi desa.
+          </p>
+
+          <p id="text">
+            Awalnya, Bima merasa sulit untuk mengubah kebiasaannya. Dia sangat
+            suka makan permen dan kue, tetapi dia tahu bahwa makanan tersebut
+            tidak baik untuk kesehatannya. Dengan tekad yang kuat, Bima terus
+            berusaha. Setiap pagi, dia bangun lebih awal untuk berolahraga. Dia
+            juga membawa bekal buah-buahan ke sekolah.
+            <br /><br />
+            Beberapa minggu kemudian, Bima mulai merasakan perubahan. Tubuhnya
+            menjadi lebih bugar dan dia tidak mudah lelah lagi. Teman-temannya
+            juga mulai mengikuti kebiasaan sehat Bima. Mereka bermain sepak bola
+            bersama setiap sore dan membawa bekal sehat ke sekolah.
+            <br /><br />
+            Suatu hari, Bima dan teman-temannya mengikuti lomba lari yang
+            diadakan di desa. Bima merasa sangat bersemangat. Dia berlari dengan
+            penuh semangat dan akhirnya berhasil memenangkan lomba tersebut.
+            Semua orang di desa memuji Bima dan teman-temannya karena telah
+            menjaga kesehatan mereka.
+            <br /><br />
+            "Terima kasih, Dokter Siti, atas nasihatnya. Sekarang kami semua
+            menjadi lebih sehat dan bugar," kata Bima dengan gembira. Dokter
+            Siti tersenyum dan berkata, "Kalian semua hebat! Teruslah menjaga
+            kesehatan kalian, karena kesehatan adalah harta yang paling
+            berharga."
+            <br /><br />
+            Sejak hari itu, Bima dan teman-temannya semakin rajin menjaga
+            kesehatan. Mereka selalu makan makanan sehat, berolahraga, dan
+            menjaga kebersihan diri. Desa Hijau menjadi desa yang penuh dengan
+            anak-anak yang sehat dan bahagia.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

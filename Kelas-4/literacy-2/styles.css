@@ -1,0 +1,304 @@
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f8f9fd;
+  color: #333;
+}
+
+/* Blur effect for body content (excluding popup) */
+body.popup-active::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent overlay */
+  backdrop-filter: blur(5px); /* Blur effect for background */
+  z-index: 999; /* Behind popup */
+}
+
+/* Popup Form Styles */
+.popup-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 320px;
+  width: 90%;
+  text-align: center;
+  z-index: 1000; /* Above background blur */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.popup-form.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-form h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.popup-form p {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.popup-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.popup-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.popup-form .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.popup-form .cta {
+  margin-top: 10px;
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.popup-form .cta:hover {
+  background-color: #365ac9;
+}
+
+.read-first {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.judul-sesi {
+  font-size: 3rem; /* Judul besar */
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.bridging {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Guide Section */
+.guide {
+  padding: 40px 20px;
+}
+
+.guide-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 38px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guide-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.guide-card .icon {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.guide-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.guide-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.icon-1 {
+  color: #ffba08;
+}
+
+.icon-2 {
+  color: #f94144;
+}
+
+.icon-3 {
+  color: #277da1;
+}
+
+.icon-4 {
+  color: #90be6d;
+}
+
+/* Reading Section */
+.reading-page {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+}
+.reading-image {
+  display: block;
+  margin: 0 auto;
+  width: 12cm;
+  height: 6cm;
+}
+.timer-container {
+  margin-bottom: 20px;
+}
+
+#stopwatch {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a6cf7;
+  padding: 10px;
+  border: 2px solid #4a6cf7;
+  border-radius: 8px;
+  display: inline-block;
+  width: 200px;
+}
+
+.text-container {
+  margin: 20px 0;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+button:hover {
+  background-color: #365ac9;
+}
+
+button:disabled {
+  background-color: #c2c2c2;
+  cursor: not-allowed;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style untuk popup content yang diperbesar dan diperindah */
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  animation: scaleIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Animasi muncul */
+}
+
+/* Animasi scale untuk muncul */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Style untuk tombol close */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

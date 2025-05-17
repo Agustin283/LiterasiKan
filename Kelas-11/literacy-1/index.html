@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Dampak Perubahan Iklim terhadap Lingkungan
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/08/d8/89/08d889d329cade05f2dfe0ee2ff72896.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Dampak Perubahan Iklim terhadap Lingkungan</p>
+        <div class="paragraph">
+          <p id="text">
+            Perubahan iklim merupakan salah satu isu global yang paling mendesak
+            di abad kedua puluh satu ini. Fenomena ini terjadi akibat
+            peningkatan gas rumah kaca di atmosfer, seperti karbon dioksida dan
+            metana, yang dihasilkan dari aktivitas manusia. Sumber utamanya
+            mencakup pembakaran bahan bakar fosil, deforestasi, dan aktivitas
+            industri. Akibatnya, suhu rata-rata bumi meningkat, dan dikenal
+            sebagai pemanasan global. Kondisi ini memicu faktor perubahan alam,
+            seperti mencairnya kutub, naiknya permukaan air laut, dan pola
+            cuaca.
+          </p>
+          <p id="text">
+            Upaya untuk mengatasi perubahan iklim memerlukan kerja sama global.
+            Salah satu langkah penting untuk kurangi emisi gas rumah kaca dengan
+            memakai sumber terbarukan, misal energi surya dan angin. Selain itu,
+            praktik reboisasi atau penanaman kembali hutan dapat membantu
+            menyerap karbon dioksida dari atmosfer. Kesadaran individu juga
+            berperan penting. Dengan mengurangi penggunaan plastik sekali pakai,
+            menghemat energi, dan memilih transportasi ramah lingkungan, setiap
+            orang dapat berkontribusi dalam mengurangi dampak perubahan iklim.
+          </p>
+          <p id="text">
+            Perubahan iklim bukan hanya masalah lingkungan, namun juga berdampak
+            pada aspek sosial dan ekonomi. Negara-negara berkembang yang
+            bergantung pada sektor pertanian menghadapi tantangan besar akibat
+            pola cuaca yang tidak stabil. Produktivitas pertanian menurun,
+            menyebabkan krisis pangan di banyak wilayah. Oleh karena itu,
+            penting bagi pemerintah, masyarakat, dan sektor swasta untuk bekerja
+            sama dalam menciptakan solusi berkelanjutan. Dengan tindakan
+            kolektif yang konsisten, kita masih memiliki peluang untuk
+            melindungi planet ini bagi generasi mendatang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-1/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

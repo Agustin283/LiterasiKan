@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Teknologi dan Inovasi</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/5e/84/2e/5e842e945dafd2cad60fb07e09131047.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Teman Setia Masa Kini</p>
+        <div class="paragraph">
+          <p id="text">
+            Teknologi itu kayak sungai yang mengalir, terus berkembang dan
+            membawa kita ke masa depan yang keren! Dari penemuan roda dulu
+            sampai komputer canggih sekarang, teknologi udah mengubah cara kita
+            hidup, kerja, dan main-main. Inovasi, kayak arus deras di sungai,
+            mendorong teknologi maju dan ngasih solusi buat masalah-masalah yang
+            kita hadapi.
+            <br /><br />
+            Bayangin deh, hidup tanpa smartphone. Kita susah ngobrol sama temen,
+            cari info, atau nonton film kesukaan. Teknologi udah bikin kita
+            gampang dapet info, ngobrol cepet, dan ngerjain tugas lebih efisien.
+            <br /><br />
+            Inovasi itu kayak percikan api yang ngebikin teknologi berubah
+            drastis. Penemuan internet, misalnya, ngelahirin platform digital
+            yang ngehubungin orang-orang di seluruh dunia. Inovasi di bidang
+            kesehatan udah ngasih vaksin dan obat-obatan yang nyelamatin banyak
+            orang.
+          </p>
+
+          <p id="text">
+            Tapi, teknologi dan inovasi juga punya sisi negatif yang harus kita
+            perhatiin. Kalo terlalu sering main gadget, kita bisa jadi
+            ketergantungan dan susah ngobrol sama orang lain. Inovasi yang gak
+            terkendali juga bisa ngerusak lingkungan.
+            <br /><br />
+            Makanya, penting banget buat kita pinter-pinter pake teknologi dan
+            inovasi. Kita harus ngebuat teknologi bermanfaat buat semua orang,
+            ningkatin kualitas hidup, dan ngejaga alam.
+            <br /><br />
+            Teknologi dan inovasi itu kayak temen setia kita buat ngebangun masa
+            depan yang lebih baik. Kalo kita pinter-pinter pake, kita bisa
+            ngerjain hal-hal yang dulu dikira mustahil dan bikin dunia lebih
+            maju dan bahagia.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

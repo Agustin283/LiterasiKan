@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Pengembangan Diri dan Karier: Menuju Masa Depan yang
+        Cemerlang
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/88/f5/0e/88f50e77861d75e396a49e0afa102d24.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Pengembangan Diri dan Karier: Menuju Masa Depan yang Cemerlang</p>
+        <div class="paragraph">
+          <p id="text">
+            Menjelang akhir masa remaja dan memasuki awal pendewasaan merupakan
+            periode terpenting dalam perjalanan hidupnya seseorang. Di tahap
+            ini, kita memulai menapaki jalan menuju masa depan, merencanakan
+            karier, dan membangun jati dirinya yang memenuhi peluang dan
+            tantangan.
+          </p>
+
+          <p id="text">
+            Pengembangan diri dan kariernya menjadi fokus utamanya, membukakan
+            peluang untuk meraih mimpinya dan mencapai potensi maksimal.
+            Pengembangan diri merupakan proses berkelanjutan dengan melibatkan
+            perupayaan untuk meningkatkan kemampuan, pengetahuan, dan
+            karakternya.
+          </p>
+
+          <p id="text">
+            Menentukan tujuan hidupnya, mengembangkan minat dan bakatnya, serta
+            membangun pola pikir positif adalah langkah awalnya yang terpenting.
+            Membaca buku, mengikuti pelatihan, dan berdiskusi dengan mentor
+            dapat membantu memperkaya wawasannya dan meningkatkan kemampuannya.
+          </p>
+
+          <p id="text">
+            Selain itu, menjalankan hobi, berpartisipasi dalam kegiatan
+            persosialan, dan mencarikan pengalamannya dapat membantunya dalam
+            menemukan passionnya dan mengembangkan dirinya secara holistik.
+          </p>
+
+          <p id="text">
+            Menjadi versi terbaik dari diri sendiri adalah tujuan utama dalam
+            pengembangan diri, yang akan membuka jalan menuju kesuksesan di
+            berbagai bidang kehidupan.
+          </p>
+
+          <p id="text">
+            Memilih karier merupakan keputusan penting yang memerlukan
+            pertimbangan matang. Kenali minat dan bakat, eksplorasi berbagai
+            pilihan profesi, dan pertimbangkan peluang dan tantangan yang
+            ditawarkan.
+          </p>
+
+          <p id="text">
+            Jangan takut untuk mencoba hal baru, belajar dari pengalaman, dan
+            mengembangkan keterampilan yang relevan dengan bidang yang ingin
+            ditekuni. Pertimbangkan juga faktor-faktor seperti kebutuhan pasar
+            kerja, tren industri, dan kesempatan berkembang di masa depan.
+          </p>
+
+          <p id="text">
+            Memilih karier yang selaras dengan passion dan nilai-nilai pribadi
+            akan memberikan kepuasan dan motivasi dalam menjalani pekerjaan.
+          </p>
+
+          <p id="text">
+            Membangun karier membutuhkan dedikasi, kerja keras, dan semangat
+            pantang menyerah. Bersikap proaktif, mencari peluang, dan terus
+            belajar adalah kunci untuk mencapai kesuksesan.
+          </p>
+
+          <p id="text">
+            Membangun jaringan profesional, menjalin hubungan baik dengan
+            kolega, dan mencari mentor dapat membantu dalam perjalanan karier.
+            Mentor dapat memberikan bimbingan, dukungan, dan wawasan yang
+            berharga untuk menavigasi tantangan karier.
+          </p>
+
+          <p id="text">
+            Membangun hubungan yang positif dan saling mendukung dengan
+            orang-orang di sekitar dapat memperkaya pengalaman dan membuka
+            peluang baru.
+          </p>
+
+          <p id="text">
+            Pengembangan diri dan karier tidak selalu berjalan mulus. Tantangan
+            dan kegagalan adalah bagian dari proses. Yang penting adalah belajar
+            dari kesalahan, terus beradaptasi, dan tetap fokus pada tujuan.
+          </p>
+
+          <p id="text">
+            Membangun resiliensi, menjaga kesehatan mental, dan memperkuat
+            hubungan dengan orang-orang tercinta dapat membantu mengatasi
+            tantangan dan menjaga motivasi. Kegagalan adalah kesempatan untuk
+            belajar dan tumbuh, menjadikan kita lebih kuat dan tangguh dalam
+            menghadapi masa depan.
+          </p>
+
+          <p id="text">
+            Membangun masa depan yang cemerlang membutuhkan komitmen dan usaha
+            yang konsisten. Pengembangan diri dan karier merupakan investasi
+            jangka panjang yang akan membuahkan hasil yang berharga.
+          </p>
+
+          <p id="text">
+            Dengan tekad yang kuat, semangat yang membara, dan langkah yang
+            tepat, kita dapat mencapai mimpi dan membangun masa depan yang
+            cemerlang. Percaya pada diri sendiri, tetap fokus, dan jangan pernah
+            menyerah untuk mencapai tujuan yang telah ditetapkan.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

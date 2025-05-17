@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: KESEHATAN DAN KEBERSIHAN</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/a6/06/c0/a606c0ddf19fc5a3da8898ceb7c0799b.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Langkah-Langkah Membuang Sampah yang Benar</p>
+        <div class="paragraph">
+          <p id="text">
+            Sampah merupakan salah satu masalah terbesar di dunia yang
+            memberikan dampak negatif terhadap lingkungan dan kesehatan manusia.
+            Pengelolaan sampah yang buruk dapat menyebabkan pencemaran udara,
+            air, serta tanah, sehingga menimbulkan berbagai masalah lingkungan
+            dan kesehatan. Oleh karena itu, penting bagi kita untuk memahami
+            cara membuang sampah dengan benar demi menjaga kebersihan lingkungan
+            sekaligus mencegah dampak buruk bagi kesehatan masyarakat.
+          </p>
+          <p id="text">
+            Langkah pertama dalam pengelolaan sampah adalah memisahkan sampah
+            berdasarkan jenisnya. Secara umum, sampah terbagi menjadi dua
+            kategori utama: sampah organik dan anorganik. Sampah organik
+            meliputi sisa makanan, daun kering, dan sayuran busuk yang dapat
+            terurai secara alami. Sampah jenis ini sebaiknya dikumpulkan untuk
+            dijadikan kompos sebagai pupuk alami yang bermanfaat bagi tanaman.
+            Di sisi lain, sampah anorganik, seperti plastik, logam, kaca, dan
+            bahan lainnya yang tidak mudah terurai, harus dipisahkan agar dapat
+            didaur ulang atau dikelola secara khusus sesuai dengan
+            karakteristiknya.
+          </p>
+          <p id="text">
+            Langkah kedua adalah membuang sampah di tempat yang sudah
+            disediakan. Membuang sampah sembarangan, seperti ke jalan, selokan,
+            atau sungai, dapat mencemari lingkungan dan memperburuk masalah,
+            seperti menyumbat saluran air yang seringkali menjadi penyebab
+            banjir. Oleh karena itu, gunakanlah tempat sampah yang telah
+            disediakan oleh pihak berwenang, terutama yang dilengkapi dengan
+            sistem pemisahan untuk sampah organik dan anorganik. Dengan cara
+            ini, proses pengelolaan selanjutnya dapat berjalan lebih efektif.
+          </p>
+          <p id="text">
+            Langkah ketiga adalah mendaur ulang sampah yang masih memiliki nilai
+            guna. Contohnya, botol plastik dapat dimanfaatkan kembali sebagai
+            pot tanaman, sedangkan kertas bekas bisa dijadikan bahan untuk
+            kerajinan tangan. Mendaur ulang tidak hanya mengurangi jumlah sampah
+            yang berakhir di tempat pembuangan akhir, tetapi juga membantu
+            menghemat sumber daya alam yang semakin terbatas.
+          </p>
+          <p id="text">
+            Selain mendaur ulang, upaya lain yang penting adalah mengurangi
+            penggunaan barang sekali pakai, seperti kantong plastik. Membawa tas
+            belanja sendiri saat berbelanja, menggunakan botol minum yang dapat
+            digunakan ulang, serta memilih produk ramah lingkungan adalah
+            langkah kecil yang dapat memberikan dampak besar bagi pengurangan
+            sampah.
+          </p>
+          <p id="text">
+            Pengelolaan sampah yang baik bukan hanya menjadi tanggung jawab
+            pemerintah, tetapi juga setiap individu. Dengan membuang sampah di
+            tempatnya, mendaur ulang, dan mengurangi produksi sampah, kita dapat
+            berkontribusi pada terciptanya lingkungan yang bersih dan sehat.
+            Bersama-sama, kita bisa mewujudkan masa depan yang lebih baik bagi
+            generasi mendatang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

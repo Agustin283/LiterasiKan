@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi:Kebiasaan Sehat di Sekolah</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/33/79/67/3379677951e9f137d874c698b6737bbd.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kebiasaan Sehat di Sekolah</p>
+        <div class="paragraph">
+          <p id="text">
+            Di sebuah sekolah dasar yang terletak di desa yang asri, hiduplah
+            seorang anak bernama Rani. Rani adalah siswa kelas 6 yang rajin dan
+            selalu menjaga kebersihan. Setiap hari, Rani selalu datang ke
+            sekolah dengan seragam yang rapi dan bersih. Dia juga selalu membawa
+            bekal makanan sehat dari rumah.
+            <br /><br />
+            Suatu hari, sekolah Rani mengadakan lomba kebersihan kelas. Setiap
+            kelas harus menjaga kebersihan ruangannya selama satu minggu penuh.
+            Kelas yang paling bersih akan mendapatkan hadiah menarik. Rani
+            sangat bersemangat mengikuti lomba ini. Dia mengajak teman-temannya
+            untuk bekerja sama menjaga kebersihan kelas.
+            <br /><br />
+            "Teman-teman, kita harus menjaga kebersihan kelas kita. Mari kita
+            mulai dengan membersihkan meja dan kursi setiap hari," ajak Rani.
+            Teman-teman Rani setuju dan mulai membersihkan kelas bersama-sama.
+            Mereka menyapu lantai, mengelap meja, dan membuang sampah pada
+            tempatnya. Setiap pagi sebelum pelajaran dimulai, Rani dan
+            teman-temannya selalu memastikan kelas mereka bersih dan rapi.
+            Selain menjaga kebersihan kelas, Rani juga selalu mengingatkan
+            teman-temannya untuk mencuci tangan sebelum makan. "Cuci tangan
+            dengan sabun sebelum makan sangat penting untuk mencegah penyakit,"
+            kata Rani. Teman-teman Rani mengikuti nasihatnya. Mereka mencuci
+            tangan dengan sabun di wastafel yang ada di depan kelas. Rani juga
+            membawa hand sanitizer untuk digunakan saat tidak ada air dan sabun.
+          </p>
+
+          <p id="text">
+            Pada hari Jumat, saat pengumuman pemenang lomba kebersihan, kepala
+            sekolah memanggil semua siswa untuk berkumpul di lapangan.
+            "Anak-anak, saya sangat bangga dengan usaha kalian dalam menjaga
+            kebersihan sekolah. Setelah menilai kebersihan setiap kelas, kami
+            memutuskan bahwa pemenangnya adalah... kelas 6A!" kata kepala
+            sekolah. Rani dan teman-temannya bersorak gembira. Mereka merasa
+            bangga karena usaha mereka membuahkan hasil. "Terima kasih,
+            teman-teman, atas kerja samanya. Mari kita terus menjaga kebersihan,
+            tidak hanya saat lomba, tetapi setiap hari," kata Rani dengan senyum
+            lebar.
+            <br /><br />
+            Sejak hari itu, kebiasaan menjaga kebersihan menjadi bagian dari
+            kehidupan sehari-hari di sekolah Rani. Semua siswa semakin sadar
+            akan pentingnya perilaku hidup bersih dan sehat. Mereka selalu
+            menjaga kebersihan diri dan lingkungan, serta makan makanan sehat
+            dan bergizi.
+            <br /><br />
+            Secara umum, setiap hal yang bersih memberikan kesan hal tersebut
+            sehat dan aman. Misalnya, bahan makanan yang dicuci hingga bersih
+            menjadikannya lebih higienis dan aman dikonsumsi. Selain itu,
+            lingkungan sekitar dan tubuh kita haruslah dibersihkan secara rutin
+            agar bisa hidup dengan sehat, bebas dari penyakit, dan pastinya
+            nyaman. Menjaga kebersihan tubuh tidak hanya dengan mandi, cuci
+            muka, dan gosok gigi saja. Kita juga harus sering mencuci tangan
+            sebelum makan dan sesudah melakukan sesuatu. Menggunakan pakaian
+            bersih dan mengonsumsi makanan yang bersih juga termasuk dalam
+            aktivitas menjaga kebersihan untuk kesehatan tubuh. Tapi bukan hanya
+            kesehatan tubuh secara fisik, menjaga kebersihan juga memiliki
+            banyak manfaat lain. Berikut ini beberapa di antaranya.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

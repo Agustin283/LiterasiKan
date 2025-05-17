@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Pendidikan Karakter</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/9f/c0/10/9fc010c24e81c467a9c0b82c56fb5e9d.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Sikap Disiplin: Fondasi Kesuksesan</p>
+        <div class="paragraph">
+          <p id="text">
+            Disiplin adalah kunci kesuksesan dalam berbagai aspek kehidupan.
+            Sikap disiplin tidak hanya penting untuk meraih prestasi, tetapi
+            juga untuk membangun karakter yang kuat. Disiplin berarti kemampuan
+            mengatur diri sendiri, menaati aturan, dan konsisten melakukan
+            sesuatu, bahkan ketika kita tidak ingin melakukannya. Sikap disiplin
+            yang ditanam sejak dini sangat penting, karena membentuk kebiasaan
+            yang baik dan bermanfaat.
+          </p>
+          <p id="text">
+            Bagaimana cara menumbuhkan sikap disiplin? Pertama, kita perlu
+            memahami pentingnya disiplin. Disiplin bukanlah sebuah beban,
+            melainkan sebuah alat untuk mencapai tujuan kita. Dengan disiplin,
+            kita dapat mengelola waktu dengan efektif, menyelesaikan tugas
+            dengan tepat waktu, dan menghindari kebiasaan buruk. Kedua, kita
+            perlu menetapkan tujuan yang jelas dan terukur. Tujuan yang jelas
+            akan memberikan motivasi dan arah dalam menjalani hidup. Ketiga,
+            kita perlu membuat rencana dan jadwal yang terstruktur. Rencana yang
+            terstruktur akan membantu kita untuk tetap fokus dan konsisten dalam
+            mencapai tujuan. Keempat, kita perlu konsisten dalam menjalankan
+            rencana tersebut. Konsistensi adalah kunci keberhasilan dalam
+            menumbuhkan sikap disiplin. Jangan mudah menyerah ketika menghadapi
+            tantangan.
+          </p>
+          <p id="text">
+            Menumbuhkan disiplin juga membutuhkan dukungan dari lingkungan
+            sekitar. Orang tua, guru, dan teman-teman dapat memberikan dukungan
+            dan motivasi untuk tetap disiplin. Mereka dapat membantu kita untuk
+            tetap fokus pada tujuan dan mengatasi hambatan yang dihadapi. Selain
+            itu, penting juga untuk memberikan penghargaan kepada diri sendiri
+            ketika kita berhasil menjalankan disiplin. Penghargaan ini dapat
+            berupa hal-hal kecil, seperti menonton film kesukaan atau makan
+            makanan favorit.
+          </p>
+          <p id="text">
+            Sikap disiplin tidak akan terbentuk dalam waktu singkat. Dibutuhkan
+            proses yang panjang dan konsisten. Namun, dengan usaha dan komitmen
+            yang kuat, kita dapat menumbuhkan sikap disiplin dan menuai hasilnya
+            di masa depan. Disiplin adalah investasi untuk masa depan yang lebih
+            cerah dan sukses.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

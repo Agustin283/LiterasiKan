@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Kesehatan Mental dan Psikologi: Menjelajahi Dunia Batin
+        Manusia
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/d5/06/0d/d5060da40e34b629facbae2edf683fc6.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kesehatan Mental dan Psikologi: Menjelajahi Dunia Batin Manusia</p>
+        <div class="paragraph">
+          <p class="text">
+            Kesehatan mental adalah kondisi dimana seseorang merasakan
+            keseimbangan, tenang, dan mampu menghadapi tantangan hidupnya
+            sehari-hari dengan caranya yang sehat. Kesehatan mental tidak hanya
+            berhubungan dengan tidak adanya gangguan mental, tetapi juga dengan
+            kemampuan untuk berfungsi secara optimal dalam berbagai aspek
+            kehidupannya, seperti hubungan sosial, pekerjaan, serta pencapaian
+            tujuan pribadinya. Oleh karena itulah, menjaga kesehatan mental
+            menjadi hal yang sangatlah penting, terutama bagi remaja yang tengah
+            berada dalam masa transisi dan pencarian jati dirinya.
+          </p>
+          <p class="text">
+            Psikologi adalah ilmu yang mempelajari tentang perilaku serta proses
+            mental manusia. Dalam psikologi, juga ada banyak cabang yang
+            membahas tentang bagaimana caranya manusia berpikir dan bertindak.
+            Selain itu, salah satu cabang yang paling relevan dengan kesehatan
+            mental adalah psikologi klinis. Psikologi klinis berfokus pada
+            diagnosis, pencegahan, dan pengobatan gangguan mental, seperti
+            depresi, kecemasan, dan stres.
+          </p>
+          <p class="text">
+            Remaja seringkali mengalami tantangan berat dalam hal kesehatan
+            mental. Tekanan akademik, hubungan sosial, serta ekspektasi dari
+            orang tua dan masyarakat bisa menyebabkan stres dan kecemasan.
+            Selain itu, di era digital ini, media sosial dapat memperburuk
+            kondisi mental remaja, karena banyak yang merasa tertekan dengan
+            perbandingan diri terhadap orang lain yang tampil sempurna di media
+            sosial. Oleh karena itu, penting bagi remaja untuk belajar bagaimana
+            mengelola emosi mereka dengan cara yang sehat.
+          </p>
+          <p class="text">
+            Untuk menjaga kesehatan mental, ada beberapa hal yang bisa
+            dilakukan. Pertama, menjaga pola tidur yang baik sangat penting
+            untuk memelihara keseimbangan emosional. Kurang tidur bisa
+            menyebabkan perubahan suasana hati yang negatif dan mempengaruhi
+            konsentrasi. Kedua, menjaga hubungan sosial yang sehat juga dapat
+            mendukung kesehatan mental. Berbicara dengan teman atau keluarga
+            yang dapat dipercaya dapat membantu mengurangi stres dan kecemasan.
+            Ketiga, berolahraga secara teratur terbukti dapat meningkatkan
+            suasana hati dan mengurangi gejala depresi.
+          </p>
+          <p class="text">
+            Selain itu, jika merasa kesulitan dalam mengatasi masalah mental,
+            mencari bantuan dari seorang psikolog atau konselor adalah langkah
+            yang bijak. Banyak orang merasa malu atau enggan untuk mencari
+            bantuan, padahal itu adalah cara yang efektif untuk mengatasi
+            gangguan mental. Psikolog dapat membantu individu untuk memahami
+            perasaan mereka dan memberikan strategi untuk menghadapinya.
+          </p>
+          <p class="text">
+            Penting untuk menyadari bahwa kesehatan mental bukanlah hal yang
+            bisa dianggap remeh. Seperti halnya menjaga kesehatan fisik, menjaga
+            kesehatan mental juga memerlukan perhatian dan usaha yang
+            berkelanjutan. Dengan mengelola stres, membangun kebiasaan sehat,
+            dan mencari dukungan ketika dibutuhkan, kita dapat menjaga
+            keseimbangan emosional dan mencapai kehidupan yang lebih baik.
+          </p>
+          <p class="text">
+            Mengelola stres merupakan langkah penting dalam menjaga kesehatan
+            mental. Stres dapat berasal dari berbagai sumber, seperti kerja,
+            hubungan antar manusia, keuangan, dan kehidupan pribadi. Teknik
+            mengelola stres yang efektif meliputi olahraga, meditasi, yoga,
+            menghabiskan waktu di alam, dan mencari dukungan dari orang
+            tercinta.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-4/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Penyebab Pemanasan Global</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/22/58/44/225844499d795ef3bd8e91e67c45e80f.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Penyebab Pemanasan Global</p>
+        <div class="paragraph">
+          <p class="text">
+            Pemanasan global adalah proses peningkatan suhu rata-rata di seluruh
+            permukaan bumi pada bagian atmosfer, bagian laut, dan daratan bumi.
+            Beberapa hal yang masih diragukan para ilmuwan adalah mengenai
+            jumlah pemanasan global yang diperkirakan akan terjadi di masa depan
+            dan bagaimana pemanasan serta perubahan-perubahan yang terjadi
+            tersebut akan bervariasi dari satu daerah ke daerah yang lain. Suhu
+            rata-rata global pada permukaan bumi telah meningkat 0.74 ± 0.18 °C
+            (1.33 ± 0.32 °F) selama seratus tahun terakhir. Banyak yang
+            menganggap perubahan ini hanya perubahan kecil, namun dapat
+            berdampak besar pada bumi.
+          </p>
+
+          <p class="text">
+            Kenaikan suhu ini dapat merubah iklim sehingga menyebabkan perubahan
+            pola cuaca yang dapat menimbulkan peningkatan dan perubahan curah
+            hujan, angin dan badai, serta terjadinya bencana alam yang dapat
+            memakan banyak korban jiwa. Peningkatan suhu permukaan bumi
+            dihasilkan oleh adanya radiasi sinar matahari menuju ke atmosfer
+            bumi, kemudian sebagian sinar ini berubah menjadi energi panas dalam
+            bentuk sinar infra merah yang diserap oleh udara dan permukaan bumi.
+          </p>
+
+          <p class="text">
+            Proses pemanasan global disebabkan oleh banyak faktor, terutama oleh
+            ulah manusia. Penyebab pemanasan global di seluruh dunia dikarenakan
+            adanya pertumbuhan populasi, teknologi, industri, dan juga populasi
+            penduduk yang semakin meningkat. Berikut adalah penyebab pemanasan
+            global:
+          </p>
+
+          <h3 class="text">Efek Rumah Kaca</h3>
+          <p class="text">
+            Efek rumah kaca adalah proses atmosfer menghangatkan planet. Rumah
+            kaca terjadi akibat panas yang dipantulkan ke permukaan bumi
+            terperangkap oleh gas-gas di atmosfer, sehingga tidak dapat
+            diteruskan ke luar angkasa tetapi dipantulkan kembali ke permukaan
+            bumi. Efek rumah kaca yang berlebihan akan membahayakan kehidupan di
+            bumi karena dapat mempengaruhi iklim.
+          </p>
+
+          <h3 class="text">Meningkatnya Gas Rumah Kaca</h3>
+          <p class="text">
+            Gas memiliki sifat memerangkap panas, sehingga panas yang terpantul
+            dari permukaan bumi tidak dapat diteruskan ke cahaya akibat dari gas
+            tersebut, dan gas ini disebut gas rumah kaca. Gas yang paling banyak
+            adalah karbon dioksida. Penyebab karbon dioksida meningkat karena
+            adanya pembakaran bahan bakar batu bara, minyak, dan gas alam.
+          </p>
+
+          <h3 class="text">Polusi Kendaraan Berbahan Bakar Bensin</h3>
+          <p class="text">
+            Polusi yang dihasilkan kendaraan berbahan bakar bensin seperti
+            motor, mobil, dan kendaraan lainnya, di mana dari hasil pembuangan
+            polusi tersebut menghasilkan karbon dioksida yang berlebihan. Karbon
+            dioksida adalah penyebab terbesar pemanasan global.
+          </p>
+
+          <h3 class="text">Perusakan Hutan</h3>
+          <p class="text">
+            Hutan sangat bermanfaat, karena pohon yang rimbun dapat menyerap
+            karbon dioksida dan mengeluarkan oksigen. Apabila hutan rusak karena
+            penebangan pohon sembarangan atau pun pembakaran, maka yang terjadi
+            jumlah karbon dioksida yang diserap hutan semakin sedikit dan
+            semakin banyak karbon dioksida yang berkumpul di atmosfer sehingga
+            dapat meningkatkan terjadinya pemanasan global.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

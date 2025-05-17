@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Fenomena Sosial Budaya di Era Modern
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/12/3e/1a/123e1adb59d84f2a0fabeb20555d3212.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Fenomena Sosial Budaya di Era Modern</p>
+        <div class="paragraph">
+          <p class="text">
+            Di era modern maju ini, masyarakat alami banyak perubahan sosial dan
+            budaya yang terpengaruh oleh teknologi dan globalisasi. Salah satu
+            fenomena yang tampak adalah budaya digital. Media sosial seperti
+            Instagram, TikTok, dan Twitter telah jadi bagian penting dalam hidup
+            sehari-hari. Dengan media ini, orang dapat berbagi info, bangun
+            jejaring, hingga kenalkan produk budaya mereka ke seluruh dunia.
+            Namun, dengan media sosial juga ada tantangan, seperti penyebaran
+            info palsu atau hoax.
+          </p>
+          <p class="text">
+            Globalisasi juga telah beri perubahan besar dalam interaksi budaya.
+            Budaya asing masuk dari film, musik, makanan, dan medsos telah
+            pengaruhi gaya hidup banyak orang, terutama anak muda. Contoh,
+            budaya Korea atau Hallyu. Fenomena sosial lainnya yang muncul adalah
+            meningkatnya kesadaran akan pentingnya kesetaraan dan keadilan.
+            Banyak gerakan sosial yang berkembang, seperti kampanye untuk
+            hak-hak perempuan, kesetaraan gender, dan kesadaran lingkungan.
+            Kampanye ini sering dilakukan melalui platform digital, yang membuat
+            pesan-pesan penting dapat menyebar dengan cepat. Misalnya, gerakan
+            peduli lingkungan mendorong masyarakat untuk mengurangi penggunaan
+            plastik sekali pakai dan meningkatkan penghijauan.
+          </p>
+          <p class="text">
+            Namun, di balik semua perubahan ini, muncul pula tantangan baru,
+            seperti polarisasi sosial akibat perbedaan pandangan. Isu-isu
+            seperti politik, agama, dan budaya kadang menimbulkan perpecahan di
+            tengah masyarakat. Oleh karena itu, penting untuk menumbuhkan sikap
+            toleran dan menghormati perbedaan. Dengan memahami sudut pandang
+            orang lain, masyarakat dapat hidup berdampingan secara harmonis
+            meskipun memiliki latar belakang yang berbeda.
+          </p>
+          <p class="text">
+            Fenomena sosial dan budaya yang terjadi saat ini mencerminkan
+            dinamika masyarakat yang terus berkembang. Dengan memahami dan
+            menyikapi perubahan ini secara bijak, kita dapat menjaga
+            keseimbangan antara kemajuan dan pelestarian nilai-nilai yang
+            penting dalam kehidupan bersama.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-4/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

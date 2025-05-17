@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Perubahan Iklim</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/8d/f1/a4/8df1a4b85cc9b5199bb469ab9666fdee.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Bumi Kita Sedang Panas: Memahami Perubahan Iklim</p>
+        <div class="paragraph">
+          <p id="text">
+            Bayangkan Bumi kita seperti rumah kita. Kalau kita jarang
+            membersihkan rumah dan membiarkan sampah berserakan, rumah jadi
+            kotor dan tidak nyaman dihuni. Begitu juga dengan Bumi. Karena
+            banyak aktivitas manusia, Bumi sekarang mengalami perubahan iklim,
+            seperti sedang demam tinggi. Cuaca jadi lebih panas dari biasanya,
+            hujan tidak menentu, kadang-kadang banjir besar melanda, dan
+            kekeringan panjang membuat lahan pertanian kering kerontang. Ini
+            semua terjadi karena banyak gas yang dihasilkan dari aktivitas
+            manusia, seperti asap kendaraan motor, pabrik-pabrik besar, dan
+            pembakaran hutan. Gas-gas ini seperti selimut tebal yang menyelimuti
+            Bumi, membuat panas matahari terperangkap dan suhu Bumi terus
+            meningkat. Ini disebut efek rumah kaca.
+          </p>
+          <p id="text">
+            Dampaknya sudah mulai kita rasakan. Es di kutub mencair dengan
+            cepat, membuat air laut naik dan mengancam pulau-pulau kecil dan
+            daerah pantai. Hutan-hutan sering terbakar, hewan-hewan kehilangan
+            tempat tinggal dan makanan, dan tanaman pertanian sulit tumbuh
+            dengan baik. Badai dan banjir juga semakin sering terjadi dan lebih
+            dahsyat dari sebelumnya. Singkatnya, Bumi kita menjadi tempat yang
+            tidak nyaman untuk ditinggali.
+          </p>
+          <p id="text">
+            Untungnya, kita masih bisa membantu Bumi kita! Kita bisa mulai
+            dengan mengurangi aktivitas yang menghasilkan banyak gas penyebab
+            pemanasan global. Menghemat energi dengan mematikan lampu yang tidak
+            terpakai, menggunakan kendaraan umum atau bersepeda, dan menghemat
+            penggunaan air merupakan langkah sederhana namun berarti. Mengurangi
+            sampah dengan rajin mendaur ulang dan mengurangi penggunaan plastik
+            juga sangat penting. Menanam pohon juga bisa membantu, karena pohon
+            menyerap gas penyebab pemanasan global.
+          </p>
+          <p id="text">
+            Perubahan iklim adalah masalah besar yang membutuhkan usaha bersama.
+            Meskipun terlihat kecil, setiap tindakan kita untuk mengurangi
+            dampak negatif terhadap lingkungan akan sangat membantu. Mari kita
+            jaga Bumi kita agar tetap sehat dan nyaman untuk dihuni oleh kita
+            dan generasi mendatang!
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

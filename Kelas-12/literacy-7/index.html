@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Perubahan Nilai Keluarga di Era Modern: Tradisional vs
+        Modernisasi
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/7d/8c/12/7d8c12012ee5904bd489e790394139d2.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>
+          Perubahan Nilai Keluarga di Era Modern: Tradisional vs Modernisasi
+        </p>
+        <div class="paragraph">
+          <p id="text">
+            Keluarga merupakan fondasi utama dalam kehidupan masyarakat. Di masa
+            lalu, nilai-nilai tradisional seperti kebersamaan, gotong-royong,
+            dan penghormatan terhadap orang tua menjadi pilar utama dalam
+            keluarga. Namun, seiring perkembangan zaman dan masuknya
+            modernisasi, nilai-nilai keluarga mulai mengalami perubahan. Era
+            modern membawa gaya hidup yang serba cepat, teknologi canggih, serta
+            tuntutan ekonomi yang tinggi. Perubahan ini memunculkan tantangan
+            baru yang menggeser pola hubungan dan peran dalam keluarga.
+          </p>
+
+          <p id="text">
+            Dalam keluarga tradisional, interaksi antaranggota keluarga sangat
+            erat. Contohnya, makan bersama dan berdiskusi mengenai permasalahan
+            keluarga adalah kegiatan rutin yang mempererat hubungan. Peran ayah
+            sebagai pencari nafkah utama dan ibu sebagai pengurus rumah tangga
+            menjadi hal yang lazim. Anak-anak diajarkan untuk menghormati orang
+            tua, menjaga tradisi, dan mengutamakan kebersamaan.
+          </p>
+
+          <p id="text">
+            Namun, dalam keluarga modern, peran-peran tersebut mulai bergeser.
+            Perempuan kini banyak yang bekerja di luar rumah dan memiliki
+            karier. Di sisi lain, teknologi telah mengubah cara keluarga
+            berkomunikasi. Anggota keluarga lebih sering berinteraksi melalui
+            ponsel atau media sosial daripada bertemu langsung. Menurut survei
+            Katadata Insight Center (2022), sekitar 67% keluarga di perkotaan
+            mengaku jarang menghabiskan waktu bersama akibat kesibukan pekerjaan
+            dan teknologi. Hal ini mengurangi kedekatan emosional dan
+            meningkatkan individualisme.
+          </p>
+
+          <p id="text">
+            Perubahan ini memiliki dampak positif dan negatif. Positifnya,
+            keluarga modern lebih fleksibel dan mampu beradaptasi dengan
+            perkembangan zaman. Namun, tantangan utamanya adalah hilangnya
+            nilai-nilai tradisional yang membentuk karakter, seperti kebersamaan
+            dan penghormatan. Jika tidak diimbangi, modernisasi dapat menjauhkan
+            keluarga dari identitas budaya dan nilai moral yang telah lama
+            dijaga.
+          </p>
+
+          <p id="text">
+            Perubahan nilai dalam keluarga di era modern adalah hal yang tak
+            terelakkan. Meski demikian, penting bagi setiap keluarga untuk
+            menemukan keseimbangan antara nilai tradisional dan modernisasi.
+            Mengadopsi perkembangan teknologi dan kesetaraan peran sambil
+            mempertahankan kebersamaan dan tradisi akan menciptakan keluarga
+            yang harmonis dan berkarakter. Keluarga yang mampu beradaptasi tanpa
+            kehilangan akar budayanya adalah kunci menghadapi tantangan di era
+            modern.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

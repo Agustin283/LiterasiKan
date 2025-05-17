@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Kesehatan Mental Kunci Kehidupan Seimbang
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/7d/97/52/7d975228598106c7b8d4058e1dd43b24.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kesehatan Mental Kunci Kehidupan Seimbang</p>
+        <div class="paragraph">
+          <p class="text">
+            Kesehatan mental adalah aspek penting dari hidup yang sering kali
+            kurang mendapat perhatian dibandingkan kesehatan fisik. Padahal,
+            kondisi mental yang sehat merupakan kunci untuk mencapai hidup yang
+            seimbang. Menurut Organisasi Kesehatan Dunia (WHO), kesehatan mental
+            mencakup kompetensi seseorang untuk mengelola stres, dapat bekerja
+            secara produktif, dan berkontribusi untuk komunitasnya. Sebaliknya,
+            gangguan mental seperti kecemasan, depresi, dan stres kronis dapat
+            menghambat individu dalam mencapai potensi terbaik.
+          </p>
+          <p class="text">
+            Pada masa remaja, sehat mental menjadi makin penting untuk memahami
+            perubahan yang dialami, baik secara fisik, emosional, maupun sosial.
+            Tekanan dari lingkungan sekolah, hubungan dengan teman sebaya, dan
+            harapan dari keluarga dapat memicu stres yang berlebihan. Jika tidak
+            dikelola dengan baik, stres ini dapat berkembang menjadi gangguan
+            yang lebih serius. Oleh karena itu, penting bagi remaja untuk
+            mengenali tanda-tanda awal gangguan mental, seperti perasaan sedih
+            berkepanjangan dan kehilangan minat pada aktivitas.
+          </p>
+          <p class="text">
+            Untuk menjaga kesehatan mental, ada beberapa langkah yang dapat
+            dilakukan. Pertama, menjaga pola hidup sehat, termasuk tidur yang
+            cukup, mengonsumsi makanan bergizi, dan rutin berolahraga. Aktivitas
+            fisik tidak hanya bermanfaat bagi tubuh, tetapi juga dapat membantu
+            mengurangi gejala stres dan kecemasan. Kedua, penting untuk
+            melibatkan diri dalam kegiatan positif yang sesuai dengan minat,
+            seperti seni, olahraga, atau kegiatan sosial. Ketiga, jangan ragu
+            untuk berbagi perasaan dengan orang yang dipercaya, seperti teman,
+            keluarga, atau guru. Selain itu, remaja juga perlu mengembangkan
+            keterampilan pengelolaan emosi, seperti berpikir positif dan
+            meluangkan waktu untuk relaksasi. Sementara untuk situasi yang lebih
+            serius, diperlukan adanya konsultasi.
+          </p>
+          <p class="text">
+            Dengan memperhatikan kesehatan mental, remaja dapat tumbuh menjadi
+            individu yang tangguh dan produktif. Keseimbangan antara kesehatan
+            fisik dan mental merupakan fondasi untuk mencapai cita-cita dan
+            menjalani kehidupan yang bermakna. Mari bersama-sama membangun
+            kesadaran tentang pentingnya kesehatan mental, karena sehat bukan
+            hanya tentang tubuh, tetapi juga tentang pikiran.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

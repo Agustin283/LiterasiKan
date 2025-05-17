@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Meningkatkan Potensi Diri untuk Masa Depan
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/bc/57/7a/bc577a53aae0c8303b84846c07a245fb.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Meningkatkan Potensi Diri untuk Masa Depan</p>
+        <div class="paragraph">
+          <p id="text">
+            Pengembangan diri merupakan proses yang penting bagi setiap
+            individu, terutama bagi remaja yang sedang berada di fase pencarian
+            jati diri. Sebagai siswa, masa ini adalah waktu yang tepat untuk
+            mengenali potensi dan mengasah keterampilan yang akan berguna di
+            masa depan. Salah satu langkah awal dalam pengembangan diri adalah
+            mengenali kekuatan dan kelemahan pribadi. Dengan memahami apa yang
+            menjadi kelebihan, kita dapat menggunakannya untuk mencapai tujuan.
+            Sementara itu, kelemahan bisa menjadi tantangan yang memotivasi kita
+            untuk terus belajar. Selain mengenali diri sendiri, menetapkan
+            tujuan yang jelas juga sangat penting. Tujuan memberikan arah dalam
+            kehidupan sehingga kita dapat fokus pada langkah-langkah yang harus
+            diambil. Misalnya, jika ingin menjadi seorang dokter, siswa perlu
+            mempersiapkan diri dengan mempelajari mata pelajaran sains, seperti
+            biologi dan kimia, serta mencari informasi tentang jalur pendidikan
+            yang diperlukan. Tanpa tujuan yang spesifik, seseorang cenderung
+            mudah kehilangan motivasi atau merasa bingung dalam mengambang.
+          </p>
+          <p id="text">
+            Pengembangan diri juga melibatkan pengelolaan waktu yang baik.
+            Dengan banyaknya tuntutan akademik dan kegiatan di luar sekolah,
+            manajemen waktu menjadi kunci untuk menjaga keseimbangan. Membuat
+            jadwal harian dan memprioritaskan tugas dapat membantu meningkatkan
+            produktivitas. Jangan lupa untuk menyisihkan waktu bagi hobi dan
+            istirahat, karena menjaga kesehatan mental sama pentingnya dengan
+            mencapai prestasi akademik. Interaksi sosial juga berperan penting
+            dalam pengembangan diri. Berkomunikasi dengan teman, guru, dan
+            keluarga dapat membantu memperluas wawasan dan mendapatkan dukungan
+            emosional. Membiarkan kemampuan komunikasi yang efektif, seperti
+            mendengarkan dengan baik dan menyampaikan pendapat secara sopan,
+            akan berguna dalam kehidupan sehari-hari. Selain itu, bergabung
+            dalam organisasi atau komunitas tertentu dapat menjadi sarana untuk
+            melatih kerja sama dan memperluas relasi.
+          </p>
+          <p id="text">
+            Oleh karena itu, jangan takut untuk mencoba hal-hal baru. Setiap
+            pengalaman, baik berhasil maupun gagal, adalah pelajaran berharga
+            yang membantu kita tumbuh. Dengan keberanian untuk keluar dari zona
+            nyaman, kita dapat menemukan potensi tersembunyi yang sebelumnya
+            tidak kita sadari. Pengembangan diri bukanlah proses yang instan,
+            melainkan perjalanan panjang yang membutuhkan konsistensi dan
+            ketekunan. Namun, usaha ini akan terbayar di masa mendatang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

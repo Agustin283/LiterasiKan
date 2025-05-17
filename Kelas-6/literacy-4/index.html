@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Teknologi Sederhana</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/12/8e/4c/128e4c63241e0839464487d355916462.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>DINA DAN KINCIR ANGIN PENYELAMAT DESA SUKARAME</p>
+        <div class="paragraph">
+          <p id="text">
+            Dina adalah seorang anak perempuan berusia 12 tahun yang tinggal di
+            Desa Sukarame, sebuah desa kecil yang terletak di dataran tinggi.
+            Desa Sukarame terkenal dengan pemandangannya yang indah, dikelilingi
+            perbukitan hijau dan lembah yang subur. Namun, keindahan itu
+            terkadang ternodai oleh masalah klasik: kekeringan. Mata air yang
+            menjadi sumber kehidupan warga Desa Sukarame sering mengering di
+            musim kemarau, membuat warga kesulitan mendapatkan air bersih. Dina
+            melihat betapa sulitnya warga desa mendapatkan air bersih. Setiap
+            hari, ia melihat ibunya dan para ibu lainnya berjalan jauh ke mata
+            air yang jauh dan terkadang kering untuk mendapatkan air. Mereka
+            harus mengantri berjam-jam dan seringkali pulang dengan ember yang
+            hanya berisi sedikit air. Dina merasa iba dan ingin membantu.
+          </p>
+
+          <p id="text">
+            Suatu hari, saat menonton televisi bersama keluarganya, Dina melihat
+            tayangan tentang kincir angin raksasa yang digunakan untuk
+            membangkitkan listrik. Ide cemerlang pun muncul di benaknya. "Aku
+            bisa membuat kincir angin mini untuk membantu!" pikirnya. Dina
+            langsung bercerita kepada ayahnya, seorang tukang kayu yang handal.
+            Ayah Dina awalnya ragu, tetapi melihat semangat putrinya yang
+            membara, ia setuju untuk membantunya. Mereka mengumpulkan
+            bahan-bahan sederhana: beberapa potongan kayu bekas dari bengkel
+            ayahnya, beberapa lembar plastik bekas dari warung tetangga, dan
+            sebuah baterai bekas dari radio tua. Mereka juga memanfaatkan
+            beberapa paku, lem, dan tali nilon yang masih tersisa. Dengan
+            bantuan ayahnya, Dina mempelajari cara membuat kincir angin
+            sederhana. Mereka memotong kayu menjadi baling-baling yang ramping
+            dan aerodinamis. Plastik bekas dipotong dan dibentuk menjadi layar
+            untuk menangkap angin. Prosesnya tidak mudah. Mereka harus mengukur
+            dan memotong kayu dengan presisi agar baling-baling dapat berputar
+            dengan seimbang. Dina belajar tentang keseimbangan dan aerodinamika
+            secara praktis.
+          </p>
+
+          <p id="text">
+            Setelah baling-baling selesai, mereka memasang sebuah poros kecil
+            yang terbuat dari bambu yang kuat. Poros ini terhubung dengan sebuah
+            pompa air kecil yang ditemukan Dina di gudang bengkel ayahnya. Pompa
+            ini cukup tua, tetapi masih berfungsi dengan baik. Baterai bekas
+            digunakan sebagai sumber tenaga untuk membantu memutar poros di
+            awal, hingga kincir angin cukup berputar untuk menggerakkan pompa.
+            Kincir angin mini buatan Dina memang tidak sekuat kincir angin
+            besar, tetapi cukup untuk memutar pompa air kecil dan menyedot air
+            dari sumur dangkal yang ada di dekat rumahnya. Dina berhasil membuat
+            sistem sederhana yang dapat mengalirkan air ke tempat penampungan
+            air yang lebih dekat dengan rumah warga.
+          </p>
+
+          <p id="text">
+            Warga desa sangat terbantu dengan penemuan Dina. Mereka tidak perlu
+            lagi berjalan jauh untuk mendapatkan air. Dina pun dikenal sebagai
+            anak yang kreatif dan inovatif. Kisah Dina dan kincir angin mini-nya
+            menjadi inspirasi bagi anak-anak lain di Desa Sukarame untuk
+            berpikir kreatif dan mencari solusi atas permasalahan di sekitar
+            mereka. Dina membuktikan bahwa teknologi sederhana, jika dipadukan
+            dengan kreativitas dan ketekunan, dapat membawa perubahan besar bagi
+            kehidupan masyarakat.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-4/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

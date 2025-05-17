@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Kemajuan Teknologi bagi Generasi Muda
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/93/ab/0a/93ab0ae21a1be5d6901853a4fce27e7f.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kemajuan Teknologi bagi Generasi Muda</p>
+        <div class="paragraph">
+          <p class="text">
+            Tidak dapat disangkal, teknologi kini hadir dan memengaruhi berbagai
+            aspek kehidupan. Anak muda, sebagai pengguna teknologi terbesar,
+            tentu merasakan banyak manfaatnya dalam kehidupan sehari-hari.
+            Dengan teknologi, banyak hal yang sebelumnya rumit atau memakan
+            waktu kini bisa dilakukan dengan lebih cepat dan mudah. Misalnya,
+            mencari informasi, berkomunikasi dengan orang lain, belajar, hingga
+            berbelanja, semuanya dapat dilakukan hanya dengan sentuhan jari.
+            Teknologi tidak hanya mempermudah, tetapi juga membuka peluang baru
+            yang sebelumnya tidak terpikirkan.
+          </p>
+
+          <p class="text">
+            Contohnya, menonton film kini jauh lebih mudah berkat adanya
+            berbagai situs streaming online. Kita tidak lagi harus pergi ke
+            bioskop untuk menikmati film favorit, karena semuanya bisa diakses
+            langsung dari rumah melalui ponsel atau komputer. Selain itu,
+            berbagi cerita atau momen keseharian juga semakin praktis dengan
+            bantuan media sosial. Platform seperti YouTube, Facebook, Twitter,
+            dan Instagram memungkinkan kita untuk membagikan foto, video, atau
+            tulisan dengan teman-teman atau bahkan orang di seluruh dunia hanya
+            dalam hitungan detik.
+          </p>
+
+          <p class="text">
+            Kemudahan akses yang ditawarkan oleh teknologi jelas memberikan
+            banyak dampak positif. Salah satu contohnya adalah kemampuan
+            bilingual atau kemampuan berbahasa lebih dari satu bahasa yang
+            semakin tinggi di kalangan anak muda masa kini. Dengan teknologi,
+            mereka bisa belajar bahasa asing melalui aplikasi, video, atau
+            kursus online kapan saja. Selain itu, anak muda juga memiliki
+            kesempatan untuk mengakses beragam informasi dan wawasan hanya
+            dengan bantuan internet. Dengan sekali klik, mereka bisa membaca
+            artikel, menonton video edukasi, atau mengikuti kursus online dari
+            berbagai sumber di seluruh dunia. Teknologi benar-benar membuka
+            jalan bagi mereka untuk terus belajar dan berkembang.
+          </p>
+
+          <p class="text">
+            Namun, kehadiran teknologi tidak hanya menawarkan dampak positif
+            namun juga membawa dampak negatif yang perlu diperhatikan. Salah
+            satu contohnya adalah penyebaran berbagai konten sensitif atau tidak
+            pantas yang dapat dengan mudah diakses oleh anak muda. Hal ini bisa
+            berdampak buruk pada pola pikir, perilaku, dan moral mereka jika
+            tidak dibarengi dengan pengawasan yang baik. Selain itu, teknologi
+            juga sering membuat anak muda lebih tertarik pada budaya modern
+            daripada budaya asli bangsa. Akibatnya, banyak adat istiadat dan
+            kebudayaan tradisional yang mulai dilupakan atau bahkan hilang
+            karena tidak lagi dianggap menarik untuk dilestarikan. Ini menjadi
+            tantangan besar untuk menjaga keseimbangan antara memanfaatkan
+            teknologi dan tetap menghargai nilai-nilai budaya.
+          </p>
+
+          <p class="text">
+            Akses teknologi yang mudah bukan berarti tanpa tanggung jawab. Kita
+            perlu mengajarkan anak muda untuk menggunakan teknologi dengan
+            bijak, sehingga mereka bisa memanfaatkannya untuk kebaikan, bukan
+            sebaliknya. Dengan bimbingan yang tepat, anak muda dapat
+            memanfaatkan teknologi untuk berkreasi, berinovasi, dan
+            berkontribusi positif bagi kemajuan negara. Mari kita dukung mereka
+            agar potensi mereka dapat berkembang secara optimal. Bimbingan yang
+            baik akan membantu anak muda menggunakan teknologi untuk kemajuan
+            diri dan bangsa. Akses yang tepat, kunci menuju perubahan yang lebih
+            baik.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

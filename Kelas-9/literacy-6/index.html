@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Desember Penghujan</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/67/18/43/67184302063c86ecac8683bdc57586f3.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Desember Penghujan</p>
+        <div class="paragraph">
+          <p class="text">
+            Desember adalah bulan yang selalu membawa nuansa berbeda di setiap
+            sudut kota. Hujan yang turun dengan lebatnya seolah menjadi penanda
+            bahwa tahun akan segera berganti. Suara gemuruh petir dan kilatan
+            cahaya di langit menambah kesan dramatis pada suasana. Di tengah
+            dinginnya udara, aroma tanah basah dan dedaunan yang segar menyatu,
+            menciptakan keharuman yang khas. Bagi sebagian orang, Desember
+            adalah bulan penuh harapan, di mana mereka merenungkan perjalanan
+            hidup selama setahun terakhir dan merencanakan harapan baru untuk
+            tahun yang akan datang.
+          </p>
+
+          <p class="text">
+            Hujan yang turun seolah menghapus jejak-jejak kesedihan dan
+            kegagalan, memberikan kesempatan untuk memulai kembali dengan
+            semangat yang baru. Di tengah hujan yang tak kunjung reda, banyak
+            aktivitas yang terpaksa terhenti. Jalanan yang biasanya ramai kini
+            dipenuhi genangan air, membuat kendaraan melaju dengan hati-hati.
+            Namun, di balik kesulitan ini, ada keindahan yang tak bisa
+            dipungkiri.
+          </p>
+
+          <p class="text">
+            Anak-anak berlarian di bawah hujan, tertawa dan bermain, seolah
+            tidak peduli dengan dinginnya air yang membasahi tubuh mereka.
+            Mereka melompat-lompat di genangan air, menciptakan percikan yang
+            menambah keceriaan suasana. Di sudut-sudut kota, para pedagang kaki
+            lima tetap berjualan, menawarkan makanan hangat yang menggugah
+            selera. Aroma bakso, mie rebus, dan wedang jahe menyebar di udara,
+            menjadi pelipur lara bagi para pengunjung yang berteduh dari hujan.
+          </p>
+
+          <p class="text">
+            Suasana hangat dari tenda-tenda kecil mereka menjadi tempat
+            berkumpul yang nyaman, di mana orang-orang saling berbagi cerita dan
+            tawa. Desember juga menjadi waktu bagi keluarga untuk berkumpul,
+            berbagi cerita, dan menikmati momen kebersamaan di dalam rumah,
+            sambil mendengarkan suara hujan yang menenangkan. Momen-momen ini
+            menjadi kenangan berharga yang akan dikenang sepanjang hidup.
+          </p>
+
+          <p class="text">
+            Saat bulan Desember berakhir, hujan yang terus mengguyur seolah
+            membawa pesan bahwa setiap akhir adalah awal yang baru. Setiap tetes
+            air yang jatuh dari langit adalah harapan yang mengalir,
+            membersihkan segala kesedihan dan kesulitan yang telah dilalui.
+            Ketika tahun baru menjelang, banyak orang mulai menuliskan resolusi
+            dan impian mereka, berharap agar tahun yang akan datang membawa
+            keberuntungan dan kebahagiaan. Desember, dengan segala hujan dan
+            keindahannya, mengajarkan kita untuk bersyukur atas setiap momen
+            yang telah dilalui, serta mengingatkan kita bahwa setiap perubahan,
+            meskipun sulit, adalah bagian dari perjalanan hidup yang harus
+            dijalani. Dengan semangat baru, kita melangkah ke tahun yang akan
+            datang, siap menghadapi tantangan dan meraih impian yang telah lama
+            diidamkan. Desember bukan hanya sekadar bulan penghujan, tetapi juga
+            bulan refleksi dan harapan, di mana kita belajar untuk menghargai
+            setiap detik yang ada.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

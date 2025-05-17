@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Dampak Perubahan Iklim terhadap Tradisi Budaya Masyarakat
+        Lokal
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/b8/75/2d/b8752d99377fb8ce7b416d37e96e70a9.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Dampak Perubahan Iklim terhadap Tradisi Budaya Masyarakat Lokal</p>
+        <div class="paragraph">
+          <p id="text">
+            Perubahan iklim telah menjadi isu global yang mempengaruhi berbagai
+            aspek kehidupan, termasuk tradisi budaya masyarakat lokal. Di banyak
+            daerah, perubahan cuaca yang ekstrem dan tidak terduga mengganggu
+            pola kehidupan sehari-hari serta praktik budaya yang telah
+            berlangsung selama berabad-abad. Dalam konteks ini, penting untuk
+            memahami bagaimana perubahan iklim dapat mengubah tradisi budaya
+            yang telah ada dan mempengaruhi cara berinteraksi dengan lingkungan
+            mereka.
+          </p>
+
+          <p id="text">
+            Salah satu dampak utama dari perubahan iklim adalah perubahan pola
+            cuaca. Misalnya, musim hujan yang tidak menentu dapat mempengaruhi
+            pertanian, yang merupakan bagian integral dari banyak tradisi
+            budaya. Di daerah pertanian, festival panen yang biasanya dirayakan
+            pada waktu tertentu bisa terancam hilang karena hasil panen yang
+            tidak stabil. Hal ini tidak hanya mempengaruhi perekonomian lokal
+            tetapi juga identitas budaya masyarakat yang terikat pada siklus
+            pertanian dan kegiatan sosial yang menyertainya.
+          </p>
+
+          <p id="text">
+            Selain itu, perubahan iklim juga menyebabkan migrasi penduduk.
+            Ketika sumber daya alam menipis akibat perubahan iklim, banyak orang
+            terpaksa meninggalkan tempat tinggal mereka untuk mencari kehidupan
+            yang lebih baik di daerah lain. Proses migrasi ini dapat
+            mengakibatkan hilangnya tradisi dan kebiasaan lokal karena
+            masyarakat baru mungkin tidak memiliki ikatan emosional atau sejarah
+            terhadap budaya tempat mereka tinggal sekarang.
+          </p>
+
+          <p id="text">
+            Tradisi lisan, seni pertunjukan, dan ritual keagamaan juga terancam
+            oleh perubahan iklim. Banyak dari praktik ini sangat tergantung pada
+            lingkungan fisik dan keanekaragaman hayati setempat. Misalnya, jika
+            suatu daerah mengalami penurunan populasi spesies tertentu akibat
+            perubahan iklim, maka cerita rakyat atau lagu-lagu yang berkaitan
+            dengan spesies tersebut mungkin akan hilang seiring berjalannya
+            waktu.
+          </p>
+
+          <p id="text">
+            Namun, ada juga contoh positif bagaimana masyarakat lokal
+            beradaptasi dengan perubahan iklim sambil mempertahankan tradisi
+            mereka. Beberapa komunitas mulai mengintegrasikan pengetahuan
+            tradisional dengan teknologi modern untuk mengatasi tantangan baru
+            ini. Misalnya, praktik pertanian berkelanjutan yang menggabungkan
+            metode tradisional dengan inovasi baru dapat membantu menjaga
+            kepunahan budaya sekaligus melindungi lingkungan.
+          </p>
+
+          <p id="text">
+            Di sisi lain, kolaborasi antara generasi tua dan muda dalam
+            melestarikan tradisi juga menjadi kunci penting dalam menghadapi
+            dampak perubahan iklim. Generasi muda dapat belajar dari pengalaman
+            dan pengetahuan generasi sebelumnya tentang cara-cara beradaptasi
+            dengan lingkungan yang berubah. Dengan memanfaatkan teknologi dan
+            media sosial, mereka dapat menyebarkan nilai-nilai budaya serta
+            praktik-praktik lokal kepada audiens yang lebih luas. Hal ini tidak
+            hanya memperkuat identitas budaya tetapi juga menciptakan kesadaran
+            akan pentingnya menjaga warisan budaya di tengah tantangan global.
+          </p>
+
+          <p id="text">
+            Kesimpulannya, dampak perubahan iklim terhadap tradisi budaya
+            masyarakat lokal sangat kompleks dan beragam. Masyarakat harus
+            menghadapi tantangan ini dengan cara yang kreatif dan adaptif agar
+            tetap dapat mempertahankan identitas budaya mereka dalam menghadapi
+            ancaman global yang semakin meningkat.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-3/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

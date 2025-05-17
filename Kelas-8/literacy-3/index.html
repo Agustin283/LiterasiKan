@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Cyber Bullying</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/f8/2b/9b/f82b9b84d09e7bef72247f70c14eaf42.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Cyber Bullying</p>
+        <div class="paragraph">
+          <p class="text">
+            Cyber bullying adalah salah satu bentuk bullying yang terjadi di
+            dunia maya. Ini berarti tindakan jahat yang dilakukan dengan sengaja
+            untuk menyakiti orang lain melalui internet. Bentuk-bentuk cyber
+            bullying dapat berupa penyebaran fitnah, ejekan, hinaan, ancaman,
+            penggunaan kata-kata kasar, hingga pelecehan. Hal ini bisa terjadi
+            di media sosial, pesan singkat, atau platform online lainnya, dan
+            dapat sangat merugikan korban secara emosional dan psikologis.
+            Penting untuk mengenali dan menghentikan tindakan ini agar
+            lingkungan online menjadi lebih aman dan nyaman bagi semua orang.
+          </p>
+
+          <p class="text">
+            Kejahatan yang dilakukan dengan sengaja ini biasanya dilakukan oleh
+            satu orang atau sekelompok orang yang ingin membuat orang lain
+            merasa kesal atau bahkan sampai mengalami masalah mental. Kasus
+            bullying ini sering terjadi di antara teman-teman, di mana seseorang
+            bisa merasa tertekan atau tersakiti akibat tindakan atau kata-kata
+            yang menyakitkan dari orang-orang di sekitarnya. Penting untuk
+            menyadari bahwa bullying dapat berdampak serius pada kesehatan
+            mental korban, sehingga kita perlu saling mendukung dan menciptakan
+            suasana yang positif dalam pertemanan.
+          </p>
+
+          <p class="text">
+            Salah satu faktor yang menyebabkan terjadinya bullying adalah
+            kurangnya pengawasan dari orang-orang yang seharusnya bertanggung
+            jawab, seperti orang tua, guru, atau pengawas. Terkadang, tindakan
+            bullying ini dianggap sepele atau biasa saja oleh sebagian orang,
+            sehingga tidak mendapatkan perhatian yang cukup. Namun, meskipun
+            tampak remeh, dampak yang ditimbulkan bisa sangat serius dan dapat
+            mengganggu kesehatan mental korban. Dampak dari cyber bullying
+            sangat berbahaya bagi korban. Tidak hanya melukai perasaan, tindakan
+            ini juga bisa memengaruhi kesehatan mental korban, seperti
+            menimbulkan rasa cemas, stres, atau bahkan depresi. Beberapa korban
+            mungkin merasa takut untuk bersosialisasi, kehilangan kepercayaan
+            diri, atau mengalami trauma yang mendalam. Oleh karena itu, penting
+            bagi kita semua untuk lebih peka terhadap perilaku bullying dan
+            memberikan dukungan kepada mereka yang menjadi korban.
+          </p>
+
+          <p class="text">
+            Cyber bullying bisa diatasi jika kita semua mau berpikir dulu
+            sebelum bertindak atau melakukan sesuatu di dunia maya. Penting
+            untuk mengingat bahwa kata-kata dan tindakan kita dapat menyakiti
+            perasaan orang lain. Sekolah dan keluarga juga harus ikut berperan
+            aktif dalam mengatasi cyber bullying. Mereka bisa memberikan edukasi
+            tentang bahaya cyber bullying, mengajarkan anak-anak cara bersikap
+            baik di dunia maya, dan memberikan dukungan kepada korban cyber
+            bullying. Dengan kerja sama dari semua pihak, kita bisa menciptakan
+            lingkungan online yang lebih aman dan nyaman bagi semua orang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-3/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

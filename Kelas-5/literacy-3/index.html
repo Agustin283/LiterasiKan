@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: CERITA RAKYAT DAN FABEL</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/dc/57/3d/dc573d901304f97679a356751b9a7756.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Si Kuda yang Bijak dan Serigala yang Licik</p>
+        <div class="paragraph">
+          <p id="text">
+            Di sebuah padang rumput yang luas, hiduplah seekor kuda bernama
+            Arka. Arka terkenal sebagai kuda yang kuat, bijaksana, dan selalu
+            berpikir dua kali sebelum bertindak. Ia sering berkelana di sekitar
+            hutan, menjaga diri dari bahaya, dan berusaha hidup damai dengan
+            makhluk lain. Suatu hari, saat sedang merumput di tepi hutan, Arka
+            bertemu seekor serigala bernama Riko. Riko dikenal sebagai hewan
+            yang licik, suka menipu binatang lain untuk kepentingannya sendiri,
+            dan selalu mencari celah untuk mendapatkan keuntungan.
+          </p>
+
+          <p id="text">
+            “Hai, Arka! Apa kabar? Aku sudah lama ingin bertemu denganmu,” sapa
+            Riko dengan senyum lebar yang penuh tipu daya. Arka, yang sudah
+            mendengar tentang kebiasaan buruk Riko, tetap tenang dan tidak
+            terpengaruh. Ia menjaga jarak dan menjawab dengan hati-hati, “Aku
+            baik-baik saja, Riko. Ada apa kau datang ke sini?”
+          </p>
+
+          <p id="text">
+            Riko tersenyum lebih lebar, mencoba menyembunyikan niat buruknya.
+            “Aku hanya ingin berteman denganmu, Arka. Bagaimana kalau kita
+            bekerja sama? Kau bisa membantuku mencari makanan, dan aku akan
+            melindungimu dari bahaya. Kita bisa saling membantu, kan?”
+          </p>
+
+          <p id="text">
+            Arka tetap waspada. Ia tahu bahwa serigala seperti Riko tidak
+            mungkin hanya ingin berteman tanpa ada maksud tersembunyi. Namun,
+            Arka tidak langsung menolak. “Kau tahu, Riko, aku tidak mudah
+            percaya pada kata-kata seperti itu. Aku lebih memilih berhati-hati
+            dalam memilih teman.” Riko merasa terganggu oleh sikap Arka yang
+            tidak mudah terpengaruh. Ia mencoba meyakinkan lagi, “Tapi kita bisa
+            saling menguntungkan. Aku tahu banyak tempat dengan makanan
+            melimpah, dan jika ada bahaya, aku bisa melindungimu. Jangan
+            khawatir, aku tidak akan mengecewakanmu.”
+          </p>
+
+          <p id="text">
+            Namun, Arka yang bijaksana tidak terburu-buru menerima tawaran
+            tersebut. “Aku menghargai tawaranmu, Riko, tetapi aku lebih suka
+            mencari makanan sendiri dan menghindari bahaya dengan cara yang
+            aman. Lagipula, aku tidak yakin aku bisa mempercayaimu sepenuhnya.”
+          </p>
+
+          <p id="text">
+            Riko, yang merasa kalah, akhirnya mengangguk dengan enggan. Ia tahu
+            bahwa Arka tidak akan mudah dibohongi. “Baiklah, Arka. Aku mengerti.
+            Tapi ingatlah, jika ada bahaya, aku selalu siap untuk membantu.”
+          </p>
+
+          <p id="text">
+            Arka hanya tersenyum tipis dan melanjutkan langkahnya, merasa lebih
+            hati-hati dan bijaksana dari sebelumnya. Ia tahu bahwa dalam hidup,
+            tidak semua tawaran yang tampak menarik itu harus diterima, dan
+            kadang-kadang, jauh lebih baik mengandalkan kebijaksanaan daripada
+            mencari keuntungan jangka pendek.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-3/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

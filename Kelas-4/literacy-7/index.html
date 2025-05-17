@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Perjuangan Raden Ajeng Kartini untuk Perempuan Indonesia
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/1c/6e/8b/1c6e8b0578990f79dfbea82d7745e786.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Perjuangan Raden Ajeng Kartini untuk Perempuan Indonesia</p>
+        <div class="paragraph">
+          <p>
+            Raden Ajeng Kartini, atau Kartini, adalah pahlawan nasional yang
+            sangat hebat. Ia lahir di Jepara, Jawa Tengah. Kartini lahir dari
+            keluarga ningrat. Namun, Kartini punya pandangan yang beda tentang
+            perempuan. Pandangan ia jauh lebih maju dari banyak orang di
+            zamannya. Kala itu, perempuan di Jawa, yang dari kalangan bangsawan,
+            sangat kurang. Hal itu tampak dalam pendidikan dan kehidupan sosial.
+            Mereka hanya tinggal di rumah. Mereka mengurus rumah tangga. Mereka
+            tidak boleh sekolah. Kartini sangat prihatin. Ia merasa perempuan
+            juga berhak mendapatkan pendidikan. Perempuan juga berhak mendapat
+            kesempatan yang sama dengan laki-laki. Kartini sangat ingin belajar.
+            Ia ingin mengembangkan dirinya.
+          </p>
+
+          <p>
+            Ia ingin memajukan kaum perempuan. Keinginan Kartini sangat kuat.
+            Adat dan tradisi mencoba menghalangi. Namun, Kartini tetap gigih. Ia
+            rajin membaca buku. Ia membaca surat kabar. Ia belajar banyak hal.
+            Ia berkirim surat dengan banyak orang. Ia bahkan berkirim surat
+            dengan orang-orang di Belanda. Ia mendapat banyak pengetahuan dan
+            wawasan. Ia belajar bahasa Belanda. Kartini adalah teladan bagi
+            perempuan yang gigih dan pantang menyerah.
+          </p>
+
+          <p>
+            Kartini memperjuangkan hak-hak perempuan dengan berbagai cara. Ia
+            menulis surat. Surat-surat itu ditujukan kepada teman-temannya di
+            Belanda. Dalam surat-suratnya, Kartini menuangkan isi hatinya. Ia
+            mengungkapkan pikirannya. Ia mengungkapkan perasaannya. Ia menulis
+            tentang kedudukan perempuan. Ia menulis tentang harapannya.
+            Harapannya adalah kemajuan perempuan Indonesia.
+          </p>
+
+          <p>
+            Surat-surat Kartini kemudian dikumpulkan. Surat-surat itu kemudian
+            diterbitkan menjadi sebuah buku. Buku itu berjudul
+            <i>Habis Gelap Terbitlah Terang</i>. Buku itu sangat terkenal. Buku
+            itu sangat inspiratif. Banyak orang terinspirasi oleh buku tersebut.
+            Buku itu menjadi bacaan penting. Buku itu dibaca oleh perempuan
+            Indonesia. Buku tersebut diterjemahkan ke berbagai bahasa. Buku
+            tersebut dibaca di seluruh dunia.
+          </p>
+
+          <p>
+            Selain menulis, Kartini juga mendirikan sekolah. Sekolah itu untuk
+            perempuan. Tujuannya adalah memberikan pendidikan kepada perempuan.
+            Kartini ingin perempuan Indonesia mendapatkan pendidikan yang layak.
+            Ia ingin perempuan Indonesia mengembangkan potensi mereka.
+          </p>
+
+          <p>
+            Meskipun Kartini meninggal di usia muda, pengaruhnya tetap besar.
+            Perjuangan dan pemikirannya terus menginspirasi. Kartini telah
+            memberikan kontribusi besar. Kontribusinya adalah kemajuan perempuan
+            Indonesia. Ia membuka jalan bagi perempuan. Perempuan mendapatkan
+            pendidikan dan kesempatan yang sama.
+          </p>
+
+          <p>
+            Kartini adalah teladan. Ia adalah simbol perjuangan. Ia adalah
+            pahlawan nasional. Kita harus selalu mengenang jasanya. Kita harus
+            meneladani semangat juangnya. Kita harus meneladani kegigihannya.
+            Kita harus memperjuangkan hak-hak perempuan. Kita harus memajukan
+            perempuan Indonesia. Kita harus membangun Indonesia yang lebih baik.
+          </p>
+
+          <p>
+            Kartini akan selalu dikenang. Ia dikenang sebagai pahlawan perempuan
+            Indonesia yang luar biasa. Semangatnya akan selalu menginspirasi.
+            Generasi penerus akan selalu terinspirasi olehnya.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

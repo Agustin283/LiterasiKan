@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Petualangan di Dunia Teknologi</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/19/16/f4/1916f4550a939d26025501139831a21c.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Petualangan di Dunia Teknologi</p>
+        <div class="paragraph">
+          <p id="text">
+            Di sebuah desa kecil, hiduplah seorang anak bernama Budi. Budi
+            adalah anak yang sangat penasaran dan suka sekali belajar hal-hal
+            baru, terutama tentang teknologi. Setiap hari sepulang sekolah, Budi
+            selalu menghabiskan waktu di perpustakaan desa untuk membaca
+            buku-buku tentang komputer, robot, dan penemuan-penemuan teknologi
+            lainnya.
+            <br /><br />
+            Suatu hari, Budi menemukan sebuah buku tua yang berjudul
+            "Petualangan di Dunia Teknologi". Di rumah, Budi langsung membuka
+            buku dan mulai membaca. Ternyata, buku itu bercerita tentang seorang
+            anak yang bisa masuk ke dalam dunia teknologi melalui sebuah portal
+            ajaib. Budi sangat terpesona dengan cerita itu dan berharap bisa
+            mengalami petualangan yang sama.
+            <br /><br />
+            Malam itu, saat Budi sedang tidur, ia bermimpi tentang portal ajaib
+            yang ada di buku tersebut. Dalam mimpinya, portal muncul di kamarnya
+            dan mengeluarkan cahaya yang sangat terang. Tanpa berpikir panjang,
+            Budi melangkah masuk ke dalam portal tersebut. Tiba-tiba, Budi
+            menemukan dirinya berada di sebuah dunia yang penuh dengan teknologi
+            canggih. Di sekelilingnya, ada robot-robot yang sedang bekerja,
+            mobil-mobil terbang, dan gedung-gedung tinggi yang terbuat dari
+            kaca. Budi merasa sangat kagum dan bersemangat untuk menjelajahi
+            dunia baru ini.
+          </p>
+
+          <p id="text">
+            Saat berjalan-jalan, Budi bertemu dengan seorang robot bernama Robo.
+            Robo adalah robot yang pintar dan ramah. Ia menjelaskan kepada Budi
+            bahwa dunia ini adalah tempat di mana semua teknologi canggih
+            dikembangkan dan diuji coba. Robo mengajak Budi untuk mengunjungi
+            beberapa tempat menarik di dunia teknologi ini. Pertama, mereka
+            mengunjungi sebuah laboratorium tempat para ilmuwan sedang
+            mengembangkan robot-robot baru. Budi melihat bagaimana para ilmuwan
+            merancang dan merakit robot-robot tersebut dengan sangat teliti. Ia
+            juga belajar tentang berbagai komponen yang digunakan untuk membuat
+            robot, seperti sensor, motor, dan chip komputer.
+            <br /><br />
+            Selanjutnya, Robo mengajak Budi ke pabrik yang memproduksi
+            mobil-mobil terbang. Budi melihat proses pembuatan mobil-mobil
+            tersebut dari awal hingga akhir. Lalu, Robo mengajak Budi ke taman
+            bermain yang penuh dengan permainan berbasis teknologi. Budi mencoba
+            berbagai permainan seru, seperti simulasi penerbangan, permainan
+            virtual reality, dan robot-robot yang bisa diajak bermain.
+            <br /><br />
+            Setelah seharian menjelajahi dunia teknologi, Budi merasa sangat
+            senang dan puas. Ia belajar banyak hal baru dan mendapatkan
+            pengalaman yang sangat berharga. Namun, tiba-tiba, portal ajaib itu
+            muncul kembali dan mengeluarkan cahaya terang. Robo memberitahu Budi
+            bahwa sudah saatnya ia kembali ke dunia nyata. Dengan berat hati,
+            Budi melangkah masuk ke dalam portal dan kembali ke kamarnya. Ketika
+            terbangun, Budi menyadari bahwa semua itu hanyalah mimpi. Namun,
+            mimpi itu memberikan inspirasi besar bagi Budi untuk terus belajar
+            dan mengejar cita-citanya menjadi seorang ilmuwan teknologi.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-3/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Peran Psikologi dalam Pencegahan Bunuh Diri
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/55/47/8c/55478c3cd3b5af6eaf9beaaec2e4f17b.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Peran Psikologi dalam Pencegahan Bunuh Diri</p>
+        <div class="paragraph">
+          <p id="text">
+            Bunuh diri adalah masalah serius yang dihadapi banyak masyarakat di
+            seluruh dunia. Menurut data dari Organisasi Kesehatan Dunia (WHO),
+            bunuh diri merupakan penyebab kematian yang signifikan, terutama di
+            kalangan remaja dan dewasa muda. Dalam konteks ini, psikologi
+            memiliki peran penting dalam pencegahan bunuh diri dengan memahami
+            faktor-faktor yang mempengaruhi individu dan menyediakan intervensi
+            yang efektif.
+          </p>
+
+          <p id="text">
+            Psikologi membantu kita memahami bahwa bunuh diri sering kali
+            merupakan hasil dari kombinasi faktor psikologis, sosial, dan
+            lingkungan. Individu yang mengalami depresi, kecemasan, atau
+            gangguan mental lainnya lebih rentan terhadap pikiran bunuh diri.
+            Oleh karena itu, deteksi dini dan penanganan masalah kesehatan
+            mental sangatlah penting. Psikolog dapat menggunakan berbagai
+            pendekatan untuk membantu individu mengatasi masalah emosional dan
+            mental mereka.
+          </p>
+
+          <p id="text">
+            Salah satu pendekatan yang efektif dalam pencegahan bunuh diri
+            adalah terapi kognitif perilaku (CBT). Terapi ini fokus pada
+            mengubah pola pikir negatif dan perilaku maladaptif yang dapat
+            menyebabkan individu merasa putus asa. Dengan membantu individu
+            mengidentifikasi dan mengubah pikiran negatif mereka, CBT dapat
+            mengurangi gejala depresi dan kecemasan serta meningkatkan harapan
+            hidup. Selain itu, terapi ini juga memberikan keterampilan coping
+            yang berguna untuk menghadapi stres dan tantangan hidup sehari-hari.
+          </p>
+
+          <p id="text">
+            Selain itu, dukungan sosial juga merupakan faktor penting dalam
+            pencegahan bunuh diri. Psikologi menunjukkan bahwa hubungan yang
+            kuat dengan keluarga, teman, dan komunitas dapat memberikan rasa
+            aman dan dukungan bagi individu yang berjuang dengan masalah mental.
+            Program-program yang mendorong keterlibatan sosial dan membangun
+            jaringan dukungan dapat membantu mengurangi risiko bunuh diri.
+            Keterlibatan dalam aktivitas komunitas atau dukungan kelompok dapat
+            memberikan rasa memiliki yang sangat dibutuhkan oleh individu yang
+            merasa terasing. Hal ini menciptakan lingkungan yang lebih inklusif
+            di mana setiap orang merasa diperhatikan dan dihargai.
+          </p>
+
+          <p id="text">
+            Pendidikan tentang kesehatan mental juga sangat penting. Masyarakat
+            perlu diberdayakan untuk mengenali tanda-tanda peringatan dari
+            seseorang yang mungkin berisiko melakukan bunuh diri. Dengan
+            meningkatkan kesadaran akan masalah kesehatan mental dan mengurangi
+            stigma, lebih banyak orang akan merasa nyaman untuk mencari bantuan
+            ketika mereka mengancam. Selain itu, pelatihan bagi tenaga pendidik
+            dan profesional kesehatan dalam mengenali tanda-tanda awal masalah
+            kesehatan mental juga sangat diperlukan untuk menciptakan lingkungan
+            yang lebih aman bagi semua orang.
+          </p>
+
+          <p id="text">
+            Kesimpulannya, psikologi memainkan peran penting dalam pencegahan
+            bunuh diri melalui pemahaman mendalam tentang faktor-faktor risiko,
+            intervensi terapeutik yang efektif, dukungan sosial, dan pendidikan
+            masyarakat. Dengan pendekatan yang holistik dan terintegrasi, kita
+            dapat bekerja sama untuk mengurangi angka bunuh diri dan mendukung
+            individu dalam perjalanan mereka menuju kesehatan mental yang lebih
+            baik. Penting bagi setiap orang untuk berpartisipasi aktif dalam
+            menciptakan lingkungan yang mendukung kesehatan mental agar semua
+            individu merasa dihargai dan diperhatikan.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

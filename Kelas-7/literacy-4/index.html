@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Cerita Inspiratif</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/9f/2b/30/9f2b301b28e39f55e8b0d1f7e836baf4.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>B.J. Habibie, Perpaduan Kecerdasan dan Kekuatan Tekad</p>
+        <div class="paragraph">
+          <p id="text">
+            Siapa yang tidak kenal dengan Bacharuddin Jusuf Habibie atau yang
+            lebih sering dipanggil dengan nama B.J. Habibie? Beliau adalah salah
+            satu putra bangsa berprestasi yang dikenal karena kecerdasannya, tak
+            hanya di Indonesia, tetapi juga di negara lain. Selain keahliannya
+            di bidang teknologi pesawat terbang dan penemu rumus Faktor Habibie,
+            pria kelahiran Pare-Pare, 25 Juni 1936 ini juga pernah menjabat
+            sebagai Presiden Indonesia yang ke-3.
+          </p>
+          <p id="text">
+            Sejak kanak-kanak, Habibie yang memiliki kegemaran menunggang kuda
+            dan membaca ini memang sudah dikenal sangat cerdas. Apakah cukup
+            kecerdasan untuk meraih sukses? Ternyata tidak. Mari kita simak
+            perjalanan hidup Bapak Teknologi Indonesia ini lebih lanjut.
+          </p>
+          <p id="text">
+            Habibie tumbuh dalam keluarga besar dengan tujuh saudara. Ia adalah
+            anak keempat. Ayahnya bernama Alwi Abdul Jalil Habibie, seorang ahli
+            pertanian. Sang Ibu, R.A. Tuti Marini Puspowardojo adalah seorang
+            spesialis mata. Namun, pada usia yang masih sangat muda, yaitu 14
+            tahun, Habibie harus kehilangan ayahnya yang terkena serangan
+            jantung. Hal ini membawa banyak perubahan dalam kehidupan Habibie.
+            Tak hanya pindah ke Kota Bandung, ia pun melihat perjuangan ibunya
+            yang harus membanting tulang untuk membiayai kehidupan mereka.
+          </p>
+          <p id="text">
+            Di kota barunya, Habibie melanjutkan pendidikan di SMAK Dago. Ia
+            melanjutkan kuliah di Universitas Indonesia Bandung yang saat ini
+            dikenal dengan nama ITB, mengambil jurusan Teknik Mesin. Berkat
+            perjuangan ibunya dan tekad kuatnya untuk sukses, Habibie berhasil
+            terbang ke Jerman, bersekolah di Rhein Westfalen Aachen Technische
+            Hochschule, mengambil jurusan Teknik Penerbangan spesialisasi
+            konstruksi pesawat terbang.
+          </p>
+          <p id="text">
+            Pendidikan Habibie di Jerman memakan waktu hampir selama 10 tahun.
+            Ia berjuang keras, belajar sambil bekerja praktik. Libur kuliah pun
+            menjadi kesempatan emas bagi Habibie untuk belajar, mengikuti ujian,
+            dan mencari uang agar bisa membeli buku. Tahun 1960 Habibie mendapat
+            gelar Diploma Ing dari Technische Hochschule dengan predikatnya Cum
+            Laude atau sempurna. Nilai rata-rata yang dikantongi Habibie saat
+            itu adalah 9,5. Tak berhenti di sana, Habibie langsung melanjutkan
+            studi ke Technische Hochschule Die Facultaet de Fuer Maschinenwesen
+            Aachen untuk mendapatkan gelar doktor.
+          </p>
+          <p id="text">
+            Perjuangan terasa makin berat dan menantang setelah pernikahannya
+            pada tahun 1962 dengan Hasri Ainun. Habibie sering harus berjalan
+            kaki ke tempat kerjanya yang jauh untuk menghemat uang dan pulang
+            malam, padahal ia masih harus belajar untuk studinya. Namun, tentu
+            saja tidak ada perjuangan yang sia-sia. Habibie akhirnya berhasil
+            meraih gelar Doktor Ingenieur dari Technische Hochschule Die
+            Facultaet de Fuer Maschinenwesen Aachen dengan nilai summa cumlaude
+            atau sangat sempurna. Rata-rata nilai yang diperolehnya adalah 10!
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-4/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

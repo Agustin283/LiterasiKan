@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Dampak Internet of Things (IoT) pada Kehidupan
+        Sehari-hari
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/a5/1a/0e/a51a0e22ce9b8d4c075cd27391a8516f.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Dampak Internet of Things (IoT) pada Kehidupan Sehari-hari</p>
+        <div class="paragraph">
+          <p id="text">
+            Internet of Things (IoT) adalah konsep yang menghubungkan berbagai
+            perangkat fisik melalui internet, memungkinkan mereka untuk saling
+            berkomunikasi dan bertukar data. Dalam beberapa tahun terakhir, IoT
+            telah mengubah cara hidup kita dan bekerja dengan memberikan
+            kenyamanan, efisiensi, dan inovasi di berbagai sektor. Dampak
+            positif dari IoT sangat terasa dalam kehidupan sehari-hari, mulai
+            dari rumah pintar hingga pemantauan kesehatan.
+          </p>
+
+          <p id="text">
+            Salah satu contoh nyata dari dampak positif IoT adalah pengembangan
+            rumah pintar. Dengan perangkat seperti termostat pintar, lampu
+            otomatis, dan kamera keamanan yang terhubung ke internet, pengguna
+            dapat mengontrol semua perangkat ini dari jarak jauh menggunakan
+            smartphone. Hal ini tidak hanya meningkatkan kenyamanan tetapi juga
+            efisiensi energi. Misalnya, pengguna dapat mengatur suhu rumah
+            sebelum pulang kerja atau mematikan lampu yang tidak diperlukan,
+            sehingga mengurangi konsumsi energi dan biaya listrik.
+          </p>
+
+          <p id="text">
+            Di sektor kesehatan, IoT telah membawa perubahan signifikan dalam
+            cara kita menjaga kesehatan. Perangkat yang dapat dikenakan seperti
+            jam tangan pintar dan pelacak kebugaran memungkinkan individu untuk
+            memantau detak jantung, tekanan darah, dan tingkat aktivitas fisik
+            secara real-time. Data yang dikumpulkan dapat diakses oleh medis
+            profesional untuk membantu dalam diagnosis dan pengobatan. Selain
+            itu, rumah sakit juga menggunakan teknologi IoT untuk menghubungkan
+            pasien dari jarak jauh, meningkatkan aksesibilitas layanan kesehatan
+            dan mempercepat respons terhadap kondisi darurat.
+          </p>
+
+          <p id="text">
+            Namun, meskipun banyak manfaat yang ditawarkan oleh IoT, ada juga
+            tantangan yang perlu dihadapi. Salah satunya adalah masalah privasi
+            dan keamanan data. Dengan semakin banyaknya data pribadi yang
+            dikumpulkan oleh perangkat IoT, risiko pencurian identitas dan
+            cakupan informasi meningkat. Oleh karena itu, penting bagi pengguna
+            untuk memahami cara melindungi data pribadi mereka dan bagi
+            perusahaan untuk menerapkan standar keamanan yang ketat.
+          </p>
+
+          <p id="text">
+            Selain itu, ketergantungan pada teknologi juga menjadi perhatian.
+            Dengan semakin banyaknya perangkat yang terhubung ke internet,
+            individu menjadi terlalu bergantung pada teknologi untuk menjalani
+            kehidupan sehari-hari. Jika terjadi gangguan pada sistem atau
+            serangan siber, hal ini dapat mengganggu aktivitas sehari-hari dan
+            menimbulkan masalah besar. Oleh karena itu, penting bagi masyarakat
+            untuk tetap memiliki keterampilan dasar dalam menjalani kehidupan
+            tanpa bergantung sepenuhnya pada teknologi.
+          </p>
+
+          <p id="text">
+            Dampak positif lainnya dari IoT dapat dilihat pada sektor pertanian.
+            Dengan menggunakan sensor dan perangkat IoT, petani dapat memantau
+            kondisi tanah, kelembaban, dan cuaca secara real-time. Hal ini
+            memungkinkan mereka untuk mengambil keputusan yang lebih baik dalam
+            mengelola tanaman dan sumber daya udara. Dengan cara ini, IoT tidak
+            hanya meningkatkan hasil panen tetapi juga membantu konservasi
+            sumber daya alam.
+          </p>
+
+          <p id="text">
+            Simpulannya, Internet of Things (IoT) memiliki dampak besar pada
+            kehidupan sehari-hari kita dengan memberikan kenyamanan dan
+            efisiensi di berbagai sektor. Meskipun ada batasan terkait privasi
+            dan kemandirian pada teknologi, manfaat yang ditawarkan oleh IoT
+            sangat signifikan. Penting bagi kita untuk terus belajar tentang
+            teknologi ini dan bagaimana cara menggunakannya dengan bijaksana
+            agar dapat memanfaatkan potensi penuh dari inovasi ini.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

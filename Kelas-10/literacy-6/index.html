@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Membangun Diri Strategi Sukses untuk Karir di Era
+        Kompetitif
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/7f/a3/50/7fa350406a7f81d63392249316593e29.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Membangun Diri Strategi Sukses untuk Karir di Era Kompetitif</p>
+        <div class="paragraph">
+          <p id="text">
+            Di era globalisasi dan persaingan yang semakin ketat, pengembangan
+            diri menjadi salah satu kunci utama untuk mencapai kesuksesan dalam
+            karir. Dengan banyaknya lulusan yang memasuki dunia kerja setiap
+            tahun, memiliki keterampilan dan pengetahuan yang memadai saja tidak
+            cukup. Individu perlu terus-menerus mengembangkan diri agar dapat
+            bersaing dan beradaptasi dengan perubahan yang cepat. Pengembangan
+            diri mencakup berbagai aspek, termasuk keterampilan interpersonal,
+            kepemimpinan, serta kemampuan teknis yang relevan dengan bidang
+            pekerjaan.
+          </p>
+
+          <p id="text">
+            Salah satu strategi penting dalam pengembangan diri adalah
+            menetapkan tujuan yang jelas. Tujuan ini harus spesifik, terukur,
+            dapat dicapai, relevan, dan berbatas waktu (SMART). Dengan
+            menetapkan tujuan yang jelas, individu dapat lebih fokus dalam
+            mencapai apa yang diinginkan. Misalnya, seseorang yang ingin
+            meningkatkan keterampilan komunikasi dapat mengikuti kursus public
+            speaking atau bergabung dengan organisasi yang memberikan kesempatan
+            untuk berlatih berbicara di depan umum. Selain itu, penting untuk
+            melakukan evaluasi secara berkala terhadap kemajuan yang telah
+            dicapai.
+          </p>
+
+          <p id="text">
+            Selain menetapkan tujuan, membangun jaringan profesional juga
+            merupakan langkah penting dalam pengembangan diri. Jaringan ini
+            dapat membantu individu mendapatkan informasi mengenai peluang
+            karir, serta berbagi pengalaman dan pengetahuan dengan orang lain di
+            bidang yang sama. Menghadiri seminar, workshop, atau konferensi
+            adalah cara efektif untuk memperluas jaringan. Dalam banyak kasus,
+            peluang kerja datang melalui rekomendasi dari orang-orang dalam
+            jaringan tersebut.
+          </p>
+
+          <p id="text">
+            Pendidikan formal juga tetap berperan penting dalam pengembangan
+            diri. Namun, pendidikan tidak hanya terbatas pada gelar akademis.
+            Kursus online, pelatihan sertifikasi, dan pengembangan program
+            profesional lainnya juga dapat meningkatkan kompetensi seseorang.
+            Dengan mengikuti pelatihan atau kursus tambahan, individu dapat
+            memperoleh pengetahuan baru dan meningkatkan keterampilan yang sudah
+            ada. Ini sangat penting di dunia kerja yang selalu berubah dan
+            membutuhkan keterampilan baru.
+          </p>
+
+          <p id="text">
+            Selain itu, penting bagi individu untuk mengembangkan keterampilan
+            soft skill seperti komunikasi efektif, tim kerja, dan manajemen
+            waktu. Keterampilan ini sering kali menjadi penentu keberhasilan
+            seseorang dalam lingkungan kerja. Banyak perusahaan saat ini mencari
+            kandidat yang tidak hanya memiliki keterampilan teknis tetapi juga
+            kemampuan untuk bekerja sama dengan baik dalam tim dan berkomunikasi
+            secara efektif dengan rekan kerja dan klien. Oleh karena itu,
+            melatih soft skill melalui pengalaman praktis seperti magang atau
+            proyek kelompok sangatlah bermanfaat.
+          </p>
+
+          <p id="text">
+            Pengembangan diri juga mencakup aspek kesehatan mental dan fisik.
+            Dalam dunia kerja yang kompetitif, menjaga keseimbangan antara
+            pekerjaan dan kehidupan pribadi sangat penting untuk mencegah stres
+            dan kelelahan. Mengatur waktu untuk berolahraga, bersosialisasi
+            dengan teman-teman, atau melakukan hobi dapat membantu individu
+            tetap sehat secara mental dan fisik. Kesehatan mental yang baik akan
+            mendukung produktivitas dan kreativitas di tempat kerja.
+          </p>
+
+          <p id="text">
+            Sebagai penutup, pengembangan diri adalah proses berkelanjutan yang
+            sangat penting untuk mencapai kesuksesan karir di era kompetitif
+            saat ini. Dengan menetapkan tujuan yang jelas, membangun jaringan
+            profesional, terus belajar melalui pendidikan formal maupun
+            informal, serta mengembangkan soft skill dan menjaga kesehatan
+            mental, individu dapat mempersiapkan diri untuk menghadapi tantangan
+            di dunia kerja. Kesadaran akan pentingnya pengembangan diri akan
+            membantu setiap orang untuk tidak hanya bertahan tetapi juga
+            berkembang di lingkungan kerja yang semakin dinamis.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Perjalanan Seorang Pemuda</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/15/3a/9d/153a9d2fceb179ac324067c12cca2341.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Perjalanan Seorang Pemuda</p>
+        <div class="paragraph">
+          <p class="text">
+            Di sebuah desa kecil yang dikelilingi oleh pegunungan hijau,
+            hiduplah seorang pemuda bernama Arif. Sejak kecil, Arif memiliki
+            impian besar untuk menjadi seorang insinyur. Namun, kondisi ekonomi
+            keluarganya yang sederhana membuatnya merasa ragu untuk mengejar
+            cita-citanya. Ayahnya seorang petani, dan ibunya seorang penjahit,
+            mereka bekerja keras untuk memenuhi kebutuhan sehari-hari. Meskipun
+            demikian, Arif tidak pernah kehilangan semangat. Ia selalu belajar
+            dengan tekun di sekolah, berharap suatu hari bisa mengubah nasib
+            keluarganya. Setiap malam, setelah membantu orang tuanya di ladang,
+            Arif akan duduk di bawah cahaya lampu minyak, membaca buku-buku
+            pelajaran dan mencatat hal-hal yang ia anggap penting. Ia percaya
+            bahwa pendidikan adalah jalan untuk meraih impian.
+          </p>
+
+          <p class="text">
+            Suatu hari, Arif mendengar tentang beasiswa pendidikan yang
+            ditawarkan oleh sebuah universitas terkemuka di kota. Dengan penuh
+            keberanian, ia memutuskan untuk mendaftar. Ia menghabiskan
+            malam-malamnya belajar dan mempersiapkan diri untuk ujian masuk.
+            Arif tidak hanya belajar materi pelajaran, tetapi juga mencari
+            informasi tentang teknik-teknik belajar yang efektif. Ia berlatih
+            mengerjakan soal-soal ujian dan meminta bantuan guru-gurunya untuk
+            memahami konsep-konsep yang sulit. Ketika hasil ujian diumumkan,
+            Arif merasa jantungnya berdebar. Dengan penuh harapan, ia membuka
+            surat pengumuman dan terkejut ketika melihat namanya tertera sebagai
+            penerima beasiswa. Kegembiraan meluap dalam dirinya, dan ia segera
+            memberi tahu orang tuanya. Mereka menangis haru, merasa bangga dan
+            bersyukur atas pencapaian Arif. Dengan semangat baru, Arif berangkat
+            ke kota untuk memulai perjalanan barunya, meninggalkan desa dan
+            keluarganya untuk mengejar impian yang telah lama ia idamkan.
+          </p>
+
+          <p class="text">
+            Setelah bertahun-tahun belajar dan berjuang, Arif akhirnya berhasil
+            menyelesaikan pendidikannya dengan predikat cum laude. Ia
+            mendapatkan pekerjaan di perusahaan teknik ternama dan mulai meraih
+            kesuksesan. Namun, Arif tidak melupakan asal-usulnya. Ia kembali ke
+            desanya dan mendirikan sebuah yayasan yang memberikan beasiswa
+            kepada anak-anak kurang mampu agar mereka bisa mengejar pendidikan
+            yang lebih baik. Arif percaya bahwa pendidikan adalah kunci untuk
+            mengubah hidup, dan ia ingin memberikan kesempatan yang sama yang
+            pernah ia terima. Ia juga mengadakan program pelatihan bagi para
+            pemuda di desanya agar mereka memiliki keterampilan yang dibutuhkan
+            di dunia kerja.
+          </p>
+
+          <p class="text">
+            Kisah Arif menjadi inspirasi bagi banyak orang di desanya,
+            membuktikan bahwa dengan kerja keras, ketekunan, dan semangat,
+            impian dapat menjadi kenyataan. Arif tidak hanya mengubah hidupnya
+            sendiri, tetapi juga memberikan harapan baru bagi generasi
+            mendatang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-4/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

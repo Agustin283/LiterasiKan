@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Proses Daur Ulang Sampah yang Memiliki Banyak Manfaat
+        Bagi Kita
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/e4/e6/f8/e4e6f8fc44923a19244f3492869b05d8.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Proses Daur Ulang Sampah yang Memiliki Banyak Manfaat Bagi Kita</p>
+        <div class="paragraph">
+          <p id="text">
+            Dewasa ini banyak aktivis yang mulai menggalakkan kegiatan daur
+            ulang. Kegiatan daur ulang ini dimulai dengan memisah-misahkan
+            jenis-jenis sampah. Daur ulang sendiri merupakan proses pengolahan
+            bahan bekas menjadi bahan baru atau bahan yang masih bisa dipakai.
+            Proses daur ulang mempunyai banyak manfaat bagi masyarakat dan
+            lingkungan. Berikut adalah beberapa manfaat yang dapat ditimbulkan
+            dari proses daur ulang.
+          </p>
+
+          <p id="text">
+            Daur ulang akan menghemat energi. Melalui proses daur ulang, bahan
+            baku yang digunakan untuk produksi adalah produk dari daur ulang.
+            Padahal biasanya bahan yang digunakan adalah bahan baku baru. Jika
+            menggunakan bahan baku baru, maka energi yang digunakan dalam proses
+            produksi akan lebih tinggi. Berbeda jika menggunakan bahan baku daur
+            ulang. Energi yang dibutuhkan untuk memproduksi dan mengangkut bahan
+            baku akan lebih sedikit.
+          </p>
+
+          <p id="text">
+            Manfaat daur ulang yang kedua adalah mengurangi polusi. Manfaat ini
+            diperoleh dari banyak sedikitnya energi yang digunakan untuk
+            produksi industri. Jika energi yang digunakan semakin kecil, maka
+            emisi gas rumah kaca yang dihasilkan juga akan semakin kecil. Hal
+            ini akan sangat berpengaruh terhadap pencegahan pemanasan global.
+          </p>
+
+          <p id="text">
+            Daur ulang bermanfaat dalam menghemat sumber daya alam. Pernahkah
+            Anda membayangkan bahwa kertas yang dipakai sekarang sebagian besar
+            adalah kertas bekas yang didaur ulang? Jika lebih banyak kertas
+            bekas didaur ulang menjadi kertas baru yang bisa digunakan, maka
+            akan semakin sedikit pohon yang harus ditebang. Seperti yang kita
+            tahu bahwa setiap ada produksi kertas baru maka itu berarti ada
+            jutaan pohon yang ditebang. Dengan cara daur ulang ini, sumber daya
+            alam dapat lebih dijaga dan dilestarikan.
+          </p>
+
+          <p id="text">
+            Daur ulang memiliki banyak manfaat secara ekonomi. Salah satu
+            manfaatnya adalah mengurangi biaya dalam proses produksi. Jika
+            menggunakan bahan baku baru, biaya yang dibutuhkan biasanya jauh
+            lebih besar. Biaya ini meliputi pembelian bahan baku, pengangkutan,
+            pengolahan, hingga proses pembuatan produk. Sebaliknya, dengan
+            mendaur ulang bahan yang sudah ada, biaya bisa dihemat dalam jumlah
+            besar. Hal ini karena bahan daur ulang lebih mudah diperoleh dan
+            lebih murah untuk diproses. Selain itu, daur ulang juga dapat
+            membantu menciptakan produk dengan harga lebih terjangkau dan
+            mendorong pertumbuhan industri daur ulang, yang bisa membuka
+            lapangan kerja baru. Dengan begitu, manfaat daur ulang dapat
+            dirasakan oleh banyak pihak, baik oleh produsen, konsumen, maupun
+            masyarakat luas.
+          </p>
+
+          <p id="text">
+            Daur ulang merupakan proses yang dapat diterapkan pada berbagai
+            jenis material, seperti plastik, kertas, kaca, logam, dan limbah
+            organik. Oleh karena itu, membiasakan dan membudayakan kegiatan daur
+            ulang material yang masih layak digunakan tidak hanya membantu
+            mengurangi jumlah sampah yang berakhir di tempat pembuangan akhir,
+            tetapi juga memberikan banyak manfaat bagi lingkungan, seperti
+            menghemat sumber daya alam, mengurangi emisi gas rumah kaca, serta
+            menciptakan peluang ekonomi melalui industri daur ulang.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-1/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

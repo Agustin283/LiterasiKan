@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Etika dan Moralitas: Mencari Jalan Tengah di Dunia yang
+        Kompleks
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/43/eb/95/43eb95fd5cc9915b47c51d506e0f93c1.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Etika dan Moralitas: Mencari Jalan Tengah di Dunia yang Kompleks</p>
+        <div class="paragraph">
+          <p class="text">
+            Dunia kedewasaan dipenuhi dengan kedilemaan. Mereka dihadapkan pada
+            pilihan-pilihan sulit yang menuntut mereka untuk berpikir kritis dan
+            bertindak bijak. Di sinilah peran beretika dan moralitas menjadi
+            sangatlah penting. Keduanya, meskipun seringkali digunakannya secara
+            bergantian, memiliki perbedaan yang halus tetapi signifikan. Etika,
+            secara sederhananya, merupakan studi sistematis membahas
+            prinsip-prinsip moral dalam mengatur perilaku manusia. Ia merupakan
+            kerangka kerja dalam memberikan panduan membahas apa itu benar dan
+            salah, baik dan buruk, dalam berbagai konteksnya. Etika dapat
+            bersumber dari berbagai tempat: agama, filsafat, hukum, bahkan
+            budaya. Contohnya, etika berprofesi kedokteran menekankan
+            kerahasiaan pasiennya, sementara etika berbisnis menekankan
+            kejujurannya serta transparansinya. Etika memberikan landasan bagi
+            pembuatan keputusan yang rasional dan terukur.
+          </p>
+          <p class="text">
+            Moralitas, di sisi lain, lebih menekankan pada praktik dan penerapan
+            prinsip-prinsip moral dalam kehidupan sehari-hari. Ia merupakan
+            kompas batiniah yang membimbing tindakan kita. Moralitas bersifat
+            personal dan dipengaruhi oleh berbagai faktor, termasuk pendidikan,
+            pengalaman hidup, dan keyakinan pribadi. Seseorang yang memiliki
+            moralitas tinggi akan cenderung bertindak jujur, bertanggung jawab,
+            dan empati terhadap sesama. Perbedaan antara etika dan moralitas
+            dapat dianalogikan dengan peta dan perjalanan. Etika adalah peta
+            yang memberikan gambaran umum tentang jalan yang harus ditempuh,
+            sementara moralitas adalah perjalanan itu sendiri, di mana kita
+            menghadapi berbagai tantangan dan rintangan. Kita dapat memiliki
+            pemahaman yang baik tentang etika (peta), tetapi masih kesulitan
+            dalam menerapkannya dalam kehidupan nyata (perjalanan).
+          </p>
+          <p class="text">
+            Di era digital seperti sekarang, tantangan etika dan moralitas
+            semakin kompleks. Penyebaran informasi yang cepat dan mudah melalui
+            internet menimbulkan dilema baru, seperti penyebaran hoaks,
+            plagiarisme, dan pelanggaran privasi. Kita perlu mengembangkan
+            kemampuan berpikir kritis untuk membedakan informasi yang benar dari
+            yang salah, serta kesadaran akan dampak tindakan kita di dunia maya.
+            Menjadi pribadi yang beretika dan bermoral bukanlah hal yang mudah.
+            Ia membutuhkan proses pembelajaran dan refleksi yang terus-menerus.
+            Kita perlu bertanya pada diri sendiri: Apa nilai-nilai yang saya
+            anut? Bagaimana saya dapat menerapkan nilai-nilai tersebut dalam
+            kehidupan sehari-hari? Apa konsekuensi dari tindakan saya terhadap
+            diri sendiri dan orang lain?
+          </p>
+          <p class="text">
+            Pertanyaan-pertanyaan seperti, "Apa nilai-nilai yang saya anut?
+            Bagaimana saya dapat menerapkan nilai-nilai tersebut dalam situasi
+            yang rumit dan penuh tekanan? Apa dampak jangka panjang dari pilihan
+            saya, tidak hanya bagi diri sendiri tetapi juga bagi keluarga,
+            komunitas, dan bahkan lingkungan global?", akan membantu kita
+            menavigasi dunia yang semakin kompleks dan membuat pilihan-pilihan
+            yang bertanggung jawab, bukan hanya sekadar keputusan yang mudah
+            atau menguntungkan secara pribadi. Dengan memahami etika dan
+            moralitas secara mendalam, bukan hanya sebatas menghafal definisi,
+            melainkan dengan merenungkan dan menghayati prinsip-prinsipnya dalam
+            konteks kehidupan nyata, kita dapat membangun karakter yang kuat,
+            berintegritas, dan tangguh.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-2/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

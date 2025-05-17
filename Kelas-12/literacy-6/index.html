@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Teknologi dan Sains Modern: Menjelajahi Batas Kemungkinan
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/51/a5/3d/51a53d7f9e5ec72dac364ea8c9d0a839.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Teknologi dan Sains Modern: Menjelajahi Batas Kemungkinan</p>
+        <div class="paragraph">
+          <p id="text">
+            Teknologi dan sains modern yang membawa perubahan luar biasa dalam
+            kehidupan manusia. Di era digital ini, kita menyaksikan laju
+            perkembangan teknologi yang semakin pesat, mendorong inovasi dan
+            transformasi di berbagai bidang.
+          </p>
+
+          <p id="text">
+            Sains modern, dengan pendekatan ilmiah sistematis dan metodologis,
+            telah membuka tabir misteri alam semesta dan melahirkan berbagai
+            penemuan revolusioner. Dari pemahaman tentang genetika hingga
+            penciptaan vaksin, sains telah memberikan solusi untuk berbagai
+            masalah kesehatan dan meningkatkan kualitas hidup manusia.
+          </p>
+
+          <p id="text">
+            Teknologi informasi dan komunikasi yang merevolusi cara kita
+            komunikasi, mengakses informasi, dan berinteraksi dengan dunia.
+            Internet, smartphone, dan platform digital telah menciptakan
+            jaringan global yang menghubungkan manusia di seluruh penjuru dunia.
+          </p>
+
+          <p id="text">
+            Kecerdasan buatan (AI) dan pembelajaran mesin (ML) merupakan
+            terobosan teknologi yang tengah berkembang pesat. AI mampu meniru
+            kemampuan kognitif manusia, seperti belajar, memecahkan masalah, dan
+            membuat keputusan.
+          </p>
+
+          <p id="text">
+            Penerapan AI di berbagai bidang, seperti kesehatan, keuangan, dan
+            manufaktur, berpotensi meningkatkan efisiensi, akurasi, dan
+            produktivitas. Teknologi biologi dan bioteknologi telah membuka
+            peluang baru dalam dunia kesehatan dan pertanian.
+          </p>
+
+          <p id="text">
+            Rekayasa genetika, terapi gen, dan biomaterial menawarkan solusi
+            inovatif untuk mengatasi penyakit, meningkatkan hasil panen, dan
+            menciptakan produk baru.
+          </p>
+
+          <p id="text">
+            Namun, di balik kemajuan teknologi dan sains modern, terdapat
+            tantangan yang perlu diatasi. Perkembangan teknologi yang cepat
+            dapat menimbulkan kesenjangan digital, menimbulkan masalah etika,
+            dan mengancam privasi.
+          </p>
+
+          <p id="text">
+            Oleh karena itu, penting untuk mengembangkan teknologi secara
+            bertanggung jawab dan berkelanjutan. Pengembangan teknologi harus
+            selaras dengan nilai-nilai kemanusiaan, menjunjung tinggi etika, dan
+            memperhatikan dampak sosial dan lingkungan.
+          </p>
+
+          <p id="text">
+            Sains dan teknologi modern memiliki potensi besar untuk memperbaiki
+            kehidupan manusia dan mengatasi berbagai tantangan global. Namun,
+            kita perlu mempertimbangkan dampaknya secara holistik dan memastikan
+            bahwa teknologi digunakan untuk kebaikan bersama.
+          </p>
+
+          <p id="text">
+            Melalui pengetahuan dan pemahaman yang mendalam tentang teknologi
+            dan sains modern, kita dapat memanfaatkan potensi besarnya untuk
+            menciptakan masa depan yang lebih baik.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

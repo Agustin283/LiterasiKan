@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Cerita Rakyat dan Fabel</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/80/da/c6/80dac639fec27879d4f6d4c4fae9c5ef.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Si Kancil dan Buaya yang Cerdik</p>
+        <div class="paragraph">
+          <p id="text">
+            Di sebuah hutan yang lebat dan rimbun, hiduplah seekor kancil yang
+            terkenal kecerdikannya. Kancil memiliki bulu berwarna coklat
+            keemasan, tubuh yang kecil dan lincah. Ia sangat pandai berlari dan
+            melompat, sehingga sulit untuk menangkapnya. Suatu hari, Kancil
+            sedang berjalan-jalan di tepi sungai. Ia merasa haus dan ingin minum
+            air. Namun, di tengah perjalanan, ia bertemu dengan seekor buaya
+            yang besar dan mengerikan. Buaya itu memiliki mulut yang lebar dan
+            gigi yang tajam. Kancil merasa takut, tetapi ia mencoba untuk tetap
+            tenang.
+          </p>
+
+          <p id="text">
+            "Hai, Kancil," sapa Buaya dengan suara yang serak. "Mau ke mana
+            kamu?" "Oh, Buaya," jawab Kancil dengan suara gemetar. "Aku sedang
+            mencari air minum. Aku sangat haus."
+          </p>
+
+          <p id="text">
+            "Kebetulan sekali," kata Buaya. "Di sungai ini ada banyak air. Tapi,
+            aku sedang lapar. Maukah kamu menjadi makananku?"
+          </p>
+
+          <p id="text">
+            Kancil sangat ketakutan. Ia tidak ingin menjadi santapan Buaya.
+            Namun, ia harus berpikir cepat untuk menyelamatkan dirinya.
+          </p>
+
+          <p id="text">
+            "Wah, Buaya," jawab Kancil dengan cengengesan. "Aku tidak bisa
+            menjadi makanmu. Aku sedang dalam perjalanan penting untuk
+            mengantarkan pesan dari raja hutan kepada para hewan di seberang
+            sungai. Jika aku terlambat, raja hutan akan marah besar."
+          </p>
+
+          <p id="text">"Pesan apa yang kamu bawa?" tanya Buaya penasaran.</p>
+
+          <p id="text">
+            "Aku membawa pesan tentang jumlah hewan yang akan hadir di pesta
+            ulang tahun raja hutan," jawab Kancil. "Aku harus menghitung semua
+            hewan yang akan datang, mulai dari gajah, harimau, rusa, hingga
+            burung-burung."
+          </p>
+
+          <p id="text">
+            Buaya semakin penasaran. Ia ingin tahu berapa jumlah hewan yang akan
+            datang ke pesta ulang tahun raja hutan.
+          </p>
+
+          <p id="text">"Berapa jumlah hewan yang akan datang?" tanya Buaya.</p>
+
+          <p id="text">
+            "Banyak sekali," jawab Kancil. "Aku tidak bisa menghitungnya dengan
+            jariku. Aku harus menghitung dengan kakiku. Jika kamu mau, aku bisa
+            menghitungnya di punggungmu."
+          </p>
+
+          <p id="text">
+            Buaya senang mendengarnya. Ia mengizinkan Kancil untuk menghitung di
+            punggungnya. Kancil pun dengan cepat memanjat ke punggung Buaya. Ia
+            mulai menghitung dengan kakinya.
+          </p>
+
+          <p id="text">
+            "Satu, dua, tiga, empat," hitung Kancil. "Lima, enam, tujuh,
+            delapan."
+          </p>
+
+          <p id="text">
+            Kancil terus menghitung dengan kakinya. Ia berlari-lari di punggung
+            Buaya. Buaya merasa geli dan terhibur. Ia tidak menyadari bahwa
+            Kancil sedang mendekat ke ujung ekornya.
+          </p>
+
+          <p id="text">
+            "Sembilan, sepuluh, sebelas, dua belas," hitung Kancil. "Tiga belas,
+            empat belas, lima belas, enam belas."
+          </p>
+
+          <p id="text">
+            Saat Kancil mencapai ujung ekor Buaya, ia langsung melompat ke
+            tanah.
+          </p>
+
+          <p id="text">
+            "Sudah selesai," kata Kancil. "Jumlah hewan yang akan datang ke
+            pesta ulang tahun raja hutan adalah enam belas." Buaya terkejut. Ia
+            tidak menyangka Kancil akan begitu cepat menghitung. Ia pun tertipu
+            oleh kecerdikan Kancil.
+          </p>
+
+          <p id="text">
+            Kancil pun berlari dengan cepat menuju ke tepi sungai dan minum air
+            dengan puas. Ia berterima kasih kepada Buaya yang telah membantunya,
+            lalu berlari kembali ke hutan.
+          </p>
+
+          <p id="text">
+            Cerita ini mengajarkan kita bahwa kecerdikan dan akal sehat dapat
+            membantu kita mengatasi berbagai kesulitan. Kita juga harus
+            berhati-hati dalam menghadapi orang yang licik dan tidak jujur.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-3/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

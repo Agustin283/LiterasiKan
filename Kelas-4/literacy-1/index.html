@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Tema Lingkungan Hidup</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/b0/d2/d5/b0d2d5c6ba78337a77e5ffe980cdcda7.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Sampah Musuh Lingkungan</p>
+        <div class="paragraph">
+          <p id="text">
+            Pernahkah kamu lihat sampah tersebar di jalan, di sungai, dan di
+            taman? Sampah itu musuh lingkungan yang jahat! Kenapa? Sebab sampah
+            bisa membuat lingkungan kita kotor, tidak sehat, dan bahkan
+            berbahaya.
+          </p>
+          <p id="text">
+            Bayangkan, jika kita asal buang sampah, sampah plastik akan
+            berserakan di mana- mana. Plastik itu sulit sekali hancur, lho!
+            Plastik yang dibuang ke sungai bisa mencemari air dan membahayakan
+            ikan. Ikan bisa terjerat plastik atau bahkan memakannya, sehingga
+            bisa mati. Bayangkan, seekor ikan yang terlilit plastik dan tidak
+            bisa berenang, atau ikan yang mati karena memakan sampah plastik
+            yang dimakanan. Sungguh tragis!
+          </p>
+          <p id="text">
+            Sampah makanan yang asal dibuang bisa jadi masalah, yang nantinya
+            akan membusuk dan mengeluarkan bau yang tidak sedap. Bau busuk itu
+            bisa mengganggu kesehatan kita dan membuat lingkungan kita tidak
+            nyaman. Bayangkan, jika tumpukan sampah makanan di sekitar rumah
+            kita membusuk, pasti akan menimbulkan bau yang tidak sedap dan
+            mengundang penyakit.
+          </p>
+          <p id="text">
+            Selain itu, sampah juga bisa menjadi tempat berkembang biak nyamuk,
+            lalat, dan tikus. Hewan-hewan itu bisa membawa penyakit, seperti
+            demam berdarah, diare, dan penyakit lainnya. Bayangkan, jika kita
+            tinggal di dekat tumpukan sampah, kita akan lebih rentan terkena
+            penyakit karena gigitan nyamuk atau tikus yang membawa penyakit.
+          </p>
+          <p id="text">
+            Lalu, bagaimana cara kita melawan sampah? Tenang, ada banyak cara
+            yang bisa kita lakukan:
+          </p>
+          <p id="text">
+            1 Buang sampah pada tempatnya: Jangan membuang sampah sembarangan.
+            Gunakan tempat sampah yang tersedia dan buang sampah sesuai
+            jenisnya. Sampah plastik, kertas, dan kaca bisa dikumpulkan di
+            tempat sampah yang berbeda. Bayangkan, jika kita membuang sampah
+            pada tempatnya, lingkungan kita akan lebih bersih dan terbebas dari
+            sampah yang berserakan.
+          </p>
+          <p id="text">
+            2 Kurangi penggunaan plastik: Gunakan tas belanja kain, sedotan
+            stainless steel, dan hindari membeli makanan atau minuman yang
+            dikemas dengan banyak plastik. Bayangkan, jika kita mengurangi
+            penggunaan plastik, kita sudah membantu mengurangi polusi plastik
+            yang mencemari lingkungan.
+          </p>
+          <p id="text">
+            3 Daur ulang sampah: Beberapa sampah, seperti botol plastik, kertas,
+            dan kaleng, bisa didaur ulang. Daur ulang membantu mengurangi sampah
+            dan menjaga lingkungan. Bayangkan, jika kita mendaur ulang sampah,
+            kita dapat memanfaatkan kembali sampah dan mengurangi pencemaran
+            lingkungan.
+          </p>
+          <p id="text">
+            4 Buat kompos: Sampah organik, seperti sisa makanan dan daun kering,
+            bisa dibuat kompos. Kompos bisa digunakan untuk menyuburkan tanaman.
+            Bayangkan, jika kita membuat kompos, kita dapat mengurangi volume
+            sampah dan mendapatkan pupuk organik untuk tanaman kita.
+          </p>
+          <p id="text">
+            Menjaga kebersihan lingkungan adalah tanggung jawab kita bersama.
+            Yuk, kita lawan sampah dan ciptakan lingkungan yang bersih dan
+            sehat! Dengan membuang sampah pada tempatnya, mengurangi penggunaan
+            plastik, dan mendaur ulang sampah, kita sudah membantu menjaga
+            lingkungan kita.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-1/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

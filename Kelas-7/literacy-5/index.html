@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Sejarah dan Perjuangan bangsa</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/c1/41/0c/c1410cf4061dd4e5ab3a6c1c08dccf7d.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Jejak Langkah Menuju Kemerdekaan</p>
+        <div class="paragraph">
+          <p id="text">
+            Sejarah bangsa Indonesia adalah sebuah catatan panjang perjuangan,
+            pengorbanan, dan tekad yang tak kenal lelah. Dari masa
+            kerajaan-kerajaan besar hingga perjuangan melawan penjajah, setiap
+            lembarannya diwarnai oleh kisah-kisah heroik dan peristiwa penting
+            yang membentuk identitas kita sebagai bangsa. Kita belajar tentang
+            kejayaan kerajaan Sriwijaya dan Majapahit yang pernah menguasai
+            wilayah yang luas, menunjukkan kekuatan dan kebudayaan bangsa
+            Indonesia di masa lalu. Namun, masa kejayaan itu kemudian
+            tergantikan oleh masa penjajahan yang panjang dan penuh penderitaan.
+          </p>
+          <p id="text">
+            Masa penjajahan Belanda selama berabad-abad meninggalkan luka
+            mendalam bagi bangsa Indonesia. Eksploitasi sumber daya alam,
+            penindasan, dan perlakuan tidak adil memicu perlawanan dari berbagai
+            daerah. Perjuangan melawan penjajah bukan hanya dilakukan oleh para
+            pahlawan besar seperti Pangeran Diponegoro, Kartini, dan Cut Nyak
+            Dien, tetapi juga oleh rakyat biasa yang gigih mempertahankan tanah
+            airnya. Mereka berjuang dengan berbagai cara, dari perlawanan
+            bersenjata hingga gerakan-gerakan bawah tanah yang penuh risiko.
+          </p>
+          <p id="text">
+            Proklamasi Kemerdekaan 17 Agustus 1945 merupakan puncak dari
+            perjuangan panjang bangsa Indonesia. Namun, kemerdekaan bukanlah
+            hadiah yang diberikan begitu saja. Setelah proklamasi, bangsa
+            Indonesia masih harus menghadapi berbagai tantangan, seperti
+            mempertahankan kemerdekaan dari serangan Belanda dan negara-negara
+            lain, serta membangun negara dari nol. Perjuangan untuk mengisi
+            kemerdekaan dengan pembangunan dan penegakan keadilan terus
+            berlanjut hingga saat ini.
+          </p>
+          <p id="text">
+            Mempelajari sejarah dan perjuangan bangsa Indonesia bukan hanya
+            sekadar mengingat tanggal dan nama-nama pahlawan. Lebih dari itu,
+            mempelajari sejarah adalah untuk memahami nilai-nilai luhur seperti
+            persatuan, kesatuan, dan cinta tanah air yang telah diwariskan oleh
+            para pendahulu kita. Nilai-nilai ini sangat penting untuk menjaga
+            keutuhan bangsa dan membangun Indonesia yang lebih baik di masa
+            depan. Dengan memahami sejarah, kita dapat menghargai pengorbanan
+            para pahlawan dan meneruskan perjuangan mereka untuk mewujudkan
+            cita-cita bangsa.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-5/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

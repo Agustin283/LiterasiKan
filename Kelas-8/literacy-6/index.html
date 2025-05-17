@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Bapak Pendidikan Indonesia</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/4d/75/02/4d7502ac39b1844654869c89fd5ad71d.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Bapak Pendidikan Indonesia</p>
+        <div class="paragraph">
+          <p class="text">
+            Ki Hajar Dewantara merupakan salah satu pahlawan nasional Indonesia
+            yang telah berjasa dalam bidang pendidikan. Beliau lahir pada
+            tanggal 25 Mei 1889 di Yogyakarta. Dia dikenal dengan julukan Guru
+            Kebangsaan Indonesia. Beliau juga dikenal sebagai seorang aktivis
+            pergerakan kebangsaan, pendidikan, dan kebudayaan di Indonesia.
+            Beliau berperan dalam menyebarkan pendidikan di seluruh nusantara.
+          </p>
+
+          <p class="text">
+            Ki Hajar Dewantara, yang dikenal sebagai Bapak Pendidikan Nasional
+            Indonesia, memulai perjalanan pendidikannya di Sekolah Tinggi
+            Kebudayaan Jepang di Yogyakarta. Pada tahun 1910, ia melanjutkan
+            studinya ke Tokyo untuk memperluas wawasan dan pengetahuannya.
+            Setelah kembali ke Indonesia pada tahun 1912, beliau mengabdikan
+            diri di dunia pendidikan. Ki Hajar memulai kariernya sebagai guru di
+            Sekolah Rendah Negeri di Yogyakarta, di mana ia mengajarkan
+            nilai-nilai dasar kepada para siswa. Selain itu, ia juga menjadi
+            pengajar di Sekolah Tinggi Kebudayaan Jepang, menunjukkan
+            dedikasinya yang besar untuk membangun fondasi pendidikan di tanah
+            air. Keberadaannya dalam dunia pendidikan menjadi inspirasi bagi
+            banyak orang untuk memperjuangkan pendidikan sebagai kunci kemajuan
+            bangsa.
+          </p>
+
+          <p class="text">
+            Ketika Jepang mulai berusaha untuk menyebarkan pendidikan di
+            Indonesia, Ki Hajar Dewantara mendirikan sekolah-sekolah bersama
+            dengan para pemuda lokal. Sekolah-sekolah ini mengajarkan
+            pelajaran-pelajaran yang bertujuan untuk meningkatkan kesadaran
+            nasionalisme di antara para siswa. Ki Hajar Dewantara juga mencoba
+            untuk menyebarkan pendidikan ke seluruh nusantara, termasuk di
+            daerah-daerah yang terpencil. Dia berhasil menyebarkan pendidikan di
+            seluruh pulau di Indonesia.
+          </p>
+
+          <p class="text">
+            Ki Hajar Dewantara mendirikan Yayasan Pendidikan Indonesia. Sebuah
+            lembaga yang berguna untuk mencapai visi pendidikan yang inklusif
+            dan dapat diakses oleh semua orang, tanpa melihat status sosial dan
+            status ekonomi. Melalui yayasan ini, ia ingin menjamin bahwa setiap
+            orang memiliki kesempatan untuk mendapat pendidikan yang layak untuk
+            bekal di masa depan yang lebih baik. Selain itu, ia juga mendirikan
+            berbagai sekolah yang fokus pada ajaran bahasa dan budaya Indonesia.
+            Sebagai cara untuk memperkuat jati diri dan mendukung semangat
+            nasional di tengah penjajahan. Ia berperan aktif dalam menyerukan
+            pentingnya pendidikan sebagai fondasi bagi kemerdekaan yang sejati.
+            Upaya dan baktinya jadi bukti nyata bahwa pendidikan adalah salah
+            satu kunci utama dalam memperjuangkan dan mempertahankan
+            kemerdekaan.
+          </p>
+
+          <p class="text">
+            Setelah proklamasi kemerdekaan, Ki Hajar Dewantara menjabat sebagai
+            Menteri Pendidikan dan Kebudayaan di pemerintahan Soekarno. Dia juga
+            menjadi ketua umum Partai Nasional Indonesia. Pada tahun 1949, Ki
+            Hajar Dewantara memperkenalkan sistem pendidikan baru yang bertujuan
+            untuk menciptakan generasi muda yang memiliki rasa nasionalisme yang
+            kuat. Di samping itu, beliau juga mendirikan Universitas Indonesia
+            pada tahun 1950.
+          </p>
+
+          <p class="text">
+            Ki Hajar Dewantara tidak hanya dikenal sebagai tokoh pendidikan,
+            tetapi juga sebagai penulis yang memberikan pengaruh besar melalui
+            karyanya. Pada tahun 1952, beliau menulis sebuah buku berjudul
+            “Pendidikan Kebangsaan”. Melalui buku ini, Ki Hajar menegaskan bahwa
+            pendidikan harus menjadi alat untuk mencerdaskan kehidupan bangsa
+            dan menciptakan masyarakat yang merdeka secara pemikiran. Hingga
+            akhir hayatnya, Ki Hajar Dewantara terus mengabdikan hidupnya untuk
+            pendidikan. Beliau meninggal dunia pada tahun 1959 di usia 70 tahun,
+            meninggalkan warisan besar berupa pemikiran dan semangat perjuangan
+            yang terus menginspirasi generasi penerus.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-6/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

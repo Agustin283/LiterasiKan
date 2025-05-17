@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">
+        Sesi Literasi: Kemajuan Teknologi dan Sains Modern
+      </h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/98/07/ce/9807ce02fa01077cae34742f2f130992.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Kemajuan Teknologi dan Sains Modern</p>
+        <div class="paragraph">
+          <p id="text">
+            Dalam beberapa dekade terakhir, kemajuan teknologi dan sains telah
+            mengubah hampir semua aspek kehidupan kita. Dari cara kita bekerja
+            hingga cara kita berinteraksi, teknologi telah membawa perubahan
+            yang signifikan. Salah satu contoh yang paling jelas adalah
+            perkembangan informasi teknologi. Komputer, internet, dan ponsel
+            pintar memungkinkan kita berkomunikasi dengan orang lain di seluruh
+            dunia dalam hitungan detik. Hal ini tidak hanya mempermudah
+            pekerjaan, tetapi juga membuka peluang baru dalam bidang pendidikan,
+            bisnis, dan hiburan.
+          </p>
+          <p id="text">
+            Sains modern juga berperan besar dalam kemajuan ini. Temuan-temuan
+            baru di bidang fisika, biologi, dan kimia membuat kita dapat
+            memahami dunia dengan lebih dalam. Misalnya, dalam bidang biologi,
+            kemajuan dalam teknologi genetika telah memungkinkan para ilmuwan
+            untuk memetakan genom manusia, yang membuka jalan bagi pengobatan
+            penyakit yang sebelumnya sulit dibudidayakan. Selain itu, di bidang
+            medis, teknologi seperti alat pemindai MRI dan terapi gen telah
+            membantu meningkatkan.
+          </p>
+          <p id="text">
+            Di bidang energi, sains dan teknologi modern juga berperan dalam
+            pencarian sumber energi yang lebih lanjut. Namun, meskipun kemajuan
+            teknologi membawa banyak manfaat, ada juga tantangan yang perlu
+            dihadapi. Salah satunya adalah dampak negatif dari kecanduan
+            teknologi, terutama pada generasi muda. Penggunaan perangkat
+            elektronik yang berlebihan dapat mengganggu keseimbangan antara
+            dunia maya dan dunia nyata, serta berdampak pada kesehatan fisik dan
+            mental. Oleh karena itu, penting untuk menggunakan teknologi dengan
+            bijak, mengatur waktu layar, dan tetap menjaga hubungan sosial di
+            dunia nyata.
+          </p>
+          <p id="text">
+            Secara keseluruhan, kemajuan teknologi dan sains memberikan banyak
+            manfaat bagi umat manusia. Namun, kita juga harus bijak dalam
+            memanfaatkan teknologi ini agar dampak negatifnya dapat
+            diminimalkan. Perkembangan teknologi yang berkelanjutan, ditambah
+            dengan kesadaran akan pentingnya etika dalam penggunaannya, akan
+            memastikan bahwa kemajuan ini memberikan manfaat maksimal bagi
+            kehidupan kita di masa depan.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-3/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

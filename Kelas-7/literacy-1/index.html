@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <h2>Isi Data Anda</h2>
+      <p>Masukkan nama dan nomor absen sebelum memulai.</p>
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+      </div>
+      <div class="form-group">
+        <label for="absen">Nomor Absen:</label>
+        <input type="number" id="absen" placeholder="Masukkan nomor absen" />
+      </div>
+      <button class="cta" onclick="submitForm()">Simpan</button>
+    </div>
+
+    <section class="read-first">
+      <h1 class="judul-sesi">Sesi Literasi: Lingkungan Hidup dan Ekosistem</h1>
+      <p class="bridging">
+        Sebelum memulai tes membaca, pastikan Anda siap dengan suasana yang
+        tenang. Ikuti panduan berikut untuk memulai tes dan mendapatkan hasil
+        kecepatan membaca Anda.
+      </p>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+      <div class="guide-container">
+        <div class="guide-card">
+          <div class="icon icon-1">📖</div>
+          <h3>Langkah 1</h3>
+          <p>Klik tombol Mulai untuk memulai tes membaca.</p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-2">📚</div>
+          <h3>Langkah 2</h3>
+          <p>
+            Bacalah teks yang diberikan dengan kecepatan yang menurutmu nyaman,
+            seperti saat membaca sehari-hari.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-3">⏱️</div>
+          <h3>Langkah 3</h3>
+          <p>
+            Saat selesai membaca, klik tombol Berhenti untuk menghentikan
+            penghitungan waktu.
+          </p>
+        </div>
+        <div class="guide-card">
+          <div class="icon icon-4">📊</div>
+          <h3>Langkah 4</h3>
+          <p>
+            Hasil tes akan langsung ditampilkan, termasuk kecepatan membaca dan
+            jumlah kata yang berhasil dibaca per menit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="reading-page">
+      <div class="timer-container">
+        <div id="stopwatch">00:00:00.000</div>
+      </div>
+      <div class="text-container">
+        <img
+          src="https://i.pinimg.com/736x/c4/23/57/c42357d9d79517264977d8385aae31fd.jpg"
+          alt="Reading Illustration"
+          class="reading-image"
+        />
+        <p>Sebuah Simfoni Kehidupan</p>
+        <div class="paragraph">
+          <p id="text">
+            Lingkungan hidup adalah segalanya yang ada di sekitar kita, mulai
+            dari udara yang kita hirup, air yang kita minum, hingga tanah tempat
+            kita berpijak. Di dalamnya, terdapat ekosistem, sebuah sistem
+            kompleks yang terdiri dari makhluk hidup dan lingkungan tak hidup
+            yang saling berinteraksi.
+            <br /><br />
+            Bayangkanlah sebuah hutan lebat. Pohon-pohon menjulang tinggi,
+            akarnya mencengkeram tanah, memberikan tempat tinggal bagi berbagai
+            hewan. Burung berkicau di antara dahan, serangga merayap di
+            dedaunan, dan hewan-hewan lain mencari makan di bawah naungan
+            pepohonan. Semua makhluk hidup ini saling bergantung satu sama lain,
+            membentuk sebuah jaringan kehidupan yang harmonis.
+            <br /><br />
+            Ekosistem memiliki peran penting dalam menjaga keseimbangan alam.
+            Tumbuhan menghasilkan oksigen yang kita hirup, menyerap karbon
+            dioksida, dan menahan tanah agar tidak longsor. Hewan membantu dalam
+            penyerbukan tumbuhan, mengurai sisa-sisa organik, dan menjaga
+            populasi spesies lain. Air mengalir melalui sungai dan danau,
+            membawa kehidupan bagi makhluk hidup di sekitarnya.
+          </p>
+
+          <p id="text">
+            Namun, keseimbangan ekosistem ini rapuh. Aktivitas manusia seperti
+            penebangan hutan, pembuangan sampah, dan polusi dapat merusak
+            ekosistem dan mengancam kelestarian lingkungan hidup. Penebangan
+            hutan menyebabkan hilangnya habitat bagi hewan, erosi tanah, dan
+            perubahan iklim. Sampah yang dibuang sembarangan mencemari air dan
+            tanah, membahayakan kesehatan makhluk hidup. Polusi udara dapat
+            menyebabkan penyakit pernapasan dan kerusakan lingkungan.
+            <br /><br />
+            Oleh karena itu, kita harus bertanggung jawab menjaga lingkungan
+            hidup dan ekosistem. Kita dapat melakukan hal sederhana seperti
+            membuang sampah pada tempatnya, menghemat air dan listrik, menanam
+            pohon, dan mengurangi penggunaan kendaraan bermotor. Dengan menjaga
+            keseimbangan alam, kita dapat memastikan kelangsungan hidup generasi
+            mendatang.
+            <br /><br />
+            Penting untuk diingat bahwa lingkungan hidup dan ekosistem adalah
+            warisan yang harus kita jaga bersama. Mari kita tingkatkan kesadaran
+            dan kepedulian kita terhadap lingkungan hidup agar bumi tetap
+            menjadi tempat yang layak huni bagi semua makhluk hidup.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="cta" onclick="startReading()">
+          Mulai
+        </button>
+        <button type="button" class="cta" onclick="stopReading()" disabled>
+          Berhenti
+        </button>
+      </div>
+
+      <!-- Popup for Result -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div class="popup-image">
+            <img src="../img/semangat_gemoy.webp" alt="Semangat Gemoy" />
+          </div>
+          <p id="popup-result"></p>
+          <div class="popup-button">
+            <button
+              type="button"
+              class="cta"
+              onclick="location.href='../quiz-1/index.html'"
+            >
+              Lanjut Quizz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
